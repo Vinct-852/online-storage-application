@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.env
+.env*
+venv/
+env/
+.env/
+.python-version
+
+# Database
+*.db
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local files
+uploads/
+keys/
+.DS_Store
+Thumbs.db
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Encryption
+*.key
+*.pem
+
+# Server
+instance/
+.webassets-cache
+
+# Build artifacts
+dist/
+build/
