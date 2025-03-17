@@ -1,0 +1,385 @@
+{% extends "base.html" %} 
+{% block title %}My Files{% endblock %} 
+{% block header %}Welcome, {{ current_user.username }}{% endblock %} 
+{% block content %}
+
+<div class="main-content">
+  <div class="card">
+    <h3 class="card-title">Upload New File</h3>
+    <form id="uploadForm" class="upload-form">
+      <div class="file-input-container">
+        <label for="fileInput" class="file-input-label">Choose File</label>
+        <input type="file" id="fileInput" class="file-input" required />
+        <span id="selectedFileName" class="selected-file-name">No file selected</span>
+      </div>
+      <button type="submit" class="btn btn-primary">
+        <i class="fas fa-upload"></i> Upload File
+      </button>
+    </form>
+  </div>
+
+  <div class="card">
+    <h3 class="card-title">Your Files</h3>
+    {% if files %}
+    <ul class="file-list">
+      {% for file in files %}
+      <li class="file-item {% if file[2] != current_user.id %}shared-file{% endif %}">
+        <div class="file-info">
+          <span class="file-name">{{ file[1] }}</span>
+          {% if file[2] != current_user.id %}
+          <span class="file-owner-tag">Shared File</span>
+          {% endif %}
+        </div>
+        <div class="file-actions">
+          <button class="btn download-btn" data-file-id="{{ file[0] }}">
+            <i class="fas fa-download"></i> Download
+          </button>
+          {% if file[2] == current_user.id %}
+          <form action="{{ url_for('share_file', file_id=file[0]) }}" method="POST" class="share-form">
+            <input type="text" name="shared_user" placeholder="Enter username to share" />
+            <button type="submit" class="btn btn-share">
+              <i class="fas fa-share-alt"></i> Share
+            </button>
+          </form>
+          {% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <div class="empty-state">
+      <p>You haven't uploaded any files yet</p>
+      <p class="empty-state-hint">Click the "Upload File" button above to get started</p>
+    </div>
+    {% endif %}
+  </div>
+
+  <div id="debug-output" style="display: none;">
+    <div class="debug-header">
+      <h4>Debug Information</h4>
+      <button class="btn btn-small" onclick="document.getElementById('debug-output').style.display='none'">Close</button>
+    </div>
+    <div id="debug-content"></div>
+  </div>
+</div>
+
+<div class="nav-links">
+  <a href="{{ url_for('logout') }}" class="nav-link">
+    <i class="fas fa-sign-out-alt"></i> Logout
+  </a>
+</div>
+
+<script>
+  // 添加调试函数
+  function debugLog(message, data = null) {
+    console.log(message, data);
+    const debugOutput = document.getElementById('debug-output');
+    const debugContent = document.getElementById('debug-content');
+    debugOutput.style.display = 'block';
+    
+    const timestamp = new Date().toISOString().substr(11, 8);
+    let logMsg = `[${timestamp}] ${message}`;
+    if (data !== null) {
+        try {
+            if (data instanceof Error) {
+                logMsg += "\n" + data.message;
+                if (data.stack) {
+                    logMsg += "\nStack: " + data.stack;
+                }
+            } else {
+                logMsg += "\n" + JSON.stringify(data, null, 2);
+            }
+        } catch(e) {
+            logMsg += "\n[Unable to serialize data: " + e.message + "]";
+        }
+    }
+    
+    debugContent.innerHTML += logMsg + "\n\n";
+  }
+
+ // 显示选择的文件名
+document.getElementById('fileInput').addEventListener('change', function(e) {
+    const fileName = e.target.files[0] ? e.target.files[0].name : 'No file selected';
+    document.getElementById('selectedFileName').textContent = fileName;
+});
+
+async function encryptFile(file) {
+    const aesKey = window.crypto.getRandomValues(new Uint8Array(16)); 
+    debugLog("Generated AES key", Array.from(aesKey));
+
+    try {
+        const response = await fetch("/get_public_key");
+        const { publicKey } = await response.json();
+        if (!publicKey) throw new Error("Public key is empty");
+        debugLog("Retrieved public key (first 20 characters)", publicKey.substring(0, 20) + "...");
+
+        const binaryDer = Uint8Array.from(atob(publicKey), c => c.charCodeAt(0)).buffer;
+        debugLog("Public key decoded successfully, preparing to import");
+
+        try {
+            const importedKey = await window.crypto.subtle.importKey(
+                "spki",
+                binaryDer,
+                { name: "RSA-OAEP", hash: "SHA-256" },
+                true,
+                ["encrypt"]
+            );
+            debugLog("Public key imported successfully");
+
+            const encryptedAesKey = await window.crypto.subtle.encrypt(
+                { name: "RSA-OAEP" },
+                importedKey,
+                aesKey
+            );
+            debugLog("AES key encrypted with RSA successfully");
+
+            const fileBuffer = await file.arrayBuffer();
+            const iv = window.crypto.getRandomValues(new Uint8Array(12));
+            debugLog("Generated IV", Array.from(iv));
+            
+            const cryptoKey = await window.crypto.subtle.importKey("raw", aesKey, { name: "AES-GCM" }, false, ["encrypt"]);
+            const encryptedFile = await window.crypto.subtle.encrypt({ 
+                name: "AES-GCM", 
+                iv,
+                tagLength: 128 // 添加GCM標籤長度
+            }, cryptoKey, fileBuffer);
+            
+            debugLog("File encrypted successfully, size", encryptedFile.byteLength);
+            
+            // 將IV與加密後的AES密鑰一起保存
+            const combinedData = {
+                encryptedAesKey: btoa(String.fromCharCode(...new Uint8Array(encryptedAesKey))),
+                iv: btoa(String.fromCharCode(...new Uint8Array(iv)))
+            };
+            
+            return {
+                encryptedFile: new Blob([encryptedFile]),
+                encryptedData: btoa(JSON.stringify(combinedData))
+            };
+        } catch (error) {
+            debugLog("Encryption processing failed", error.message);
+            throw error;
+        }
+    } catch (error) {
+        console.error("Encryption failed:", error);
+        debugLog("Encryption failed", error.message);
+        alert("Encryption failed: " + error.message);
+        return null;
+    }
+}
+
+document.getElementById("uploadForm").addEventListener("submit", async function (event) {
+    event.preventDefault();
+    const fileInput = document.getElementById("fileInput");
+    if (!fileInput.files.length) return alert("Please select a file");
+
+    // 显示加载状态
+    const submitButton = this.querySelector('button[type="submit"]');
+    const originalText = submitButton.innerHTML;
+    submitButton.innerHTML = '<span class="loading-spinner"></span> Processing...';
+    submitButton.disabled = true;
+
+    try {
+        debugLog("Starting file encryption", fileInput.files[0].name);
+        const result = await encryptFile(fileInput.files[0]);
+        if (!result) return;
+
+        const { encryptedFile, encryptedData } = result;
+        const formData = new FormData();
+        formData.append("file", encryptedFile, fileInput.files[0].name + ".enc");
+        formData.append("encrypted_aes_key", encryptedData);
+        debugLog("Preparing to upload encrypted file");
+
+        const response = await fetch("/upload", { method: "POST", body: formData });
+
+        if (!response.ok) {
+            throw new Error("File upload failed!");
+        }
+
+        debugLog("File uploaded successfully");
+        showNotification("File successfully encrypted and uploaded!", "success");
+        window.location.reload(); 
+    } catch (error) {
+        debugLog("Upload failed", error.message);
+        showNotification("An error occurred during encryption or upload: " + error.message, "error");
+    } finally {
+        // 恢复按钮状态
+        submitButton.innerHTML = originalText;
+        submitButton.disabled = false;
+    }
+});
+
+  // 显示通知
+  function showNotification(message, type = 'info') {
+    const notification = document.createElement('div');
+    notification.className = `notification ${type}`;
+    notification.innerHTML = `
+      <div class="notification-content">
+        <span>${message}</span>
+        <button class="notification-close">&times;</button>
+      </div>
+    `;
+    document.body.appendChild(notification);
+    
+    // 添加关闭按钮事件
+    notification.querySelector('.notification-close').addEventListener('click', function() {
+      document.body.removeChild(notification);
+    });
+    
+    // 自动关闭
+    setTimeout(() => {
+      if (document.body.contains(notification)) {
+        document.body.removeChild(notification);
+      }
+    }, 5000);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".download-btn").forEach(button => {
+        button.addEventListener("click", async function () {
+            const fileId = this.getAttribute("data-file-id");
+            if (!fileId) {
+                showNotification("Failed to retrieve file ID!", "error");
+                return;
+            }
+            
+            // 显示加载状态
+            const originalText = this.innerHTML;
+            this.innerHTML = '<span class="loading-spinner"></span> Processing...';
+            this.disabled = true;
+            
+            try {
+                await downloadAndDecrypt(fileId);
+                showNotification("File successfully downloaded and decrypted!", "success");
+            } catch (error) {
+                showNotification("Download or decryption failed: " + error.message, "error");
+            } finally {
+                // 恢复按钮状态
+                this.innerHTML = originalText;
+                this.disabled = false;
+            }
+        });
+    });
+});
+
+  async function downloadAndDecrypt(fileId) {
+    try {
+        debugLog(`Starting file download, ID: ${fileId}`);
+        const response = await fetch(`/download/${fileId}`);
+        if (!response.ok) throw new Error("Download failed");
+
+        const fileInfo = await response.json();
+        const { filename, encrypted_aes_key, file_data } = fileInfo;
+        debugLog("Successfully retrieved file info", { filename, encrypted_aes_key_length: encrypted_aes_key?.length });
+
+        if (!encrypted_aes_key || !file_data) {
+            throw new Error("Failed to retrieve encrypted data");
+        }
+
+        // 嘗試解密
+        await tryMultipleDecryptionMethods(encrypted_aes_key, file_data, filename);
+
+    } catch (error) {
+        console.error("File decryption failed:", error);
+        debugLog("Decryption failed", error);
+        throw error;
+    }
+}
+
+// 嘗試多種解密方法
+async function tryMultipleDecryptionMethods(encrypted_aes_key, file_data, filename) {
+    // 獲取用戶私鑰
+    debugLog("Fetching private key...");
+    const privateKeyResponse = await fetch('/get_private_key');
+    if (!privateKeyResponse.ok) {
+        throw new Error("Failed to retrieve private key");
+    }
+    
+    const { privateKey: privateKeyB64 } = await privateKeyResponse.json();
+    if (!privateKeyB64) {
+        throw new Error("Retrieved private key is empty");
+    }
+    
+    debugLog("Successfully retrieved private key");
+    
+    // 獲取私鑰二進制數據
+    const privateKeyDer = Uint8Array.from(atob(privateKeyB64), c => c.charCodeAt(0)).buffer;
+    
+    // 解析JSON格式的加密數據
+    try {
+        debugLog("Parsing encrypted data in JSON format");
+        const encryptedData = JSON.parse(atob(encrypted_aes_key));
+        const { encryptedAesKey, iv } = encryptedData;
+        
+        if (encryptedAesKey && iv) {
+            debugLog("Found encrypted AES key and IV");
+            
+            // Base64 解碼
+            const encryptedAesKeyBytes = Uint8Array.from(atob(encryptedAesKey), c => c.charCodeAt(0));
+            const ivBytes = Uint8Array.from(atob(iv), c => c.charCodeAt(0));
+            
+            // 導入RSA私鑰
+            const privateKey = await window.crypto.subtle.importKey(
+                "pkcs8", 
+                privateKeyDer,
+                { name: "RSA-OAEP", hash: "SHA-256" },
+                true,
+                ["decrypt"]
+            );
+            
+            // 解密AES密鑰
+            const aesKeyBuffer = await window.crypto.subtle.decrypt(
+                { name: "RSA-OAEP" },
+                privateKey,
+                encryptedAesKeyBytes
+            );
+            
+            // Base64解碼文件內容
+            const encryptedFileBytes = Uint8Array.from(atob(file_data), c => c.charCodeAt(0));
+            
+            // 導入AES密鑰
+            const cryptoKey = await window.crypto.subtle.importKey(
+                "raw", 
+                new Uint8Array(aesKeyBuffer), 
+                { name: "AES-GCM" }, 
+                false, 
+                ["decrypt"]
+            );
+            
+            // 解密文件
+            const decryptedFile = await window.crypto.subtle.decrypt(
+                { 
+                    name: "AES-GCM", 
+                    iv: ivBytes,
+                    tagLength: 128
+                },
+                cryptoKey,
+                encryptedFileBytes
+            );
+            
+            debugLog("File decrypted successfully", decryptedFile.byteLength);
+            saveDecryptedFile(decryptedFile, filename);
+            return;
+        } else {
+            throw new Error("Encrypted data is missing required fields");
+        }
+    } catch (error) {
+        debugLog("Decryption failed", error);
+        throw new Error(`Decryption failed: ${error.message}`);
+    }
+}
+
+// 保存解密後的文件
+function saveDecryptedFile(decryptedFile, filename) {
+    const blob = new Blob([decryptedFile], { type: "application/octet-stream" });
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = filename.replace(".enc", "");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    debugLog("File saved as", filename.replace(".enc", ""));
+}
+</script>
+
+{% endblock %}

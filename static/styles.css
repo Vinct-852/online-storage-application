@@ -1,0 +1,626 @@
+/* 安全檔案應用 - 現代簡潔風格 */
+
+/* 基本重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", "微軟正黑體", "Heiti TC", "黑體-繁", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f7f9fc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+}
+
+main.container {
+  flex: 1;
+}
+
+/* 標題樣式 */
+h1 {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin: 1.5rem 0 1rem;
+  font-weight: 500;
+}
+
+/* 頁首樣式 */
+.app-header {
+  background-color: #3498db;
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.app-title {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.header-subtitle {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/* 卡片樣式 */
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+}
+
+.card-title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+/* 表單樣式 */
+form {
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #555;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"] {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s, transform 0.1s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn i {
+  margin-right: 0.5rem;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn-primary {
+  background-color: #3498db;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-small {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+}
+
+/* 文件上傳表單 */
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.file-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.file-input {
+  opacity: 0;
+  position: absolute;
+  width: 0.1px;
+  height: 0.1px;
+  overflow: hidden;
+}
+
+.file-input-label {
+  background-color: #f0f0f0;
+  color: #555;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 1rem;
+  margin-bottom: 0;
+}
+
+.file-input-label:hover {
+  background-color: #e0e0e0;
+}
+
+.selected-file-name {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #666;
+}
+
+/* 檔案列表樣式 */
+.file-list {
+  list-style: none;
+}
+
+.file-item {
+  background: white;
+  padding: 1rem;
+  margin-bottom: 0.8rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.file-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.file-name {
+  flex: 1;
+  font-weight: 500;
+  margin-right: 1rem;
+}
+
+.file-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.download-btn {
+  background-color: #27ae60;
+}
+
+.download-btn:hover {
+  background-color: #219653;
+}
+
+/* 共享表單樣式 */
+.share-form {
+  display: flex;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.share-form input {
+  flex: 1;
+  margin-bottom: 0;
+  margin-right: 0.5rem;
+}
+
+.btn-share {
+  background-color: #9b59b6;
+}
+
+.btn-share:hover {
+  background-color: #8e44ad;
+}
+
+/* 空狀態 */
+.empty-state {
+  text-align: center;
+  padding: 2rem;
+  color: #777;
+}
+
+.empty-state-hint {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: #999;
+}
+
+/* 閃爍訊息樣式 */
+.flash-messages {
+  margin-bottom: 1.5rem;
+  list-style: none;
+}
+
+.flash-messages li {
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.flash-messages li i {
+  margin-right: 0.5rem;
+}
+
+.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* 導航連結 */
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.nav-link {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-link i {
+  margin-right: 0.5rem;
+}
+
+.nav-link:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+/* 調試輸出樣式 */
+#debug-output {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  margin-top: 2rem;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.9rem;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.debug-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #e9ecef;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.debug-header h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+#debug-content {
+  padding: 1rem;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+/* 頁腳樣式 */
+.app-footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* 通知樣式 */
+#notifications-container {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  max-width: 350px;
+}
+
+.notification {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1rem;
+  overflow: hidden;
+  animation: slideIn 0.3s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.notification-content {
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.notification-close {
+  background: none;
+  border: none;
+  color: #999;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  padding: 0;
+}
+
+.notification.success {
+  border-left: 4px solid #27ae60;
+}
+
+.notification.error {
+  border-left: 4px solid #e74c3c;
+}
+
+.notification.info {
+  border-left: 4px solid #3498db;
+}
+
+/* 加載動畫 */
+.loading-spinner {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 0.8s linear infinite;
+  margin-right: 0.5rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 登入和註冊頁面樣式 */
+.auth-container {
+  display: flex;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.auth-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  flex: 1;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.auth-subtitle {
+  color: #777;
+  margin-top: 0.5rem;
+}
+
+.auth-form {
+  margin-bottom: 1.5rem;
+}
+
+.auth-footer {
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+  margin-top: 1rem;
+}
+
+.auth-link {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.auth-link:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+.auth-info {
+  background: linear-gradient(135deg, #3498db, #2c3e50);
+  color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-list {
+  list-style: none;
+  margin: 1.5rem 0;
+}
+
+.feature-list li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.feature-list li i {
+  margin-right: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.security-note {
+  margin-top: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+  font-size: 0.9rem;
+}
+
+.security-note i {
+  margin-right: 0.8rem;
+  font-size: 1.2rem;
+  margin-top: 0.2rem;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .auth-container {
+    flex-direction: column;
+  }
+  
+  .header-content {
+    text-align: center;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  .file-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .file-name {
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+  
+  .file-actions {
+    width: 100%;
+  }
+  
+  .share-form {
+    flex-direction: column;
+  }
+  
+  .share-form input {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* 共享文件样式 */
+.shared-file {
+  border-left: 3px solid #9b59b6;
+  background-color: #f8f4fc;
+}
+
+.file-info {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.file-owner-tag {
+  font-size: 0.8rem;
+  background-color: #9b59b6;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  margin-left: 0.8rem;
+} 

@@ -1,0 +1,45 @@
+{% extends "base.html" %} 
+{% block title %}Login{% endblock %} 
+{% block header %}Welcome to the Secure File System{% endblock %} 
+{% block content %}
+
+<div class="auth-container">
+  <div class="auth-card">
+    <div class="auth-header">
+      <h2><i class="fas fa-sign-in-alt"></i> User Login</h2>
+      <p class="auth-subtitle">Please enter your username and password</p>
+    </div>
+    
+    <form method="POST" class="auth-form">
+      <div class="form-group">
+        <label for="username"><i class="fas fa-user"></i> Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required />
+      </div>
+      
+      <div class="form-group">
+        <label for="password"><i class="fas fa-lock"></i> Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required />
+      </div>
+      
+      <button type="submit" class="btn btn-primary btn-block">
+        <i class="fas fa-sign-in-alt"></i> Login
+      </button>
+    </form>
+    
+    <div class="auth-footer">
+      <p>Don't have an account? <a href="{{ url_for('register') }}" class="auth-link">Sign up now</a></p>
+    </div>
+  </div>
+  
+  <div class="auth-info">
+    <h3>Secure File System Features</h3>
+    <ul class="feature-list">
+      <li><i class="fas fa-lock"></i> End-to-end encryption protection</li>
+      <li><i class="fas fa-shield-alt"></i> Secure file sharing</li>
+      <li><i class="fas fa-user-shield"></i> Private data protection</li>
+      <li><i class="fas fa-key"></i> Personal key management</li>
+    </ul>
+  </div>
+</div>
+
+{% endblock %}

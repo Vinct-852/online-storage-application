@@ -1,74 +1,62 @@
-# online-storage-application
-================
+# 安全文件应用 (SecureFileApp)
 
-A secure file storage application with user management, client-side encryption, and access control.
+这个应用程序是一个基于Flask的安全文件存储系统，使用客户端加密和服务器端存储的方式保护文件内容的安全性。本项目实现了端到端加密，确保即使服务器管理员也无法访问用户文件的明文内容。
 
-Core Features
--------------
-1. User Management
-   - Registration with unique username and password hashing (PBKDF2/SHA-256)
-   - Secure login authentication
-   - Password reset functionality
+## 功能特点
 
-2. Data Encryption
-   - Client-side AES-256 encryption before upload
-   - Encrypted file storage (server cannot read plaintext)
-   - Secure key management using local storage
+- **用户账户管理**：注册、登录和注销
+- **RSA/AES混合加密**：结合RSA非对称加密和AES对称加密的优势
+- **客户端加密**：文件在浏览器中加密后再上传到服务器
+- **客户端解密**：加密文件从服务器下载后在浏览器中解密
+- **安全文件共享**：用户可以与其他注册用户安全地共享文件，接收方使用自己的密钥解密
+- **文件管理**：用户可以上传、下载和共享自己的文件
+- **现代化界面**：直观美观的用户界面，提供良好的用户体验
 
-3. Access Control
-   - User-specific file ownership
-   - File sharing with designated users
-   - Role-based access enforcement
+## 技术栈
 
-4. Security Measures
-   - SQL injection prevention (parameterized queries)
-   - Path traversal protection
-   - Input validation/sanitization
-   - Activity logging and audit trails
+- **后端**：Flask (Python)
+- **数据库**：SQLite
+- **加密技术**：
+  - RSA-OAEP (非对称加密，用于密钥交换)
+  - AES-GCM (对称加密，用于文件内容加密)
+- **前端技术**：
+  - Web Crypto API (浏览器加密)
+  - 现代CSS (响应式设计)
+  - Font Awesome 图标
+  - 自定义通知系统
 
-5. Log Auditing
-   - Records all critical operations (login, file changes, sharing)
-   - Non-repudiation through user-specific logs
-   - Admin access to audit logs
 
-Technologies Used
------------------
-- Python 3.10+
-- Flask (Web Framework)
-- SQLAlchemy (ORM)
-- PostgreSQL (Database)
-- cryptography (AES encryption)
-- Werkzeug (Password hashing)
-- pytest (Testing)
-- Bandit (Security Linter)
+## 当前解决方案
 
-Setup Instructions
-------------------
-1. Install dependencies:
-   pip install -r requirements.txt
+当前版本的安全文件应用实现了完整的端到端加密文件存储和共享系统：
 
-2. Configure environment variables:
-   SECRET_KEY=<your_secret_key>
-   DATABASE_URI=postgresql://user:password@localhost/dbname
-   ENCRYPTION_KEY_DERIVATION_ITERATIONS=600000
+1. **文件上传流程**：
+   - 客户端生成随机的AES密钥和初始化向量(IV)
+   - 从服务器获取用户的RSA公钥
+   - 使用RSA公钥加密AES密钥
+   - 使用AES-GCM算法和IV加密文件内容
+   - 将加密后的文件和加密后的AES密钥一起上传到服务器
+   - 服务器存储加密文件和加密后的AES密钥，但无法解密
 
-3. Initialize database:
-   python -m flask db init
-   python -m flask db migrate
-   python -m flask db upgrade
+2. **文件下载流程**：
+   - 客户端从服务器请求加密文件和相应的加密AES密钥
+   - 从服务器获取用户的RSA私钥
+   - 使用RSA私钥解密AES密钥
+   - 使用解密后的AES密钥和IV解密文件内容
+   - 将解密后的文件保存到本地
 
-4. Run application:
-   python -m flask run --host=0.0.0.0 --port=5000
+3. **文件共享流程**：
+   - 文件所有者选择要共享的用户
+   - 系统使用所有者的私钥解密原始AES密钥
+   - 使用接收方的公钥重新加密AES密钥
+   - 将专门为接收方加密的密钥存储在共享记录中
+   - 接收方可以使用自己的私钥解密共享文件
 
-Security Notes
--------------
-- Passwords are never stored in plaintext (PBKDF2-HMAC-SHA256)
-- Files encrypted client-side before upload
-- All database queries use parameterized inputs
-- File names sanitized using whitelist (a-zA-Z0-9-_.)
-- Session management with secure cookies
-- Rate limiting on authentication endpoints
+4. **安全特性**：
+   - 所有密码都以哈希形式存储，使用Werkzeug的`generate_password_hash`和`check_password_hash`
+   - 使用AES-GCM模式提供加密和完整性验证
+   - RSA密钥长度为2048位，提供足够的安全强度
+   - 文件内容在客户端加密，确保即使服务器被入侵，文件内容也不会泄露
+   - 每个用户只能使用自己的密钥对访问文件，确保共享安全
+   - 严格的文件访问权限控制，用户只能看到自己的文件和被共享的文件
 
-License
--------
-Apache License 2.0
