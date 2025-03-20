@@ -1,0 +1,10 @@
+{% extends "base.html" %} {% block title %}Login{% endblock %} {% block header
+%}Welcome to the Secure File System{% endblock %} {% block content %}
+
+<form method="POST">
+  <label>Enter OTP:</label>
+  <input type="text" name="otp" required />
+  <button type="submit">Verify</button>
+</form>
+
+{% endblock %}

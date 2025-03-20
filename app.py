@@ -1,6 +1,6 @@
 import os
 import sqlite3
-from flask import Flask, render_template, request, redirect, url_for, flash, send_from_directory
+from flask import Flask, render_template, request, redirect, url_for, flash, send_from_directory, send_file, session
 from werkzeug.utils import secure_filename
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -13,6 +13,9 @@ import base64
 import logging
 import traceback
 import json
+import qrcode
+import io
+import pyotp
 
 # 设置日志记录
 logging.basicConfig(filename='app.log', level=logging.DEBUG,
@@ -30,15 +33,20 @@ login_manager.login_view = 'login'
 def init_db():
     conn = sqlite3.connect('database.db')
     c = conn.cursor()
+    
+    # 創建 users 表，增加 otp_secret 欄位
     c.execute('''
         CREATE TABLE IF NOT EXISTS users (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             username TEXT UNIQUE NOT NULL,
             password TEXT NOT NULL,
             public_key TEXT NOT NULL,
-            private_key TEXT NOT NULL
+            private_key TEXT NOT NULL,
+            otp_secret TEXT DEFAULT NULL  -- 新增 OTP 密鑰欄位
         )
     ''')
+
+    # 創建 files 表
     c.execute('''
         CREATE TABLE IF NOT EXISTS files (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -49,6 +57,7 @@ def init_db():
             FOREIGN KEY(owner_id) REFERENCES users(id)
         )
     ''')
+
     conn.commit()
     conn.close()
 
@@ -113,23 +122,34 @@ def index():
 def register():
     if request.method == 'POST':
         username = request.form['username']
-        password = generate_password_hash(request.form['password'])  #  存儲哈希密碼
+        password = generate_password_hash(request.form['password'])
+
+        # Generate OTP secret
+        otp_secret = pyotp.random_base32()
+
+        # Generate RSA keys (assuming you need them)
         private_key, public_key = generate_keys()
-        
+ 
+
         conn = sqlite3.connect('database.db')
         c = conn.cursor()
+
         try:
-            c.execute('INSERT INTO users (username, password, public_key, private_key) VALUES (?, ?, ?, ?)', 
-                      (username, password, public_key, private_key))
+            c.execute('INSERT INTO users (username, password, public_key, private_key, otp_secret) VALUES (?, ?, ?, ?, ?)',
+                      (username, password, public_key, private_key, otp_secret))
             conn.commit()
-            flash('Registration successful! Please log in.', 'success')
-        except:
-            flash('Username already exists!', 'danger')
+            conn.close()
+
+            flash('Registration successful! Set up your OTP by scanning the QR code.', 'success')
+            return redirect(url_for('otp_setup', username=username))
+        except sqlite3.IntegrityError:
+            flash('Username already exists. Please choose another one.', 'danger')
+
         conn.close()
-        return redirect(url_for('login'))
+
     return render_template('register.html')
 
-# 📌 登入（驗證哈希密碼）
+# 📌 Login function with OTP MFA
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -138,16 +158,100 @@ def login():
 
         conn = sqlite3.connect('database.db')
         c = conn.cursor()
-        c.execute('SELECT * FROM users WHERE username = ?', (username,))
+        c.execute('SELECT id, password, otp_secret FROM users WHERE username = ?', (username,))
+        user = c.fetchone()
+
+        if user and check_password_hash(user[1], password):  # 驗證密碼
+            user_id = user[0]
+            otp_secret = user[2]  # 取得 OTP Secret
+
+            # 🔹 如果 `otp_secret` 為空，則自動生成新的
+            if not otp_secret or otp_secret.strip() == "":
+                otp_secret = pyotp.random_base32()
+                c.execute('UPDATE users SET otp_secret = ? WHERE id = ?', (otp_secret, user_id))
+                conn.commit()
+
+            conn.close()
+
+            # 存儲用戶ID到 session，跳轉到 OTP 頁面
+            session['temp_user'] = user_id
+            return redirect(url_for('otp_verification'))
+
+        else:
+            flash('登入失敗，請檢查帳號密碼！', 'danger')
+
+        conn.close()
+
+    return render_template('login.html')
+
+@app.route('/otp-verification', methods=['GET', 'POST'])
+def otp_verification():
+    if 'temp_user' not in session:
+        flash("會話過期，請重新登入。", "warning")
+        return redirect(url_for('login'))
+
+    if request.method == 'POST':
+        otp_code = request.form['otp']
+
+        conn = sqlite3.connect('database.db')
+        c = conn.cursor()
+        c.execute('SELECT otp_secret FROM users WHERE id = ?', (session['temp_user'],))
         user = c.fetchone()
         conn.close()
 
-        if user and check_password_hash(user[2], password):  #  驗證哈希密碼
-            login_user(User(user[0], user[1]))
-            return redirect(url_for('index'))
-        else:
-            flash('Login failed. Please check your username and password!', 'danger')
-    return render_template('login.html')
+        if user:
+            otp_secret = user[0]
+
+            # 🔹 確保 `otp_secret` 是有效 base32 字符串
+            if not otp_secret or not isinstance(otp_secret, str) or len(otp_secret.strip()) == 0:
+                flash("OTP 設置錯誤，請聯繫管理員。", "danger")
+                return redirect(url_for('login'))
+
+            try:
+                totp = pyotp.TOTP(otp_secret.strip())  # 確保不包含空格
+                if totp.verify(otp_code):
+                    user_obj = load_user(session['temp_user'])
+                    login_user(user_obj)
+                    session.pop('temp_user')
+                    flash('登入成功！', 'success')
+                    return redirect(url_for('index'))
+                else:
+                    flash('OTP 錯誤，請重試。', 'danger')
+            except Exception as e:
+                flash(f"OTP 驗證錯誤: {str(e)}", "danger")
+                return redirect(url_for('login'))
+
+    return render_template('otp_verification.html')
+
+@app.route('/otp-setup/<username>')
+def otp_setup(username):
+    conn = sqlite3.connect('database.db')
+    c = conn.cursor()
+    c.execute('SELECT otp_secret FROM users WHERE username = ?', (username,))
+    user = c.fetchone()
+    conn.close()
+
+    if not user:
+        flash("User not found.", "danger")
+        return redirect(url_for('register'))
+
+    otp_secret = user[0]
+    totp = pyotp.TOTP(otp_secret)
+
+    # Generate OTP Auth URI
+    otp_uri = totp.provisioning_uri(name=username, issuer_name="My Secure App")
+
+    # Generate QR Code
+    qr = qrcode.make(otp_uri)
+    img_io = io.BytesIO()
+    qr.save(img_io, 'PNG')
+    img_io.seek(0)
+
+    # Convert QR code image to base64 for embedding
+    qr_base64 = base64.b64encode(img_io.getvalue()).decode()
+
+    # ✅ Pass `otp_secret` to the template
+    return render_template('otp_setup.html', username=username, qr_base64=qr_base64, otp_secret=otp_secret)
 
 # 📌 登出
 @app.route('/logout')
@@ -385,31 +489,42 @@ def share_file(file_id):
     return redirect(url_for('index'))
 
 #  編輯檔案
-@app.route('/edit/<int:file_id>')
+@app.route('/edit/<int:file_id>', methods=['POST'])
 @login_required
 def edit_file(file_id):
-    conn = sqlite3.connect('database.db')
-    c = conn.cursor()
-    c.execute('SELECT * FROM files WHERE id = ? AND owner_id = ?', (file_id, current_user.id))
-    file = c.fetchone()
-    conn.close()
+    try:
+        conn = sqlite3.connect('database.db')
+        c = conn.cursor()
 
-    if file:
+        # 確保文件存在
+        c.execute('SELECT * FROM files WHERE id = ? AND owner_id = ?', (file_id, current_user.id))
+        file = c.fetchone()
+        conn.close()
+
+        if not file:
+            return {"error": "You do not have permission to edit this file!"}, 403
+
+        encrypted_file = request.files["file"].read()
+        encrypted_data = request.form["encrypted_aes_key"]
+
+        # 儲存加密後的文件
         file_path = os.path.join(app.config['UPLOAD_FOLDER'], file[1])
-        
-        # 讀取原始內容並模擬修改
-        try:
-            with open(file_path, 'a', encoding='utf-8') as f:
-                f.write("\n[Edited]")  # 在文件最後加上 "[Edited]"
-            
-            flash('File successfully modified and saved!', 'success')
-        except Exception as e:
-            flash(f'File modification failed: {str(e)}', 'danger')
-    else:
-        flash('You do not have permission to edit this file!', 'danger')
+        with open(file_path, 'wb') as f:
+            f.write(encrypted_file)
 
-    return redirect(url_for('index'))
+        # 更新資料庫中的加密金鑰
+        conn = sqlite3.connect('database.db')
+        c = conn.cursor()
+        c.execute("UPDATE files SET encryption_key = ? WHERE id = ?", (encrypted_data, file_id))
+        conn.commit()
+        conn.close()
 
+        return {"message": "File successfully edited!"}
+
+    except Exception as e:
+        logging.error(f"Error editing file: {str(e)}\n{traceback.format_exc()}")
+        return {"error": f"Error editing file: {str(e)}"}, 500
+    
 #  刪除檔案
 @app.route('/delete/<int:file_id>')
 @login_required
@@ -496,4 +611,4 @@ def download_file(file_id):
 if __name__ == '__main__':
     if not os.path.exists(app.config['UPLOAD_FOLDER']):
         os.makedirs(app.config['UPLOAD_FOLDER'])
-    app.run(debug=True)
+    app.run(debug=True, port=8001)

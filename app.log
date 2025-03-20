@@ -6810,3 +6810,1652 @@ ValueError: Incorrect decryption.
 2025-03-17 23:38:05,644 - INFO - 127.0.0.1 - - [17/Mar/2025 23:38:05] "[32mGET / HTTP/1.1[0m" 302 -
 2025-03-17 23:38:05,654 - INFO - 127.0.0.1 - - [17/Mar/2025 23:38:05] "GET /login?next=/ HTTP/1.1" 200 -
 2025-03-17 23:38:05,668 - INFO - 127.0.0.1 - - [17/Mar/2025 23:38:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:17:55,159 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-20 22:17:55,159 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-20 22:17:55,159 - INFO -  * Restarting with stat
+2025-03-20 22:17:55,272 - WARNING -  * Debugger is active!
+2025-03-20 22:17:55,276 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 22:17:57,649 - INFO - 127.0.0.1 - - [20/Mar/2025 22:17:57] "GET / HTTP/1.1" 200 -
+2025-03-20 22:17:57,675 - INFO - 127.0.0.1 - - [20/Mar/2025 22:17:57] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:17:57,679 - INFO - 127.0.0.1 - - [20/Mar/2025 22:17:57] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:18:04,389 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:04] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-03-20 22:18:04,402 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:04] "GET /login HTTP/1.1" 200 -
+2025-03-20 22:18:04,436 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:04] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:18:04,438 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:04] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:18:04,439 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:04] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:18:08,462 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:08] "POST /login HTTP/1.1" 200 -
+2025-03-20 22:18:08,484 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:08] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:18:08,485 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:08] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:18:13,078 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:13] "POST /login HTTP/1.1" 200 -
+2025-03-20 22:18:13,100 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:13] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:18:13,101 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:13] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:18:14,498 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:14] "GET /register HTTP/1.1" 200 -
+2025-03-20 22:18:14,521 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:14] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:18:14,522 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:18:23,732 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:23] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-03-20 22:18:23,743 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:23] "GET /login HTTP/1.1" 200 -
+2025-03-20 22:18:23,778 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:23] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:18:23,782 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:23] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:18:23,789 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:23] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:18:26,388 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:26] "GET /register HTTP/1.1" 200 -
+2025-03-20 22:18:26,424 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:26] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:18:31,273 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:31] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-03-20 22:18:31,284 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:31] "GET /login HTTP/1.1" 200 -
+2025-03-20 22:18:31,318 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:31] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:18:31,319 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:31] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:18:31,320 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:31] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:18:35,462 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:35] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-20 22:18:35,471 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:35] "GET / HTTP/1.1" 200 -
+2025-03-20 22:18:35,507 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:35] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:18:35,509 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:35] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:18:35,510 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:18:41,642 - DEBUG - Successfully retrieved public key for user 6
+2025-03-20 22:18:41,643 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:41] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-20 22:18:41,652 - DEBUG - Uploaded file content size: 1106 bytes
+2025-03-20 22:18:41,653 - DEBUG - File saved to: uploads/LICENSE.txt.enc
+2025-03-20 22:18:41,653 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-20 22:18:41,654 - DEBUG - File information saved to database: LICENSE.txt.enc, user_id=6
+2025-03-20 22:18:41,655 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:41] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-03-20 22:18:41,658 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:41] "GET / HTTP/1.1" 200 -
+2025-03-20 22:18:41,669 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:41] "GET / HTTP/1.1" 200 -
+2025-03-20 22:18:41,684 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:41] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:18:41,685 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:41] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:18:52,563 - DEBUG - Successfully decrypted AES key, length: 16 bytes
+2025-03-20 22:18:52,564 - INFO - File 6 successfully shared with user QAQ2
+2025-03-20 22:18:52,564 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:52] "[32mPOST /share/6 HTTP/1.1[0m" 302 -
+2025-03-20 22:18:52,571 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:52] "GET / HTTP/1.1" 200 -
+2025-03-20 22:18:52,589 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:52] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:18:52,591 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:52] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:18:52,593 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:18:54,004 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-20 22:18:54,004 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-20 22:18:54,004 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:54] "GET /download/6 HTTP/1.1" 200 -
+2025-03-20 22:18:54,050 - DEBUG - Successfully retrieved private key for user 6
+2025-03-20 22:18:54,050 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-20 22:18:54,050 - INFO - 127.0.0.1 - - [20/Mar/2025 22:18:54] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-20 22:22:32,117 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-20 22:22:32,142 - INFO -  * Restarting with stat
+2025-03-20 22:22:32,335 - WARNING -  * Debugger is active!
+2025-03-20 22:22:32,339 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 22:23:00,173 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-20 22:23:00,202 - INFO -  * Restarting with stat
+2025-03-20 22:23:00,325 - WARNING -  * Debugger is active!
+2025-03-20 22:23:00,329 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 22:23:19,975 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/crypto_util.py', reloading
+2025-03-20 22:23:20,002 - INFO -  * Restarting with stat
+2025-03-20 22:23:20,128 - WARNING -  * Debugger is active!
+2025-03-20 22:23:20,132 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 22:23:37,668 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-20 22:23:37,735 - INFO -  * Restarting with stat
+2025-03-20 22:23:37,853 - WARNING -  * Debugger is active!
+2025-03-20 22:23:37,857 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 22:23:43,829 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-20 22:23:43,829 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-20 22:23:43,829 - INFO -  * Restarting with stat
+2025-03-20 22:23:43,937 - WARNING -  * Debugger is active!
+2025-03-20 22:23:43,941 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 22:23:46,359 - INFO - 127.0.0.1 - - [20/Mar/2025 22:23:46] "GET / HTTP/1.1" 200 -
+2025-03-20 22:23:46,384 - INFO - 127.0.0.1 - - [20/Mar/2025 22:23:46] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:23:46,389 - INFO - 127.0.0.1 - - [20/Mar/2025 22:23:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:23:48,697 - INFO - 127.0.0.1 - - [20/Mar/2025 22:23:48] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-03-20 22:23:48,711 - INFO - 127.0.0.1 - - [20/Mar/2025 22:23:48] "GET /login HTTP/1.1" 200 -
+2025-03-20 22:23:48,738 - INFO - 127.0.0.1 - - [20/Mar/2025 22:23:48] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:23:48,740 - INFO - 127.0.0.1 - - [20/Mar/2025 22:23:48] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:23:48,742 - INFO - 127.0.0.1 - - [20/Mar/2025 22:23:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:23:49,734 - INFO - 127.0.0.1 - - [20/Mar/2025 22:23:49] "GET /register HTTP/1.1" 200 -
+2025-03-20 22:23:49,772 - INFO - 127.0.0.1 - - [20/Mar/2025 22:23:49] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:23:49,774 - INFO - 127.0.0.1 - - [20/Mar/2025 22:23:49] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:23:55,239 - INFO - 127.0.0.1 - - [20/Mar/2025 22:23:55] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-03-20 22:23:55,261 - INFO - 127.0.0.1 - - [20/Mar/2025 22:23:55] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:23:55,262 - INFO - 127.0.0.1 - - [20/Mar/2025 22:23:55] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-20 22:23:55,263 - INFO - 127.0.0.1 - - [20/Mar/2025 22:23:55] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-20 22:23:55,383 - INFO - 127.0.0.1 - - [20/Mar/2025 22:23:55] "GET /register?__debugger__=yes&cmd=resource&f=console.png&s=CfgBguO7AtdNdox7dGUo HTTP/1.1" 200 -
+2025-03-20 22:23:55,455 - INFO - 127.0.0.1 - - [20/Mar/2025 22:23:55] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-03-20 22:24:15,956 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-20 22:24:15,979 - INFO -  * Restarting with stat
+2025-03-20 22:24:16,114 - WARNING -  * Debugger is active!
+2025-03-20 22:24:16,118 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 22:24:18,393 - INFO - 127.0.0.1 - - [20/Mar/2025 22:24:18] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-03-20 22:24:18,419 - INFO - 127.0.0.1 - - [20/Mar/2025 22:24:18] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:24:18,423 - INFO - 127.0.0.1 - - [20/Mar/2025 22:24:18] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-20 22:24:18,423 - INFO - 127.0.0.1 - - [20/Mar/2025 22:24:18] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-20 22:24:18,551 - INFO - 127.0.0.1 - - [20/Mar/2025 22:24:18] "GET /register?__debugger__=yes&cmd=resource&f=console.png&s=aUhuI2ZOXq7tI62tx06N HTTP/1.1" 200 -
+2025-03-20 22:24:18,622 - INFO - 127.0.0.1 - - [20/Mar/2025 22:24:18] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-03-20 22:24:37,749 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/crypto_util.py', reloading
+2025-03-20 22:24:37,773 - INFO -  * Restarting with stat
+2025-03-20 22:24:37,899 - WARNING -  * Debugger is active!
+2025-03-20 22:24:37,903 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 22:24:44,129 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-20 22:24:44,156 - INFO -  * Restarting with stat
+2025-03-20 22:24:44,283 - WARNING -  * Debugger is active!
+2025-03-20 22:24:44,287 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 22:24:48,264 - INFO - 127.0.0.1 - - [20/Mar/2025 22:24:48] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-03-20 22:24:48,281 - INFO - 127.0.0.1 - - [20/Mar/2025 22:24:48] "GET /login HTTP/1.1" 200 -
+2025-03-20 22:24:48,317 - INFO - 127.0.0.1 - - [20/Mar/2025 22:24:48] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:24:48,323 - INFO - 127.0.0.1 - - [20/Mar/2025 22:24:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:24:54,104 - INFO - 127.0.0.1 - - [20/Mar/2025 22:24:54] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-20 22:24:54,118 - INFO - 127.0.0.1 - - [20/Mar/2025 22:24:54] "GET / HTTP/1.1" 200 -
+2025-03-20 22:24:54,156 - INFO - 127.0.0.1 - - [20/Mar/2025 22:24:54] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:24:54,159 - INFO - 127.0.0.1 - - [20/Mar/2025 22:24:54] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:24:54,160 - INFO - 127.0.0.1 - - [20/Mar/2025 22:24:54] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:24:59,579 - INFO - 127.0.0.1 - - [20/Mar/2025 22:24:59] "[32mPOST /share/6 HTTP/1.1[0m" 302 -
+2025-03-20 22:24:59,590 - INFO - 127.0.0.1 - - [20/Mar/2025 22:24:59] "GET / HTTP/1.1" 200 -
+2025-03-20 22:24:59,614 - INFO - 127.0.0.1 - - [20/Mar/2025 22:24:59] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:24:59,615 - INFO - 127.0.0.1 - - [20/Mar/2025 22:24:59] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:24:59,616 - INFO - 127.0.0.1 - - [20/Mar/2025 22:24:59] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:25:04,728 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-20 22:25:04,728 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-20 22:25:04,729 - INFO -  * Restarting with stat
+2025-03-20 22:25:04,837 - WARNING -  * Debugger is active!
+2025-03-20 22:25:04,841 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 22:26:19,276 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-20 22:26:19,304 - INFO -  * Restarting with stat
+2025-03-20 22:26:19,489 - WARNING -  * Debugger is active!
+2025-03-20 22:26:19,493 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 22:26:21,100 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-20 22:26:21,100 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-20 22:26:21,100 - INFO -  * Restarting with stat
+2025-03-20 22:26:21,210 - WARNING -  * Debugger is active!
+2025-03-20 22:26:21,214 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 22:27:07,659 - INFO - 127.0.0.1 - - [20/Mar/2025 22:27:07] "GET / HTTP/1.1" 200 -
+2025-03-20 22:27:07,686 - INFO - 127.0.0.1 - - [20/Mar/2025 22:27:07] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:27:07,691 - INFO - 127.0.0.1 - - [20/Mar/2025 22:27:07] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:27:11,341 - DEBUG - Successfully retrieved public key for user 6
+2025-03-20 22:27:11,341 - INFO - 127.0.0.1 - - [20/Mar/2025 22:27:11] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-20 22:27:11,350 - DEBUG - Uploaded file content size: 1106 bytes
+2025-03-20 22:27:11,350 - DEBUG - File saved to: uploads/LICENSE.txt.enc
+2025-03-20 22:27:11,350 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-20 22:27:11,351 - DEBUG - File information saved to database: LICENSE.txt.enc, user_id=6
+2025-03-20 22:27:11,352 - INFO - 127.0.0.1 - - [20/Mar/2025 22:27:11] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-03-20 22:27:11,355 - INFO - 127.0.0.1 - - [20/Mar/2025 22:27:11] "GET / HTTP/1.1" 200 -
+2025-03-20 22:27:11,373 - INFO - 127.0.0.1 - - [20/Mar/2025 22:27:11] "GET / HTTP/1.1" 200 -
+2025-03-20 22:27:11,385 - INFO - 127.0.0.1 - - [20/Mar/2025 22:27:11] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:27:11,386 - INFO - 127.0.0.1 - - [20/Mar/2025 22:27:11] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:27:20,175 - INFO - 127.0.0.1 - - [20/Mar/2025 22:27:20] "GET / HTTP/1.1" 200 -
+2025-03-20 22:27:20,191 - INFO - 127.0.0.1 - - [20/Mar/2025 22:27:20] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:27:20,193 - INFO - 127.0.0.1 - - [20/Mar/2025 22:27:20] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:27:47,938 - DEBUG - Successfully decrypted AES key, length: 16 bytes
+2025-03-20 22:27:47,940 - INFO - File 7 successfully shared with user QAQ2
+2025-03-20 22:27:47,941 - INFO - 127.0.0.1 - - [20/Mar/2025 22:27:47] "[32mPOST /share/7 HTTP/1.1[0m" 302 -
+2025-03-20 22:27:47,948 - INFO - 127.0.0.1 - - [20/Mar/2025 22:27:47] "GET / HTTP/1.1" 200 -
+2025-03-20 22:27:47,968 - INFO - 127.0.0.1 - - [20/Mar/2025 22:27:47] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:27:47,970 - INFO - 127.0.0.1 - - [20/Mar/2025 22:27:47] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:27:47,971 - INFO - 127.0.0.1 - - [20/Mar/2025 22:27:47] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:28:02,403 - ERROR - Error editing file: Incorrect decryption.
+Traceback (most recent call last):
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py", line 427, in edit_file
+    aes_key = cipher_rsa.decrypt(base64.b64decode(encrypted_aes_key_base64))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/flaskapp/lib/python3.12/site-packages/Crypto/Cipher/PKCS1_OAEP.py", line 191, in decrypt
+    raise ValueError("Incorrect decryption.")
+ValueError: Incorrect decryption.
+
+2025-03-20 22:28:02,404 - INFO - 127.0.0.1 - - [20/Mar/2025 22:28:02] "[32mGET /edit/7 HTTP/1.1[0m" 302 -
+2025-03-20 22:28:02,409 - INFO - 127.0.0.1 - - [20/Mar/2025 22:28:02] "GET / HTTP/1.1" 200 -
+2025-03-20 22:28:02,426 - INFO - 127.0.0.1 - - [20/Mar/2025 22:28:02] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:28:02,428 - INFO - 127.0.0.1 - - [20/Mar/2025 22:28:02] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:28:02,429 - INFO - 127.0.0.1 - - [20/Mar/2025 22:28:02] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:28:08,167 - ERROR - Error editing file: Incorrect decryption.
+Traceback (most recent call last):
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py", line 427, in edit_file
+    aes_key = cipher_rsa.decrypt(base64.b64decode(encrypted_aes_key_base64))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/flaskapp/lib/python3.12/site-packages/Crypto/Cipher/PKCS1_OAEP.py", line 191, in decrypt
+    raise ValueError("Incorrect decryption.")
+ValueError: Incorrect decryption.
+
+2025-03-20 22:28:08,167 - INFO - 127.0.0.1 - - [20/Mar/2025 22:28:08] "[32mGET /edit/6 HTTP/1.1[0m" 302 -
+2025-03-20 22:28:08,174 - INFO - 127.0.0.1 - - [20/Mar/2025 22:28:08] "GET / HTTP/1.1" 200 -
+2025-03-20 22:28:08,191 - INFO - 127.0.0.1 - - [20/Mar/2025 22:28:08] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:28:08,192 - INFO - 127.0.0.1 - - [20/Mar/2025 22:28:08] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:28:08,193 - INFO - 127.0.0.1 - - [20/Mar/2025 22:28:08] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:28:13,166 - INFO - 127.0.0.1 - - [20/Mar/2025 22:28:13] "[32mGET /edit/5 HTTP/1.1[0m" 302 -
+2025-03-20 22:28:13,173 - INFO - 127.0.0.1 - - [20/Mar/2025 22:28:13] "GET / HTTP/1.1" 200 -
+2025-03-20 22:28:13,212 - INFO - 127.0.0.1 - - [20/Mar/2025 22:28:13] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:28:13,216 - INFO - 127.0.0.1 - - [20/Mar/2025 22:28:13] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:28:13,216 - INFO - 127.0.0.1 - - [20/Mar/2025 22:28:13] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:28:18,194 - INFO - 127.0.0.1 - - [20/Mar/2025 22:28:18] "[33mGET /delete/6 HTTP/1.1[0m" 404 -
+2025-03-20 22:28:18,219 - INFO - 127.0.0.1 - - [20/Mar/2025 22:28:18] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:28:22,287 - INFO - 127.0.0.1 - - [20/Mar/2025 22:28:22] "GET / HTTP/1.1" 200 -
+2025-03-20 22:28:22,321 - INFO - 127.0.0.1 - - [20/Mar/2025 22:28:22] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:28:31,709 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-20 22:28:31,739 - INFO -  * Restarting with stat
+2025-03-20 22:28:31,923 - WARNING -  * Debugger is active!
+2025-03-20 22:28:31,928 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 22:28:41,100 - INFO - 127.0.0.1 - - [20/Mar/2025 22:28:41] "[33mGET /delete/6 HTTP/1.1[0m" 404 -
+2025-03-20 22:28:41,130 - INFO - 127.0.0.1 - - [20/Mar/2025 22:28:41] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:28:44,017 - INFO - 127.0.0.1 - - [20/Mar/2025 22:28:44] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:29:50,700 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-20 22:29:50,728 - INFO -  * Restarting with stat
+2025-03-20 22:29:50,958 - WARNING -  * Debugger is active!
+2025-03-20 22:29:50,962 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 22:29:57,832 - INFO - 127.0.0.1 - - [20/Mar/2025 22:29:57] "[32mGET /delete/6 HTTP/1.1[0m" 302 -
+2025-03-20 22:29:57,846 - INFO - 127.0.0.1 - - [20/Mar/2025 22:29:57] "GET / HTTP/1.1" 200 -
+2025-03-20 22:29:57,864 - INFO - 127.0.0.1 - - [20/Mar/2025 22:29:57] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:29:57,866 - INFO - 127.0.0.1 - - [20/Mar/2025 22:29:57] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:29:57,869 - INFO - 127.0.0.1 - - [20/Mar/2025 22:29:57] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:30:02,523 - ERROR - Error downloading file: [Errno 2] No such file or directory: 'uploads/LICENSE.txt.enc'
+Traceback (most recent call last):
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py", line 512, in download_file
+    with open(file_path, 'rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'uploads/LICENSE.txt.enc'
+
+2025-03-20 22:30:02,523 - INFO - 127.0.0.1 - - [20/Mar/2025 22:30:02] "[35m[1mGET /download/7 HTTP/1.1[0m" 500 -
+2025-03-20 22:30:20,668 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-20 22:30:20,669 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-20 22:30:20,669 - INFO -  * Restarting with stat
+2025-03-20 22:30:20,832 - WARNING -  * Debugger is active!
+2025-03-20 22:30:20,836 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 22:30:26,997 - INFO - 127.0.0.1 - - [20/Mar/2025 22:30:26] "[32mGET /delete/7 HTTP/1.1[0m" 302 -
+2025-03-20 22:30:27,016 - INFO - 127.0.0.1 - - [20/Mar/2025 22:30:27] "GET / HTTP/1.1" 200 -
+2025-03-20 22:30:27,034 - INFO - 127.0.0.1 - - [20/Mar/2025 22:30:27] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:30:27,035 - INFO - 127.0.0.1 - - [20/Mar/2025 22:30:27] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:30:27,038 - INFO - 127.0.0.1 - - [20/Mar/2025 22:30:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:30:35,023 - DEBUG - Successfully retrieved public key for user 6
+2025-03-20 22:30:35,024 - INFO - 127.0.0.1 - - [20/Mar/2025 22:30:35] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-20 22:30:35,032 - DEBUG - Uploaded file content size: 1106 bytes
+2025-03-20 22:30:35,033 - DEBUG - File saved to: uploads/LICENSE.txt.enc
+2025-03-20 22:30:35,033 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-20 22:30:35,035 - DEBUG - File information saved to database: LICENSE.txt.enc, user_id=6
+2025-03-20 22:30:35,035 - INFO - 127.0.0.1 - - [20/Mar/2025 22:30:35] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-03-20 22:30:35,039 - INFO - 127.0.0.1 - - [20/Mar/2025 22:30:35] "GET / HTTP/1.1" 200 -
+2025-03-20 22:30:35,059 - INFO - 127.0.0.1 - - [20/Mar/2025 22:30:35] "GET / HTTP/1.1" 200 -
+2025-03-20 22:30:35,071 - INFO - 127.0.0.1 - - [20/Mar/2025 22:30:35] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:30:35,072 - INFO - 127.0.0.1 - - [20/Mar/2025 22:30:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:30:35,884 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-20 22:30:35,884 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-20 22:30:35,884 - INFO - 127.0.0.1 - - [20/Mar/2025 22:30:35] "GET /download/8 HTTP/1.1" 200 -
+2025-03-20 22:30:35,908 - DEBUG - Successfully retrieved private key for user 6
+2025-03-20 22:30:35,908 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-20 22:30:35,908 - INFO - 127.0.0.1 - - [20/Mar/2025 22:30:35] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-20 22:30:46,218 - DEBUG - Successfully decrypted AES key, length: 16 bytes
+2025-03-20 22:30:46,220 - INFO - File 8 successfully shared with user QAQ2
+2025-03-20 22:30:46,221 - INFO - 127.0.0.1 - - [20/Mar/2025 22:30:46] "[32mPOST /share/8 HTTP/1.1[0m" 302 -
+2025-03-20 22:30:46,228 - INFO - 127.0.0.1 - - [20/Mar/2025 22:30:46] "GET / HTTP/1.1" 200 -
+2025-03-20 22:30:46,248 - INFO - 127.0.0.1 - - [20/Mar/2025 22:30:46] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:30:46,251 - INFO - 127.0.0.1 - - [20/Mar/2025 22:30:46] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:30:46,251 - INFO - 127.0.0.1 - - [20/Mar/2025 22:30:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:30:47,329 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-20 22:30:47,329 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-20 22:30:47,330 - INFO - 127.0.0.1 - - [20/Mar/2025 22:30:47] "GET /download/8 HTTP/1.1" 200 -
+2025-03-20 22:30:47,379 - DEBUG - Successfully retrieved private key for user 6
+2025-03-20 22:30:47,379 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-20 22:30:47,380 - INFO - 127.0.0.1 - - [20/Mar/2025 22:30:47] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-20 22:31:10,794 - ERROR - Error editing file: Incorrect decryption.
+Traceback (most recent call last):
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py", line 427, in edit_file
+    aes_key = cipher_rsa.decrypt(base64.b64decode(encrypted_aes_key_base64))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/flaskapp/lib/python3.12/site-packages/Crypto/Cipher/PKCS1_OAEP.py", line 191, in decrypt
+    raise ValueError("Incorrect decryption.")
+ValueError: Incorrect decryption.
+
+2025-03-20 22:31:10,794 - INFO - 127.0.0.1 - - [20/Mar/2025 22:31:10] "[32mGET /edit/8 HTTP/1.1[0m" 302 -
+2025-03-20 22:31:10,800 - INFO - 127.0.0.1 - - [20/Mar/2025 22:31:10] "GET / HTTP/1.1" 200 -
+2025-03-20 22:31:10,813 - INFO - 127.0.0.1 - - [20/Mar/2025 22:31:10] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:31:10,814 - INFO - 127.0.0.1 - - [20/Mar/2025 22:31:10] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:31:10,816 - INFO - 127.0.0.1 - - [20/Mar/2025 22:31:10] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:31:48,552 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-20 22:31:48,583 - INFO -  * Restarting with stat
+2025-03-20 22:31:48,773 - WARNING -  * Debugger is active!
+2025-03-20 22:31:48,779 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 22:32:23,952 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-20 22:32:23,982 - INFO -  * Restarting with stat
+2025-03-20 22:32:24,153 - WARNING -  * Debugger is active!
+2025-03-20 22:32:24,157 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 22:32:31,274 - INFO - 127.0.0.1 - - [20/Mar/2025 22:32:31] "[32mGET /edit/8 HTTP/1.1[0m" 302 -
+2025-03-20 22:32:31,294 - INFO - 127.0.0.1 - - [20/Mar/2025 22:32:31] "GET / HTTP/1.1" 200 -
+2025-03-20 22:32:31,315 - INFO - 127.0.0.1 - - [20/Mar/2025 22:32:31] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:32:31,316 - INFO - 127.0.0.1 - - [20/Mar/2025 22:32:31] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:32:31,319 - INFO - 127.0.0.1 - - [20/Mar/2025 22:32:31] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:32:54,940 - INFO - 127.0.0.1 - - [20/Mar/2025 22:32:54] "[32mGET /edit/8 HTTP/1.1[0m" 302 -
+2025-03-20 22:32:54,946 - INFO - 127.0.0.1 - - [20/Mar/2025 22:32:54] "GET / HTTP/1.1" 200 -
+2025-03-20 22:32:54,956 - INFO - 127.0.0.1 - - [20/Mar/2025 22:32:54] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:32:54,958 - INFO - 127.0.0.1 - - [20/Mar/2025 22:32:54] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:32:54,958 - INFO - 127.0.0.1 - - [20/Mar/2025 22:32:54] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:33:35,324 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-20 22:33:35,351 - INFO -  * Restarting with stat
+2025-03-20 22:33:35,539 - WARNING -  * Debugger is active!
+2025-03-20 22:33:35,544 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 22:35:28,148 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-20 22:35:28,172 - INFO -  * Restarting with stat
+2025-03-20 22:35:28,343 - WARNING -  * Debugger is active!
+2025-03-20 22:35:28,347 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 22:35:32,465 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-20 22:35:32,487 - INFO -  * Restarting with stat
+2025-03-20 22:35:32,602 - WARNING -  * Debugger is active!
+2025-03-20 22:35:32,606 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 22:35:37,696 - ERROR - Error editing file: Incorrect decryption.
+Traceback (most recent call last):
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py", line 427, in edit_file
+    aes_key = cipher_rsa.decrypt(base64.b64decode(encrypted_aes_key_base64))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/flaskapp/lib/python3.12/site-packages/Crypto/Cipher/PKCS1_OAEP.py", line 191, in decrypt
+    raise ValueError("Incorrect decryption.")
+ValueError: Incorrect decryption.
+
+2025-03-20 22:35:37,697 - INFO - 127.0.0.1 - - [20/Mar/2025 22:35:37] "[32mGET /edit/8 HTTP/1.1[0m" 302 -
+2025-03-20 22:35:37,709 - INFO - 127.0.0.1 - - [20/Mar/2025 22:35:37] "GET / HTTP/1.1" 200 -
+2025-03-20 22:35:37,731 - INFO - 127.0.0.1 - - [20/Mar/2025 22:35:37] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:35:37,734 - INFO - 127.0.0.1 - - [20/Mar/2025 22:35:37] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:35:37,737 - INFO - 127.0.0.1 - - [20/Mar/2025 22:35:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:38:01,723 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-20 22:38:01,744 - INFO -  * Restarting with stat
+2025-03-20 22:44:01,722 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-20 22:44:01,723 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-20 22:44:01,723 - INFO -  * Restarting with stat
+2025-03-20 22:44:01,829 - WARNING -  * Debugger is active!
+2025-03-20 22:44:01,833 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 22:44:04,815 - INFO - 127.0.0.1 - - [20/Mar/2025 22:44:04] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-03-20 22:44:04,843 - INFO - 127.0.0.1 - - [20/Mar/2025 22:44:04] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:44:04,848 - INFO - 127.0.0.1 - - [20/Mar/2025 22:44:04] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-20 22:44:04,851 - INFO - 127.0.0.1 - - [20/Mar/2025 22:44:04] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-20 22:44:05,141 - INFO - 127.0.0.1 - - [20/Mar/2025 22:44:05] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=cPExdoKOrKSeB6FUAjVd HTTP/1.1" 200 -
+2025-03-20 22:44:05,285 - INFO - 127.0.0.1 - - [20/Mar/2025 22:44:05] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-03-20 22:45:23,380 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-20 22:45:23,402 - INFO -  * Restarting with stat
+2025-03-20 22:45:23,636 - WARNING -  * Debugger is active!
+2025-03-20 22:45:23,641 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 22:46:37,064 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-20 22:46:37,088 - INFO -  * Restarting with stat
+2025-03-20 22:46:37,260 - WARNING -  * Debugger is active!
+2025-03-20 22:46:37,264 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 22:46:40,366 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-20 22:46:40,384 - INFO -  * Restarting with stat
+2025-03-20 22:46:40,501 - WARNING -  * Debugger is active!
+2025-03-20 22:46:40,505 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 22:47:10,398 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-20 22:47:10,421 - INFO -  * Restarting with stat
+2025-03-20 22:47:10,592 - WARNING -  * Debugger is active!
+2025-03-20 22:47:10,596 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 22:47:15,581 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-20 22:47:15,581 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-20 22:47:15,581 - INFO -  * Restarting with stat
+2025-03-20 22:47:15,691 - WARNING -  * Debugger is active!
+2025-03-20 22:47:15,695 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 22:47:18,791 - INFO - 127.0.0.1 - - [20/Mar/2025 22:47:18] "GET / HTTP/1.1" 200 -
+2025-03-20 22:47:18,815 - INFO - 127.0.0.1 - - [20/Mar/2025 22:47:18] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:47:18,819 - INFO - 127.0.0.1 - - [20/Mar/2025 22:47:18] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:47:20,936 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-20 22:47:20,936 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-20 22:47:20,936 - INFO - 127.0.0.1 - - [20/Mar/2025 22:47:20] "GET /download/8 HTTP/1.1" 200 -
+2025-03-20 22:47:20,976 - DEBUG - Successfully retrieved private key for user 6
+2025-03-20 22:47:20,976 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-20 22:47:20,976 - INFO - 127.0.0.1 - - [20/Mar/2025 22:47:20] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-20 22:47:52,803 - DEBUG - Successfully retrieved public key for user 6
+2025-03-20 22:47:52,804 - INFO - 127.0.0.1 - - [20/Mar/2025 22:47:52] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-20 22:47:53,986 - ERROR - Error uploading file: name 'PKCS1_OAEP' is not defined
+Traceback (most recent call last):
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py", line 194, in upload_file
+    cipher_rsa = PKCS1_OAEP.new(public_key)
+                 ^^^^^^^^^^
+NameError: name 'PKCS1_OAEP' is not defined
+
+2025-03-20 22:47:53,990 - INFO - 127.0.0.1 - - [20/Mar/2025 22:47:53] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-03-20 22:47:53,994 - INFO - 127.0.0.1 - - [20/Mar/2025 22:47:53] "GET / HTTP/1.1" 200 -
+2025-03-20 22:47:54,017 - INFO - 127.0.0.1 - - [20/Mar/2025 22:47:54] "GET / HTTP/1.1" 200 -
+2025-03-20 22:47:54,039 - INFO - 127.0.0.1 - - [20/Mar/2025 22:47:54] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:47:54,045 - INFO - 127.0.0.1 - - [20/Mar/2025 22:47:54] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:47:57,471 - INFO - 127.0.0.1 - - [20/Mar/2025 22:47:57] "GET / HTTP/1.1" 200 -
+2025-03-20 22:47:57,485 - INFO - 127.0.0.1 - - [20/Mar/2025 22:47:57] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:47:57,486 - INFO - 127.0.0.1 - - [20/Mar/2025 22:47:57] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:48:15,886 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-20 22:48:15,909 - INFO -  * Restarting with stat
+2025-03-20 22:48:16,095 - WARNING -  * Debugger is active!
+2025-03-20 22:48:16,101 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 22:48:16,947 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-20 22:48:16,947 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-20 22:48:16,947 - INFO -  * Restarting with stat
+2025-03-20 22:48:17,056 - WARNING -  * Debugger is active!
+2025-03-20 22:48:17,060 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 22:48:19,446 - INFO - 127.0.0.1 - - [20/Mar/2025 22:48:19] "GET / HTTP/1.1" 200 -
+2025-03-20 22:48:19,469 - INFO - 127.0.0.1 - - [20/Mar/2025 22:48:19] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:48:19,474 - INFO - 127.0.0.1 - - [20/Mar/2025 22:48:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:48:23,577 - DEBUG - Successfully retrieved public key for user 6
+2025-03-20 22:48:23,577 - INFO - 127.0.0.1 - - [20/Mar/2025 22:48:23] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-20 22:48:24,041 - DEBUG - Uploaded file content size: 91110984 bytes
+2025-03-20 22:48:24,097 - DEBUG - File saved to: uploads/TimelineExplorer.dll.enc
+2025-03-20 22:48:24,097 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-20 22:48:24,099 - DEBUG - File information saved to database: TimelineExplorer.dll.enc, user_id=6
+2025-03-20 22:48:24,101 - INFO - 127.0.0.1 - - [20/Mar/2025 22:48:24] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-03-20 22:48:24,104 - INFO - 127.0.0.1 - - [20/Mar/2025 22:48:24] "GET / HTTP/1.1" 200 -
+2025-03-20 22:48:24,118 - INFO - 127.0.0.1 - - [20/Mar/2025 22:48:24] "GET / HTTP/1.1" 200 -
+2025-03-20 22:48:24,128 - INFO - 127.0.0.1 - - [20/Mar/2025 22:48:24] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:48:24,129 - INFO - 127.0.0.1 - - [20/Mar/2025 22:48:24] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:48:25,259 - INFO - User QAQ1 downloaded file TimelineExplorer.dll.enc
+2025-03-20 22:48:25,259 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-20 22:48:25,555 - INFO - 127.0.0.1 - - [20/Mar/2025 22:48:25] "GET /download/9 HTTP/1.1" 200 -
+2025-03-20 22:48:25,932 - DEBUG - Successfully retrieved private key for user 6
+2025-03-20 22:48:25,932 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-20 22:48:25,932 - INFO - 127.0.0.1 - - [20/Mar/2025 22:48:25] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-20 22:48:34,669 - INFO - 127.0.0.1 - - [20/Mar/2025 22:48:34] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-03-20 22:48:34,683 - INFO - 127.0.0.1 - - [20/Mar/2025 22:48:34] "GET /login HTTP/1.1" 200 -
+2025-03-20 22:48:34,719 - INFO - 127.0.0.1 - - [20/Mar/2025 22:48:34] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:48:34,721 - INFO - 127.0.0.1 - - [20/Mar/2025 22:48:34] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:48:34,721 - INFO - 127.0.0.1 - - [20/Mar/2025 22:48:34] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:48:39,567 - INFO - 127.0.0.1 - - [20/Mar/2025 22:48:39] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-20 22:48:39,577 - INFO - 127.0.0.1 - - [20/Mar/2025 22:48:39] "GET / HTTP/1.1" 200 -
+2025-03-20 22:48:39,610 - INFO - 127.0.0.1 - - [20/Mar/2025 22:48:39] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:48:39,612 - INFO - 127.0.0.1 - - [20/Mar/2025 22:48:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:48:39,612 - INFO - 127.0.0.1 - - [20/Mar/2025 22:48:39] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:48:41,867 - INFO - User QAQ1 downloaded file TimelineExplorer.dll.enc
+2025-03-20 22:48:41,867 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-20 22:48:42,140 - INFO - 127.0.0.1 - - [20/Mar/2025 22:48:42] "GET /download/9 HTTP/1.1" 200 -
+2025-03-20 22:48:42,466 - DEBUG - Successfully retrieved private key for user 6
+2025-03-20 22:48:42,468 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-20 22:48:42,468 - INFO - 127.0.0.1 - - [20/Mar/2025 22:48:42] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-20 22:48:51,597 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-20 22:48:51,598 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-20 22:48:51,598 - INFO -  * Restarting with stat
+2025-03-20 22:48:51,705 - WARNING -  * Debugger is active!
+2025-03-20 22:48:51,710 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 22:48:54,057 - INFO - User QAQ1 downloaded file TimelineExplorer.dll.enc
+2025-03-20 22:48:54,058 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-20 22:48:54,359 - INFO - 127.0.0.1 - - [20/Mar/2025 22:48:54] "GET /download/9 HTTP/1.1" 200 -
+2025-03-20 22:48:54,729 - DEBUG - Successfully retrieved private key for user 6
+2025-03-20 22:48:54,729 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-20 22:48:54,729 - INFO - 127.0.0.1 - - [20/Mar/2025 22:48:54] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-20 22:49:05,249 - INFO - 127.0.0.1 - - [20/Mar/2025 22:49:05] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-03-20 22:49:05,268 - INFO - 127.0.0.1 - - [20/Mar/2025 22:49:05] "GET /login HTTP/1.1" 200 -
+2025-03-20 22:49:05,305 - INFO - 127.0.0.1 - - [20/Mar/2025 22:49:05] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:49:05,307 - INFO - 127.0.0.1 - - [20/Mar/2025 22:49:05] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:49:05,311 - INFO - 127.0.0.1 - - [20/Mar/2025 22:49:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:56:43,185 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-20 22:56:43,185 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-20 22:56:43,186 - INFO -  * Restarting with stat
+2025-03-20 22:56:43,301 - WARNING -  * Debugger is active!
+2025-03-20 22:56:43,306 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 22:56:48,659 - INFO - 127.0.0.1 - - [20/Mar/2025 22:56:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-20 22:56:48,674 - INFO - 127.0.0.1 - - [20/Mar/2025 22:56:48] "GET / HTTP/1.1" 200 -
+2025-03-20 22:56:48,716 - INFO - 127.0.0.1 - - [20/Mar/2025 22:56:48] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:56:48,725 - INFO - 127.0.0.1 - - [20/Mar/2025 22:56:48] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:56:48,731 - INFO - 127.0.0.1 - - [20/Mar/2025 22:56:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:56:56,071 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-20 22:56:56,071 - DEBUG - File LICENSE.txt.enc read successfully for decryption
+2025-03-20 22:56:56,076 - ERROR - File modification failed: name 'decrypt_data' is not defined
+Traceback (most recent call last):
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py", line 426, in edit_file
+    decrypted_content = decrypt_data(encrypted_content, encrypted_data_json)
+                        ^^^^^^^^^^^^
+NameError: name 'decrypt_data' is not defined
+
+2025-03-20 22:56:56,077 - INFO - 127.0.0.1 - - [20/Mar/2025 22:56:56] "[32mGET /edit/8 HTTP/1.1[0m" 302 -
+2025-03-20 22:56:56,083 - INFO - 127.0.0.1 - - [20/Mar/2025 22:56:56] "GET / HTTP/1.1" 200 -
+2025-03-20 22:56:56,096 - INFO - 127.0.0.1 - - [20/Mar/2025 22:56:56] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:56:56,097 - INFO - 127.0.0.1 - - [20/Mar/2025 22:56:56] "[33mGET /robots.txt?484022 HTTP/1.1[0m" 404 -
+2025-03-20 22:56:56,098 - INFO - 127.0.0.1 - - [20/Mar/2025 22:56:56] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 22:59:06,750 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-20 22:59:06,779 - INFO -  * Restarting with stat
+2025-03-20 22:59:06,959 - WARNING -  * Debugger is active!
+2025-03-20 22:59:06,964 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 23:42:47,503 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-20 23:42:47,503 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-20 23:42:47,503 - INFO -  * Restarting with stat
+2025-03-20 23:42:47,622 - WARNING -  * Debugger is active!
+2025-03-20 23:42:47,627 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 23:42:52,463 - INFO - 127.0.0.1 - - [20/Mar/2025 23:42:52] "GET / HTTP/1.1" 200 -
+2025-03-20 23:42:52,533 - INFO - 127.0.0.1 - - [20/Mar/2025 23:42:52] "[33mGET /robots.txt?484023 HTTP/1.1[0m" 404 -
+2025-03-20 23:42:52,538 - INFO - 127.0.0.1 - - [20/Mar/2025 23:42:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 23:42:58,186 - INFO - User QAQ1 downloaded file TimelineExplorer.dll.enc
+2025-03-20 23:42:58,186 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-20 23:42:58,477 - INFO - 127.0.0.1 - - [20/Mar/2025 23:42:58] "GET /download/9 HTTP/1.1" 200 -
+2025-03-20 23:42:58,841 - DEBUG - Successfully retrieved private key for user 6
+2025-03-20 23:42:58,841 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-20 23:42:58,842 - INFO - 127.0.0.1 - - [20/Mar/2025 23:42:58] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-20 23:43:08,512 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-20 23:43:08,512 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-20 23:43:08,513 - INFO - 127.0.0.1 - - [20/Mar/2025 23:43:08] "GET /download/8 HTTP/1.1" 200 -
+2025-03-20 23:43:08,564 - DEBUG - Successfully retrieved private key for user 6
+2025-03-20 23:43:08,564 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-20 23:43:08,565 - INFO - 127.0.0.1 - - [20/Mar/2025 23:43:08] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-20 23:43:16,330 - ERROR - Error editing file: 'User' object has no attribute 'private_key'
+Traceback (most recent call last):
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py", line 407, in edit_file
+    private_key_pem = current_user.private_key  # 從用戶資料中獲取 RSA 私鑰
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'private_key'
+
+2025-03-20 23:43:16,331 - INFO - 127.0.0.1 - - [20/Mar/2025 23:43:16] "[32mGET /edit/9 HTTP/1.1[0m" 302 -
+2025-03-20 23:43:16,341 - INFO - 127.0.0.1 - - [20/Mar/2025 23:43:16] "GET / HTTP/1.1" 200 -
+2025-03-20 23:43:16,363 - INFO - 127.0.0.1 - - [20/Mar/2025 23:43:16] "[33mGET /robots.txt?484023 HTTP/1.1[0m" 404 -
+2025-03-20 23:43:16,365 - INFO - 127.0.0.1 - - [20/Mar/2025 23:43:16] "[33mGET /robots.txt?484023 HTTP/1.1[0m" 404 -
+2025-03-20 23:43:16,365 - INFO - 127.0.0.1 - - [20/Mar/2025 23:43:16] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 23:45:15,296 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-20 23:45:15,320 - INFO -  * Restarting with stat
+2025-03-20 23:45:15,501 - WARNING -  * Debugger is active!
+2025-03-20 23:45:15,506 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 23:45:16,572 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-20 23:45:16,598 - INFO -  * Restarting with stat
+2025-03-20 23:45:16,721 - WARNING -  * Debugger is active!
+2025-03-20 23:45:16,725 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 23:45:17,720 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-20 23:45:17,721 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-20 23:45:17,721 - INFO -  * Restarting with stat
+2025-03-20 23:45:17,830 - WARNING -  * Debugger is active!
+2025-03-20 23:45:17,834 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 23:45:21,545 - INFO - 127.0.0.1 - - [20/Mar/2025 23:45:21] "GET / HTTP/1.1" 200 -
+2025-03-20 23:45:21,567 - INFO - 127.0.0.1 - - [20/Mar/2025 23:45:21] "[33mGET /robots.txt?484023 HTTP/1.1[0m" 404 -
+2025-03-20 23:45:21,572 - INFO - 127.0.0.1 - - [20/Mar/2025 23:45:21] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 23:45:25,161 - ERROR - Error editing file: 'User' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py", line 407, in edit_file
+    private_key_pem = current_user[4]  # 從用戶資料中獲取 RSA 私鑰
+                      ~~~~~~~~~~~~^^^
+TypeError: 'User' object is not subscriptable
+
+2025-03-20 23:45:25,161 - INFO - 127.0.0.1 - - [20/Mar/2025 23:45:25] "[32mGET /edit/9 HTTP/1.1[0m" 302 -
+2025-03-20 23:45:25,166 - INFO - 127.0.0.1 - - [20/Mar/2025 23:45:25] "GET / HTTP/1.1" 200 -
+2025-03-20 23:45:25,175 - INFO - 127.0.0.1 - - [20/Mar/2025 23:45:25] "[33mGET /robots.txt?484023 HTTP/1.1[0m" 404 -
+2025-03-20 23:45:25,177 - INFO - 127.0.0.1 - - [20/Mar/2025 23:45:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 23:45:25,178 - INFO - 127.0.0.1 - - [20/Mar/2025 23:45:25] "[33mGET /robots.txt?484023 HTTP/1.1[0m" 404 -
+2025-03-20 23:45:45,761 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-20 23:45:45,784 - INFO -  * Restarting with stat
+2025-03-20 23:45:45,953 - WARNING -  * Debugger is active!
+2025-03-20 23:45:45,957 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 23:46:10,763 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-20 23:46:10,789 - INFO -  * Restarting with stat
+2025-03-20 23:46:10,919 - WARNING -  * Debugger is active!
+2025-03-20 23:46:10,925 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 23:46:13,177 - INFO - 127.0.0.1 - - [20/Mar/2025 23:46:13] "GET / HTTP/1.1" 200 -
+2025-03-20 23:46:13,205 - INFO - 127.0.0.1 - - [20/Mar/2025 23:46:13] "[33mGET /robots.txt?484023 HTTP/1.1[0m" 404 -
+2025-03-20 23:46:13,211 - INFO - 127.0.0.1 - - [20/Mar/2025 23:46:13] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 23:46:22,392 - ERROR - Error editing file: type object 'User' has no attribute 'private_key'
+Traceback (most recent call last):
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py", line 407, in edit_file
+    private_key_pem = User.private_key  # 從用戶資料中獲取 RSA 私鑰
+                      ^^^^^^^^^^^^^^^^
+AttributeError: type object 'User' has no attribute 'private_key'
+
+2025-03-20 23:46:22,392 - INFO - 127.0.0.1 - - [20/Mar/2025 23:46:22] "[32mGET /edit/9 HTTP/1.1[0m" 302 -
+2025-03-20 23:46:22,399 - INFO - 127.0.0.1 - - [20/Mar/2025 23:46:22] "GET / HTTP/1.1" 200 -
+2025-03-20 23:46:22,412 - INFO - 127.0.0.1 - - [20/Mar/2025 23:46:22] "[33mGET /robots.txt?484023 HTTP/1.1[0m" 404 -
+2025-03-20 23:46:22,414 - INFO - 127.0.0.1 - - [20/Mar/2025 23:46:22] "[33mGET /robots.txt?484023 HTTP/1.1[0m" 404 -
+2025-03-20 23:46:22,414 - INFO - 127.0.0.1 - - [20/Mar/2025 23:46:22] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 23:48:35,974 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-20 23:48:35,999 - INFO -  * Restarting with stat
+2025-03-20 23:48:36,175 - WARNING -  * Debugger is active!
+2025-03-20 23:48:36,179 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 23:48:37,859 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-20 23:48:37,859 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-20 23:48:37,859 - INFO -  * Restarting with stat
+2025-03-20 23:48:37,968 - WARNING -  * Debugger is active!
+2025-03-20 23:48:37,972 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 23:48:41,141 - INFO - 127.0.0.1 - - [20/Mar/2025 23:48:41] "GET / HTTP/1.1" 200 -
+2025-03-20 23:48:41,165 - INFO - 127.0.0.1 - - [20/Mar/2025 23:48:41] "[33mGET /robots.txt?484023 HTTP/1.1[0m" 404 -
+2025-03-20 23:48:41,169 - INFO - 127.0.0.1 - - [20/Mar/2025 23:48:41] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 23:48:49,165 - DEBUG - Successfully retrieved private key for user 6
+2025-03-20 23:48:49,166 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-20 23:48:49,166 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-20 23:48:49,199 - DEBUG - File TimelineExplorer.dll.enc read successfully for decryption
+2025-03-20 23:48:49,201 - ERROR - File modification failed: 'dict' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py", line 428, in edit_file
+    decrypted_content = decrypt_file(encrypted_content, encrypted_data, private_key_pem)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/crypto_util.py", line 54, in decrypt_file
+    private_key = RSA.import_key(private_key_pem)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/flaskapp/lib/python3.12/site-packages/Crypto/PublicKey/RSA.py", line 824, in import_key
+    extern_key = tobytes(extern_key)
+                 ^^^^^^^^^^^^^^^^^^^
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/flaskapp/lib/python3.12/site-packages/Crypto/Util/py3compat.py", line 142, in tobytes
+    return bytes([s])
+           ^^^^^^^^^^
+TypeError: 'dict' object cannot be interpreted as an integer
+
+2025-03-20 23:48:49,204 - INFO - 127.0.0.1 - - [20/Mar/2025 23:48:49] "[32mGET /edit/9 HTTP/1.1[0m" 302 -
+2025-03-20 23:48:49,210 - INFO - 127.0.0.1 - - [20/Mar/2025 23:48:49] "GET / HTTP/1.1" 200 -
+2025-03-20 23:48:49,222 - INFO - 127.0.0.1 - - [20/Mar/2025 23:48:49] "[33mGET /robots.txt?484023 HTTP/1.1[0m" 404 -
+2025-03-20 23:48:49,223 - INFO - 127.0.0.1 - - [20/Mar/2025 23:48:49] "[33mGET /robots.txt?484023 HTTP/1.1[0m" 404 -
+2025-03-20 23:48:49,223 - INFO - 127.0.0.1 - - [20/Mar/2025 23:48:49] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 23:51:45,282 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-20 23:51:45,310 - INFO -  * Restarting with stat
+2025-03-20 23:51:45,498 - WARNING -  * Debugger is active!
+2025-03-20 23:51:45,504 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 23:51:48,360 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-20 23:51:48,361 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-20 23:51:48,361 - INFO -  * Restarting with stat
+2025-03-20 23:51:48,473 - WARNING -  * Debugger is active!
+2025-03-20 23:51:48,477 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 23:51:51,334 - INFO - 127.0.0.1 - - [20/Mar/2025 23:51:51] "GET / HTTP/1.1" 200 -
+2025-03-20 23:51:51,357 - INFO - 127.0.0.1 - - [20/Mar/2025 23:51:51] "[33mGET /robots.txt?484023 HTTP/1.1[0m" 404 -
+2025-03-20 23:51:51,361 - INFO - 127.0.0.1 - - [20/Mar/2025 23:51:51] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 23:51:57,559 - DEBUG - Successfully retrieved private key for user 6
+2025-03-20 23:51:57,560 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-20 23:51:57,560 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-20 23:51:57,601 - DEBUG - File TimelineExplorer.dll.enc read successfully for decryption
+2025-03-20 23:51:57,603 - ERROR - File modification failed: RSA key format is not supported
+Traceback (most recent call last):
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py", line 429, in edit_file
+    decrypted_content = decrypt_file(encrypted_content, encrypted_data, private_key_pem)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/crypto_util.py", line 54, in decrypt_file
+    private_key = RSA.import_key(private_key_pem)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/flaskapp/lib/python3.12/site-packages/Crypto/PublicKey/RSA.py", line 857, in import_key
+    raise ValueError("RSA key format is not supported")
+ValueError: RSA key format is not supported
+
+2025-03-20 23:51:57,605 - INFO - 127.0.0.1 - - [20/Mar/2025 23:51:57] "[32mGET /edit/9 HTTP/1.1[0m" 302 -
+2025-03-20 23:51:57,611 - INFO - 127.0.0.1 - - [20/Mar/2025 23:51:57] "GET / HTTP/1.1" 200 -
+2025-03-20 23:51:57,627 - INFO - 127.0.0.1 - - [20/Mar/2025 23:51:57] "[33mGET /robots.txt?484023 HTTP/1.1[0m" 404 -
+2025-03-20 23:51:57,629 - INFO - 127.0.0.1 - - [20/Mar/2025 23:51:57] "[33mGET /robots.txt?484023 HTTP/1.1[0m" 404 -
+2025-03-20 23:51:57,629 - INFO - 127.0.0.1 - - [20/Mar/2025 23:51:57] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 23:56:36,835 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/crypto_util.py', reloading
+2025-03-20 23:56:36,854 - INFO -  * Restarting with stat
+2025-03-20 23:56:37,036 - WARNING -  * Debugger is active!
+2025-03-20 23:56:37,042 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 23:57:27,745 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/crypto_util.py', reloading
+2025-03-20 23:57:27,769 - INFO -  * Restarting with stat
+2025-03-20 23:57:27,938 - WARNING -  * Debugger is active!
+2025-03-20 23:57:27,942 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 23:58:50,481 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-20 23:58:50,502 - INFO -  * Restarting with stat
+2025-03-20 23:58:50,695 - WARNING -  * Debugger is active!
+2025-03-20 23:58:50,701 - INFO -  * Debugger PIN: 497-729-346
+2025-03-20 23:58:52,657 - INFO - 127.0.0.1 - - [20/Mar/2025 23:58:52] "GET / HTTP/1.1" 200 -
+2025-03-20 23:58:52,696 - INFO - 127.0.0.1 - - [20/Mar/2025 23:58:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 23:58:57,142 - ERROR - Error editing file: get_private_key() takes 0 positional arguments but 1 was given
+Traceback (most recent call last):
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py", line 407, in edit_file
+    private_key_pem = get_private_key(current_user.id)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/flaskapp/lib/python3.12/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_private_key() takes 0 positional arguments but 1 was given
+
+2025-03-20 23:58:57,143 - INFO - 127.0.0.1 - - [20/Mar/2025 23:58:57] "[32mGET /edit/9 HTTP/1.1[0m" 302 -
+2025-03-20 23:58:57,149 - INFO - 127.0.0.1 - - [20/Mar/2025 23:58:57] "GET / HTTP/1.1" 200 -
+2025-03-20 23:58:57,158 - INFO - 127.0.0.1 - - [20/Mar/2025 23:58:57] "[33mGET /robots.txt?484023 HTTP/1.1[0m" 404 -
+2025-03-20 23:58:57,159 - INFO - 127.0.0.1 - - [20/Mar/2025 23:58:57] "[33mGET /robots.txt?484023 HTTP/1.1[0m" 404 -
+2025-03-20 23:58:57,163 - INFO - 127.0.0.1 - - [20/Mar/2025 23:58:57] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:00:16,548 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/crypto_util.py', reloading
+2025-03-21 00:00:16,573 - INFO -  * Restarting with stat
+2025-03-21 00:00:16,761 - WARNING -  * Debugger is active!
+2025-03-21 00:00:16,765 - INFO -  * Debugger PIN: 497-729-346
+2025-03-21 00:00:17,829 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-21 00:00:17,855 - INFO -  * Restarting with stat
+2025-03-21 00:00:17,973 - WARNING -  * Debugger is active!
+2025-03-21 00:00:17,977 - INFO -  * Debugger PIN: 497-729-346
+2025-03-21 00:00:30,352 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-21 00:00:30,378 - INFO -  * Restarting with stat
+2025-03-21 00:00:30,503 - WARNING -  * Debugger is active!
+2025-03-21 00:00:30,507 - INFO -  * Debugger PIN: 497-729-346
+2025-03-21 00:00:32,332 - INFO - 127.0.0.1 - - [21/Mar/2025 00:00:32] "GET / HTTP/1.1" 200 -
+2025-03-21 00:00:32,362 - INFO - 127.0.0.1 - - [21/Mar/2025 00:00:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:00:35,529 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:00:35,561 - DEBUG - File TimelineExplorer.dll.enc read successfully for decryption
+2025-03-21 00:00:35,591 - ERROR - File modification failed: Incorrect decryption.
+Traceback (most recent call last):
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py", line 430, in edit_file
+    decrypted_content = decrypt_file(encrypted_content, encrypted_data, private_key_pem)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/crypto_util.py", line 57, in decrypt_file
+    aes_key = cipher_rsa.decrypt(encrypted_aes_key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/flaskapp/lib/python3.12/site-packages/Crypto/Cipher/PKCS1_OAEP.py", line 191, in decrypt
+    raise ValueError("Incorrect decryption.")
+ValueError: Incorrect decryption.
+
+2025-03-21 00:00:35,593 - INFO - 127.0.0.1 - - [21/Mar/2025 00:00:35] "[32mGET /edit/9 HTTP/1.1[0m" 302 -
+2025-03-21 00:00:35,598 - INFO - 127.0.0.1 - - [21/Mar/2025 00:00:35] "GET / HTTP/1.1" 200 -
+2025-03-21 00:00:35,609 - INFO - 127.0.0.1 - - [21/Mar/2025 00:00:35] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:00:35,610 - INFO - 127.0.0.1 - - [21/Mar/2025 00:00:35] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:00:35,613 - INFO - 127.0.0.1 - - [21/Mar/2025 00:00:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:06:54,343 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-21 00:06:54,345 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 00:06:54,345 - INFO -  * Restarting with stat
+2025-03-21 00:06:54,471 - WARNING -  * Debugger is active!
+2025-03-21 00:06:54,476 - INFO -  * Debugger PIN: 497-729-346
+2025-03-21 00:06:56,113 - INFO - 127.0.0.1 - - [21/Mar/2025 00:06:56] "GET / HTTP/1.1" 200 -
+2025-03-21 00:06:56,152 - INFO - 127.0.0.1 - - [21/Mar/2025 00:06:56] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:07:01,519 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:07:01,577 - DEBUG - File TimelineExplorer.dll.enc read successfully for decryption
+2025-03-21 00:07:01,611 - ERROR - File modification failed: Incorrect decryption.
+Traceback (most recent call last):
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py", line 430, in edit_file
+    decrypted_content = decrypt_file(encrypted_content, encrypted_data, private_key_pem)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/crypto_util.py", line 57, in decrypt_file
+    aes_key = cipher_rsa.decrypt(encrypted_aes_key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/flaskapp/lib/python3.12/site-packages/Crypto/Cipher/PKCS1_OAEP.py", line 191, in decrypt
+    raise ValueError("Incorrect decryption.")
+ValueError: Incorrect decryption.
+
+2025-03-21 00:07:01,612 - INFO - 127.0.0.1 - - [21/Mar/2025 00:07:01] "[32mGET /edit/9 HTTP/1.1[0m" 302 -
+2025-03-21 00:07:01,619 - INFO - 127.0.0.1 - - [21/Mar/2025 00:07:01] "GET / HTTP/1.1" 200 -
+2025-03-21 00:07:01,631 - INFO - 127.0.0.1 - - [21/Mar/2025 00:07:01] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:07:01,632 - INFO - 127.0.0.1 - - [21/Mar/2025 00:07:01] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:07:01,636 - INFO - 127.0.0.1 - - [21/Mar/2025 00:07:01] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:07:08,648 - INFO - 127.0.0.1 - - [21/Mar/2025 00:07:08] "GET / HTTP/1.1" 200 -
+2025-03-21 00:07:08,667 - INFO - 127.0.0.1 - - [21/Mar/2025 00:07:08] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:07:08,668 - INFO - 127.0.0.1 - - [21/Mar/2025 00:07:08] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:07:09,642 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:07:09,642 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:07:09,643 - INFO - 127.0.0.1 - - [21/Mar/2025 00:07:09] "GET /download/8 HTTP/1.1" 200 -
+2025-03-21 00:07:09,693 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:07:09,693 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:07:09,694 - INFO - 127.0.0.1 - - [21/Mar/2025 00:07:09] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:07:11,512 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:07:11,513 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:07:11,514 - INFO - 127.0.0.1 - - [21/Mar/2025 00:07:11] "GET /download/8 HTTP/1.1" 200 -
+2025-03-21 00:07:11,561 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:07:11,561 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:07:11,562 - INFO - 127.0.0.1 - - [21/Mar/2025 00:07:11] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:07:12,147 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:07:12,148 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:07:12,148 - INFO - 127.0.0.1 - - [21/Mar/2025 00:07:12] "GET /download/8 HTTP/1.1" 200 -
+2025-03-21 00:07:12,204 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:07:12,204 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:07:12,204 - INFO - 127.0.0.1 - - [21/Mar/2025 00:07:12] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:07:12,698 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:07:12,698 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:07:12,699 - INFO - 127.0.0.1 - - [21/Mar/2025 00:07:12] "GET /download/8 HTTP/1.1" 200 -
+2025-03-21 00:07:12,755 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:07:12,756 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:07:12,756 - INFO - 127.0.0.1 - - [21/Mar/2025 00:07:12] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:07:23,060 - INFO - User QAQ1 downloaded file TimelineExplorer.dll.enc
+2025-03-21 00:07:23,061 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:07:23,358 - INFO - 127.0.0.1 - - [21/Mar/2025 00:07:23] "GET /download/9 HTTP/1.1" 200 -
+2025-03-21 00:07:23,716 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:07:23,716 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:07:23,717 - INFO - 127.0.0.1 - - [21/Mar/2025 00:07:23] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:07:52,831 - INFO - User QAQ1 downloaded file TimelineExplorer.dll.enc
+2025-03-21 00:07:52,832 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:07:53,132 - INFO - 127.0.0.1 - - [21/Mar/2025 00:07:53] "GET /download/9 HTTP/1.1" 200 -
+2025-03-21 00:07:53,478 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:07:53,479 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:07:53,479 - INFO - 127.0.0.1 - - [21/Mar/2025 00:07:53] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:08:13,498 - INFO - 127.0.0.1 - - [21/Mar/2025 00:08:13] "GET / HTTP/1.1" 200 -
+2025-03-21 00:08:13,527 - INFO - 127.0.0.1 - - [21/Mar/2025 00:08:13] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:08:13,529 - INFO - 127.0.0.1 - - [21/Mar/2025 00:08:13] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:08:14,864 - INFO - User QAQ1 downloaded file TimelineExplorer.dll.enc
+2025-03-21 00:08:14,864 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:08:15,169 - INFO - 127.0.0.1 - - [21/Mar/2025 00:08:15] "GET /download/9 HTTP/1.1" 200 -
+2025-03-21 00:08:15,520 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:08:15,520 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:08:15,520 - INFO - 127.0.0.1 - - [21/Mar/2025 00:08:15] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:08:42,911 - INFO - 127.0.0.1 - - [21/Mar/2025 00:08:42] "[32mGET /delete/9 HTTP/1.1[0m" 302 -
+2025-03-21 00:08:42,918 - INFO - 127.0.0.1 - - [21/Mar/2025 00:08:42] "GET / HTTP/1.1" 200 -
+2025-03-21 00:08:42,935 - INFO - 127.0.0.1 - - [21/Mar/2025 00:08:42] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:08:42,939 - INFO - 127.0.0.1 - - [21/Mar/2025 00:08:42] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:08:42,940 - INFO - 127.0.0.1 - - [21/Mar/2025 00:08:42] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:08:47,256 - INFO - 127.0.0.1 - - [21/Mar/2025 00:08:47] "[32mGET /delete/8 HTTP/1.1[0m" 302 -
+2025-03-21 00:08:47,263 - INFO - 127.0.0.1 - - [21/Mar/2025 00:08:47] "GET / HTTP/1.1" 200 -
+2025-03-21 00:08:47,276 - INFO - 127.0.0.1 - - [21/Mar/2025 00:08:47] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:08:47,278 - INFO - 127.0.0.1 - - [21/Mar/2025 00:08:47] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:08:47,278 - INFO - 127.0.0.1 - - [21/Mar/2025 00:08:47] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:08:51,791 - DEBUG - Successfully retrieved public key for user 6
+2025-03-21 00:08:51,791 - INFO - 127.0.0.1 - - [21/Mar/2025 00:08:51] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-21 00:08:51,802 - DEBUG - Uploaded file content size: 29 bytes
+2025-03-21 00:08:51,802 - DEBUG - File saved to: uploads/LICENSE.txt.enc
+2025-03-21 00:08:51,802 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:08:51,804 - DEBUG - File information saved to database: LICENSE.txt.enc, user_id=6
+2025-03-21 00:08:51,804 - INFO - 127.0.0.1 - - [21/Mar/2025 00:08:51] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-03-21 00:08:51,807 - INFO - 127.0.0.1 - - [21/Mar/2025 00:08:51] "GET / HTTP/1.1" 200 -
+2025-03-21 00:08:51,827 - INFO - 127.0.0.1 - - [21/Mar/2025 00:08:51] "GET / HTTP/1.1" 200 -
+2025-03-21 00:08:51,840 - INFO - 127.0.0.1 - - [21/Mar/2025 00:08:51] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:08:51,841 - INFO - 127.0.0.1 - - [21/Mar/2025 00:08:51] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:08:53,469 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:08:53,469 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:08:53,470 - INFO - 127.0.0.1 - - [21/Mar/2025 00:08:53] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:08:53,523 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:08:53,523 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:08:53,524 - INFO - 127.0.0.1 - - [21/Mar/2025 00:08:53] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:09:14,197 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:09:14,198 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:09:14,198 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:14] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:09:14,244 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:09:14,244 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:09:14,244 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:14] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:09:27,825 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:09:27,825 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:09:27,825 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:27] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:09:27,856 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:09:27,856 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:09:27,856 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:27] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:09:28,705 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:09:28,705 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:09:28,706 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:28] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:09:28,762 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:09:28,762 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:09:28,762 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:28] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:09:29,152 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:09:29,152 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:09:29,153 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:29] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:09:29,209 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:09:29,209 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:09:29,210 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:29] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:09:29,294 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:09:29,294 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:09:29,295 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:29] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:09:29,336 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:09:29,336 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:09:29,336 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:29] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:09:29,447 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:09:29,448 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:09:29,448 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:29] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:09:29,494 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:09:29,494 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:09:29,494 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:29] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:09:29,592 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:09:29,592 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:09:29,593 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:29] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:09:29,624 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:09:29,624 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:09:29,625 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:29] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:09:29,744 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:09:29,744 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:09:29,744 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:29] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:09:29,800 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:09:29,800 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:09:29,800 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:29] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:09:29,892 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:09:29,893 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:09:29,893 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:29] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:09:29,936 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:09:29,936 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:09:29,937 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:29] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:09:30,044 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:09:30,044 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:09:30,045 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:30] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:09:30,091 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:09:30,091 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:09:30,091 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:30] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:09:30,158 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:09:30,158 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:09:30,159 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:30] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:09:30,200 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:09:30,200 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:09:30,200 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:30] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:09:30,310 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:09:30,310 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:09:30,310 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:30] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:09:30,354 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:09:30,354 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:09:30,354 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:30] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:09:30,459 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:09:30,460 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:09:30,460 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:30] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:09:30,505 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:09:30,505 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:09:30,505 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:30] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:09:30,627 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:09:30,627 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:09:30,627 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:30] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:09:30,681 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:09:30,681 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:09:30,681 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:30] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:09:30,775 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:09:30,775 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:09:30,775 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:30] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:09:30,801 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:09:30,801 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:09:30,802 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:30] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:09:30,947 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:09:30,947 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:09:30,947 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:30] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:09:30,983 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:09:30,983 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:09:30,983 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:30] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:09:31,480 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:09:31,480 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:09:31,481 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:31] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:09:31,537 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:09:31,538 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:09:31,538 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:31] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:09:32,213 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:09:32,213 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:09:32,214 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:32] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:09:32,267 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:09:32,267 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:09:32,267 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:32] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:09:50,147 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:09:50,148 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:09:50,149 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:50] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:09:50,203 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:09:50,204 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:09:50,204 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:50] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:09:58,091 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:09:58,091 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:09:58,091 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:58] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:09:58,132 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:09:58,132 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:09:58,132 - INFO - 127.0.0.1 - - [21/Mar/2025 00:09:58] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:10:02,316 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:10:02,316 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:10:02,317 - INFO - 127.0.0.1 - - [21/Mar/2025 00:10:02] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:10:02,372 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:10:02,372 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:10:02,373 - INFO - 127.0.0.1 - - [21/Mar/2025 00:10:02] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:10:39,164 - INFO - 127.0.0.1 - - [21/Mar/2025 00:10:39] "GET / HTTP/1.1" 200 -
+2025-03-21 00:10:39,195 - INFO - 127.0.0.1 - - [21/Mar/2025 00:10:39] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:10:39,198 - INFO - 127.0.0.1 - - [21/Mar/2025 00:10:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:10:40,482 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:10:40,482 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:10:40,482 - INFO - 127.0.0.1 - - [21/Mar/2025 00:10:40] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:10:40,531 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:10:40,531 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:10:40,531 - INFO - 127.0.0.1 - - [21/Mar/2025 00:10:40] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:11:07,826 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-21 00:11:07,828 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 00:11:07,829 - INFO -  * Restarting with stat
+2025-03-21 00:11:07,945 - WARNING -  * Debugger is active!
+2025-03-21 00:11:07,950 - INFO -  * Debugger PIN: 497-729-346
+2025-03-21 00:11:09,670 - INFO - 127.0.0.1 - - [21/Mar/2025 00:11:09] "GET / HTTP/1.1" 200 -
+2025-03-21 00:11:09,688 - INFO - 127.0.0.1 - - [21/Mar/2025 00:11:09] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:11:09,692 - INFO - 127.0.0.1 - - [21/Mar/2025 00:11:09] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:11:10,929 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:11:10,929 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:11:10,930 - INFO - 127.0.0.1 - - [21/Mar/2025 00:11:10] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:11:10,972 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:11:10,972 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:11:10,972 - INFO - 127.0.0.1 - - [21/Mar/2025 00:11:10] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:11:15,667 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:11:15,667 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:11:15,669 - INFO - 127.0.0.1 - - [21/Mar/2025 00:11:15] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:11:15,716 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:11:15,716 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:11:15,716 - INFO - 127.0.0.1 - - [21/Mar/2025 00:11:15] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:14:28,226 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-21 00:14:28,250 - INFO -  * Restarting with stat
+2025-03-21 00:14:28,441 - WARNING -  * Debugger is active!
+2025-03-21 00:14:28,447 - INFO -  * Debugger PIN: 497-729-346
+2025-03-21 00:14:30,773 - INFO - 127.0.0.1 - - [21/Mar/2025 00:14:30] "GET / HTTP/1.1" 200 -
+2025-03-21 00:14:30,799 - INFO - 127.0.0.1 - - [21/Mar/2025 00:14:30] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:14:30,804 - INFO - 127.0.0.1 - - [21/Mar/2025 00:14:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:14:32,300 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:14:32,300 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:14:32,300 - INFO - 127.0.0.1 - - [21/Mar/2025 00:14:32] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:14:32,343 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:14:32,343 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:14:32,344 - INFO - 127.0.0.1 - - [21/Mar/2025 00:14:32] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:14:36,260 - DEBUG - Successfully retrieved public key for user 6
+2025-03-21 00:14:36,260 - INFO - 127.0.0.1 - - [21/Mar/2025 00:14:36] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-21 00:14:36,321 - INFO - 127.0.0.1 - - [21/Mar/2025 00:14:36] "POST /edit/10 HTTP/1.1" 200 -
+2025-03-21 00:14:36,334 - INFO - 127.0.0.1 - - [21/Mar/2025 00:14:36] "GET / HTTP/1.1" 200 -
+2025-03-21 00:14:36,348 - INFO - 127.0.0.1 - - [21/Mar/2025 00:14:36] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:14:36,352 - INFO - 127.0.0.1 - - [21/Mar/2025 00:14:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:14:47,092 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:14:47,093 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:14:47,093 - INFO - 127.0.0.1 - - [21/Mar/2025 00:14:47] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:14:47,177 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:14:47,177 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:14:47,177 - INFO - 127.0.0.1 - - [21/Mar/2025 00:14:47] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:14:50,686 - DEBUG - Successfully retrieved public key for user 6
+2025-03-21 00:14:50,686 - INFO - 127.0.0.1 - - [21/Mar/2025 00:14:50] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-21 00:14:50,694 - INFO - 127.0.0.1 - - [21/Mar/2025 00:14:50] "POST /edit/10 HTTP/1.1" 200 -
+2025-03-21 00:14:50,708 - INFO - 127.0.0.1 - - [21/Mar/2025 00:14:50] "GET / HTTP/1.1" 200 -
+2025-03-21 00:14:50,720 - INFO - 127.0.0.1 - - [21/Mar/2025 00:14:50] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:14:50,722 - INFO - 127.0.0.1 - - [21/Mar/2025 00:14:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:15:03,248 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:15:03,249 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:15:03,249 - INFO - 127.0.0.1 - - [21/Mar/2025 00:15:03] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:15:03,300 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:15:03,300 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:15:03,301 - INFO - 127.0.0.1 - - [21/Mar/2025 00:15:03] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:15:06,098 - DEBUG - Successfully retrieved public key for user 6
+2025-03-21 00:15:06,099 - INFO - 127.0.0.1 - - [21/Mar/2025 00:15:06] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-21 00:15:06,107 - INFO - 127.0.0.1 - - [21/Mar/2025 00:15:06] "POST /edit/10 HTTP/1.1" 200 -
+2025-03-21 00:15:06,116 - INFO - 127.0.0.1 - - [21/Mar/2025 00:15:06] "GET / HTTP/1.1" 200 -
+2025-03-21 00:15:06,128 - INFO - 127.0.0.1 - - [21/Mar/2025 00:15:06] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:15:06,130 - INFO - 127.0.0.1 - - [21/Mar/2025 00:15:06] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:15:12,031 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:15:12,031 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:15:12,032 - INFO - 127.0.0.1 - - [21/Mar/2025 00:15:12] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:15:12,072 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:15:12,072 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:15:12,072 - INFO - 127.0.0.1 - - [21/Mar/2025 00:15:12] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:15:18,496 - DEBUG - Successfully retrieved public key for user 6
+2025-03-21 00:15:18,497 - INFO - 127.0.0.1 - - [21/Mar/2025 00:15:18] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-21 00:15:18,514 - INFO - 127.0.0.1 - - [21/Mar/2025 00:15:18] "POST /edit/10 HTTP/1.1" 200 -
+2025-03-21 00:15:18,527 - INFO - 127.0.0.1 - - [21/Mar/2025 00:15:18] "GET / HTTP/1.1" 200 -
+2025-03-21 00:15:18,537 - INFO - 127.0.0.1 - - [21/Mar/2025 00:15:18] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:15:18,539 - INFO - 127.0.0.1 - - [21/Mar/2025 00:15:18] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:15:48,103 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-21 00:15:48,132 - INFO -  * Restarting with stat
+2025-03-21 00:15:48,310 - WARNING -  * Debugger is active!
+2025-03-21 00:15:48,317 - INFO -  * Debugger PIN: 497-729-346
+2025-03-21 00:15:53,693 - INFO - 127.0.0.1 - - [21/Mar/2025 00:15:53] "GET / HTTP/1.1" 200 -
+2025-03-21 00:15:53,722 - INFO - 127.0.0.1 - - [21/Mar/2025 00:15:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:15:54,580 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:15:54,580 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:15:54,580 - INFO - 127.0.0.1 - - [21/Mar/2025 00:15:54] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:15:54,618 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:15:54,618 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:15:54,618 - INFO - 127.0.0.1 - - [21/Mar/2025 00:15:54] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:15:56,122 - DEBUG - Successfully retrieved public key for user 6
+2025-03-21 00:15:56,123 - INFO - 127.0.0.1 - - [21/Mar/2025 00:15:56] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-21 00:15:56,132 - INFO - 127.0.0.1 - - [21/Mar/2025 00:15:56] "POST /edit/10 HTTP/1.1" 200 -
+2025-03-21 00:15:56,145 - INFO - 127.0.0.1 - - [21/Mar/2025 00:15:56] "GET / HTTP/1.1" 200 -
+2025-03-21 00:15:56,156 - INFO - 127.0.0.1 - - [21/Mar/2025 00:15:56] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:15:56,161 - INFO - 127.0.0.1 - - [21/Mar/2025 00:15:56] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:16:07,103 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:16:07,103 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:16:07,104 - INFO - 127.0.0.1 - - [21/Mar/2025 00:16:07] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:16:07,152 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:16:07,153 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:16:07,153 - INFO - 127.0.0.1 - - [21/Mar/2025 00:16:07] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:16:09,780 - DEBUG - Successfully retrieved public key for user 6
+2025-03-21 00:16:09,780 - INFO - 127.0.0.1 - - [21/Mar/2025 00:16:09] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-21 00:16:09,791 - INFO - 127.0.0.1 - - [21/Mar/2025 00:16:09] "POST /edit/10 HTTP/1.1" 200 -
+2025-03-21 00:16:09,797 - INFO - 127.0.0.1 - - [21/Mar/2025 00:16:09] "GET / HTTP/1.1" 200 -
+2025-03-21 00:16:09,813 - INFO - 127.0.0.1 - - [21/Mar/2025 00:16:09] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:16:09,815 - INFO - 127.0.0.1 - - [21/Mar/2025 00:16:09] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:16:09,816 - INFO - 127.0.0.1 - - [21/Mar/2025 00:16:09] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:16:23,878 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:16:23,878 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:16:23,878 - INFO - 127.0.0.1 - - [21/Mar/2025 00:16:23] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:16:23,923 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:16:23,923 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:16:23,923 - INFO - 127.0.0.1 - - [21/Mar/2025 00:16:23] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:16:27,179 - DEBUG - Successfully retrieved public key for user 6
+2025-03-21 00:16:27,179 - INFO - 127.0.0.1 - - [21/Mar/2025 00:16:27] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-21 00:16:27,189 - INFO - 127.0.0.1 - - [21/Mar/2025 00:16:27] "POST /edit/10 HTTP/1.1" 200 -
+2025-03-21 00:16:27,198 - INFO - 127.0.0.1 - - [21/Mar/2025 00:16:27] "GET / HTTP/1.1" 200 -
+2025-03-21 00:16:27,211 - INFO - 127.0.0.1 - - [21/Mar/2025 00:16:27] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:16:27,212 - INFO - 127.0.0.1 - - [21/Mar/2025 00:16:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:16:30,618 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:16:30,618 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:16:30,618 - INFO - 127.0.0.1 - - [21/Mar/2025 00:16:30] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:16:30,665 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:16:30,665 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:16:30,665 - INFO - 127.0.0.1 - - [21/Mar/2025 00:16:30] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:21:51,291 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-21 00:21:51,328 - INFO -  * Restarting with stat
+2025-03-21 00:23:29,346 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-21 00:23:29,346 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 00:23:29,347 - INFO -  * Restarting with stat
+2025-03-21 00:23:29,461 - WARNING -  * Debugger is active!
+2025-03-21 00:23:29,466 - INFO -  * Debugger PIN: 497-729-346
+2025-03-21 00:23:32,186 - INFO - 127.0.0.1 - - [21/Mar/2025 00:23:32] "GET / HTTP/1.1" 200 -
+2025-03-21 00:23:32,210 - INFO - 127.0.0.1 - - [21/Mar/2025 00:23:32] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:23:32,214 - INFO - 127.0.0.1 - - [21/Mar/2025 00:23:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:23:33,475 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:23:33,475 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:23:33,475 - INFO - 127.0.0.1 - - [21/Mar/2025 00:23:33] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:23:33,526 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:23:33,526 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:23:33,526 - INFO - 127.0.0.1 - - [21/Mar/2025 00:23:33] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:23:36,102 - DEBUG - Successfully retrieved public key for user 6
+2025-03-21 00:23:36,103 - INFO - 127.0.0.1 - - [21/Mar/2025 00:23:36] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-21 00:23:36,137 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:23:36,137 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:23:36,139 - ERROR - Error appending to file: name 'decrypt_file' is not defined
+Traceback (most recent call last):
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py", line 416, in edit_file
+    old_decrypted_content = decrypt_file(encrypted_old_content, encrypted_data, private_key_pem)
+                            ^^^^^^^^^^^^
+NameError: name 'decrypt_file' is not defined
+
+2025-03-21 00:23:36,139 - INFO - 127.0.0.1 - - [21/Mar/2025 00:23:36] "[35m[1mPOST /edit/10 HTTP/1.1[0m" 500 -
+2025-03-21 00:23:37,703 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:23:37,703 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:23:37,703 - INFO - 127.0.0.1 - - [21/Mar/2025 00:23:37] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:23:37,768 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:23:37,768 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:23:37,768 - INFO - 127.0.0.1 - - [21/Mar/2025 00:23:37] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:23:44,942 - INFO - 127.0.0.1 - - [21/Mar/2025 00:23:44] "GET / HTTP/1.1" 200 -
+2025-03-21 00:23:44,961 - INFO - 127.0.0.1 - - [21/Mar/2025 00:23:44] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:23:44,963 - INFO - 127.0.0.1 - - [21/Mar/2025 00:23:44] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:23:46,286 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:23:46,286 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:23:46,286 - INFO - 127.0.0.1 - - [21/Mar/2025 00:23:46] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:23:46,342 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:23:46,342 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:23:46,343 - INFO - 127.0.0.1 - - [21/Mar/2025 00:23:46] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:23:49,957 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:23:49,958 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:23:49,958 - INFO - 127.0.0.1 - - [21/Mar/2025 00:23:49] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:23:50,008 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:23:50,008 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:23:50,008 - INFO - 127.0.0.1 - - [21/Mar/2025 00:23:50] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:23:52,782 - DEBUG - Successfully retrieved public key for user 6
+2025-03-21 00:23:52,782 - INFO - 127.0.0.1 - - [21/Mar/2025 00:23:52] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-21 00:23:52,831 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:23:52,831 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:23:52,833 - ERROR - Error appending to file: name 'decrypt_file' is not defined
+Traceback (most recent call last):
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py", line 416, in edit_file
+    old_decrypted_content = decrypt_file(encrypted_old_content, encrypted_data, private_key_pem)
+                            ^^^^^^^^^^^^
+NameError: name 'decrypt_file' is not defined
+
+2025-03-21 00:23:52,833 - INFO - 127.0.0.1 - - [21/Mar/2025 00:23:52] "[35m[1mPOST /edit/10 HTTP/1.1[0m" 500 -
+2025-03-21 00:24:11,987 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/online-storage-application/app.py', reloading
+2025-03-21 00:24:12,013 - INFO -  * Restarting with stat
+2025-03-21 00:24:22,075 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-21 00:24:22,075 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 00:24:22,076 - INFO -  * Restarting with stat
+2025-03-21 00:24:22,185 - WARNING -  * Debugger is active!
+2025-03-21 00:24:22,190 - INFO -  * Debugger PIN: 497-729-346
+2025-03-21 00:24:23,718 - INFO - 127.0.0.1 - - [21/Mar/2025 00:24:23] "GET / HTTP/1.1" 200 -
+2025-03-21 00:24:23,738 - INFO - 127.0.0.1 - - [21/Mar/2025 00:24:23] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:24:23,742 - INFO - 127.0.0.1 - - [21/Mar/2025 00:24:23] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:24:24,832 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:24:24,832 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:24:24,832 - INFO - 127.0.0.1 - - [21/Mar/2025 00:24:24] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:24:24,867 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:24:24,867 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:24:24,867 - INFO - 127.0.0.1 - - [21/Mar/2025 00:24:24] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:24:27,063 - DEBUG - Successfully retrieved public key for user 6
+2025-03-21 00:24:27,064 - INFO - 127.0.0.1 - - [21/Mar/2025 00:24:27] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-21 00:24:27,092 - INFO - 127.0.0.1 - - [21/Mar/2025 00:24:27] "POST /edit/10 HTTP/1.1" 200 -
+2025-03-21 00:24:27,104 - INFO - 127.0.0.1 - - [21/Mar/2025 00:24:27] "GET / HTTP/1.1" 200 -
+2025-03-21 00:24:27,117 - INFO - 127.0.0.1 - - [21/Mar/2025 00:24:27] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:24:27,120 - INFO - 127.0.0.1 - - [21/Mar/2025 00:24:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:24:32,768 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:24:32,768 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:24:32,768 - INFO - 127.0.0.1 - - [21/Mar/2025 00:24:32] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:24:32,815 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:24:32,815 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:24:32,815 - INFO - 127.0.0.1 - - [21/Mar/2025 00:24:32] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:24:34,839 - DEBUG - Successfully retrieved public key for user 6
+2025-03-21 00:24:34,839 - INFO - 127.0.0.1 - - [21/Mar/2025 00:24:34] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-21 00:24:34,847 - INFO - 127.0.0.1 - - [21/Mar/2025 00:24:34] "POST /edit/10 HTTP/1.1" 200 -
+2025-03-21 00:24:34,858 - INFO - 127.0.0.1 - - [21/Mar/2025 00:24:34] "GET / HTTP/1.1" 200 -
+2025-03-21 00:24:34,868 - INFO - 127.0.0.1 - - [21/Mar/2025 00:24:34] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:24:34,870 - INFO - 127.0.0.1 - - [21/Mar/2025 00:24:34] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:24:39,895 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:24:39,895 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:24:39,896 - INFO - 127.0.0.1 - - [21/Mar/2025 00:24:39] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:24:39,948 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:24:39,948 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:24:39,948 - INFO - 127.0.0.1 - - [21/Mar/2025 00:24:39] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:24:41,733 - DEBUG - Successfully retrieved public key for user 6
+2025-03-21 00:24:41,734 - INFO - 127.0.0.1 - - [21/Mar/2025 00:24:41] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-21 00:24:41,740 - INFO - 127.0.0.1 - - [21/Mar/2025 00:24:41] "POST /edit/10 HTTP/1.1" 200 -
+2025-03-21 00:24:41,752 - INFO - 127.0.0.1 - - [21/Mar/2025 00:24:41] "GET / HTTP/1.1" 200 -
+2025-03-21 00:24:41,763 - INFO - 127.0.0.1 - - [21/Mar/2025 00:24:41] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:24:41,765 - INFO - 127.0.0.1 - - [21/Mar/2025 00:24:41] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:24:45,055 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:24:45,056 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:24:45,057 - INFO - 127.0.0.1 - - [21/Mar/2025 00:24:45] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:24:45,106 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:24:45,107 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:24:45,107 - INFO - 127.0.0.1 - - [21/Mar/2025 00:24:45] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:26:28,794 - DEBUG - Successfully retrieved public key for user 6
+2025-03-21 00:26:28,795 - INFO - 127.0.0.1 - - [21/Mar/2025 00:26:28] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-21 00:26:28,806 - DEBUG - Uploaded file content size: 29 bytes
+2025-03-21 00:26:28,806 - DEBUG - File saved to: uploads/TimelineExplorer.dll.enc
+2025-03-21 00:26:28,806 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:26:28,808 - DEBUG - File information saved to database: TimelineExplorer.dll.enc, user_id=6
+2025-03-21 00:26:28,809 - INFO - 127.0.0.1 - - [21/Mar/2025 00:26:28] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-03-21 00:26:28,814 - INFO - 127.0.0.1 - - [21/Mar/2025 00:26:28] "GET / HTTP/1.1" 200 -
+2025-03-21 00:26:28,830 - INFO - 127.0.0.1 - - [21/Mar/2025 00:26:28] "GET / HTTP/1.1" 200 -
+2025-03-21 00:26:28,850 - INFO - 127.0.0.1 - - [21/Mar/2025 00:26:28] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:26:28,852 - INFO - 127.0.0.1 - - [21/Mar/2025 00:26:28] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:26:30,060 - INFO - User QAQ1 downloaded file TimelineExplorer.dll.enc
+2025-03-21 00:26:30,060 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:26:30,061 - INFO - 127.0.0.1 - - [21/Mar/2025 00:26:30] "GET /download/11 HTTP/1.1" 200 -
+2025-03-21 00:26:30,094 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:26:30,094 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:26:30,094 - INFO - 127.0.0.1 - - [21/Mar/2025 00:26:30] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:28:29,473 - INFO - 127.0.0.1 - - [21/Mar/2025 00:28:29] "GET / HTTP/1.1" 200 -
+2025-03-21 00:28:29,497 - INFO - 127.0.0.1 - - [21/Mar/2025 00:28:29] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:28:30,737 - INFO - User QAQ1 downloaded file TimelineExplorer.dll.enc
+2025-03-21 00:28:30,737 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:28:30,737 - INFO - 127.0.0.1 - - [21/Mar/2025 00:28:30] "GET /download/11 HTTP/1.1" 200 -
+2025-03-21 00:28:30,780 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:28:30,780 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:28:30,781 - INFO - 127.0.0.1 - - [21/Mar/2025 00:28:30] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:28:37,297 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-21 00:28:37,299 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 00:28:37,299 - INFO -  * Restarting with stat
+2025-03-21 00:28:37,409 - WARNING -  * Debugger is active!
+2025-03-21 00:28:37,415 - INFO -  * Debugger PIN: 497-729-346
+2025-03-21 00:28:39,706 - INFO - 127.0.0.1 - - [21/Mar/2025 00:28:39] "GET / HTTP/1.1" 200 -
+2025-03-21 00:28:39,729 - INFO - 127.0.0.1 - - [21/Mar/2025 00:28:39] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:28:39,733 - INFO - 127.0.0.1 - - [21/Mar/2025 00:28:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:28:40,901 - INFO - User QAQ1 downloaded file TimelineExplorer.dll.enc
+2025-03-21 00:28:40,901 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:28:40,901 - INFO - 127.0.0.1 - - [21/Mar/2025 00:28:40] "GET /download/11 HTTP/1.1" 200 -
+2025-03-21 00:28:40,946 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:28:40,946 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:28:40,947 - INFO - 127.0.0.1 - - [21/Mar/2025 00:28:40] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:28:41,856 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:28:41,856 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:28:41,857 - INFO - 127.0.0.1 - - [21/Mar/2025 00:28:41] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:28:41,907 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:28:41,907 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:28:41,907 - INFO - 127.0.0.1 - - [21/Mar/2025 00:28:41] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:29:52,430 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-21 00:29:52,430 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 00:29:52,430 - INFO -  * Restarting with stat
+2025-03-21 00:29:52,536 - WARNING -  * Debugger is active!
+2025-03-21 00:29:52,541 - INFO -  * Debugger PIN: 497-729-346
+2025-03-21 00:29:54,744 - INFO - 127.0.0.1 - - [21/Mar/2025 00:29:54] "GET / HTTP/1.1" 200 -
+2025-03-21 00:29:54,761 - INFO - 127.0.0.1 - - [21/Mar/2025 00:29:54] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:29:54,766 - INFO - 127.0.0.1 - - [21/Mar/2025 00:29:54] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:29:55,816 - INFO - User QAQ1 downloaded file TimelineExplorer.dll.enc
+2025-03-21 00:29:55,816 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:29:55,816 - INFO - 127.0.0.1 - - [21/Mar/2025 00:29:55] "GET /download/11 HTTP/1.1" 200 -
+2025-03-21 00:29:55,946 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:29:55,946 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:29:55,947 - INFO - 127.0.0.1 - - [21/Mar/2025 00:29:55] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:31:55,899 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-21 00:31:55,899 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 00:31:55,899 - INFO -  * Restarting with stat
+2025-03-21 00:31:56,010 - WARNING -  * Debugger is active!
+2025-03-21 00:31:56,015 - INFO -  * Debugger PIN: 497-729-346
+2025-03-21 00:31:57,834 - INFO - 127.0.0.1 - - [21/Mar/2025 00:31:57] "GET / HTTP/1.1" 200 -
+2025-03-21 00:31:57,863 - INFO - 127.0.0.1 - - [21/Mar/2025 00:31:57] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:31:59,189 - INFO - User QAQ1 downloaded file TimelineExplorer.dll.enc
+2025-03-21 00:31:59,189 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:31:59,189 - INFO - 127.0.0.1 - - [21/Mar/2025 00:31:59] "GET /download/11 HTTP/1.1" 200 -
+2025-03-21 00:31:59,227 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:31:59,227 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:31:59,227 - INFO - 127.0.0.1 - - [21/Mar/2025 00:31:59] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:32:02,474 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 00:32:02,475 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:32:02,475 - INFO - 127.0.0.1 - - [21/Mar/2025 00:32:02] "GET /download/10 HTTP/1.1" 200 -
+2025-03-21 00:32:02,526 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 00:32:02,526 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 00:32:02,527 - INFO - 127.0.0.1 - - [21/Mar/2025 00:32:02] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 00:32:09,385 - DEBUG - Successfully decrypted AES key, length: 16 bytes
+2025-03-21 00:32:09,388 - INFO - File 10 successfully shared with user QAQ2
+2025-03-21 00:32:09,388 - INFO - 127.0.0.1 - - [21/Mar/2025 00:32:09] "[32mPOST /share/10 HTTP/1.1[0m" 302 -
+2025-03-21 00:32:09,396 - INFO - 127.0.0.1 - - [21/Mar/2025 00:32:09] "GET / HTTP/1.1" 200 -
+2025-03-21 00:32:09,416 - INFO - 127.0.0.1 - - [21/Mar/2025 00:32:09] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:32:09,419 - INFO - 127.0.0.1 - - [21/Mar/2025 00:32:09] "[33mGET /robots.txt?484024 HTTP/1.1[0m" 404 -
+2025-03-21 00:32:09,421 - INFO - 127.0.0.1 - - [21/Mar/2025 00:32:09] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:36:36,585 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8001
+2025-03-21 03:36:36,585 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 03:36:36,586 - INFO -  * Restarting with stat
+2025-03-21 03:36:36,710 - WARNING -  * Debugger is active!
+2025-03-21 03:36:36,714 - INFO -  * Debugger PIN: 497-729-346
+2025-03-21 03:36:55,629 - INFO - 127.0.0.1 - - [21/Mar/2025 03:36:55] "GET / HTTP/1.1" 200 -
+2025-03-21 03:36:55,660 - INFO - 127.0.0.1 - - [21/Mar/2025 03:36:55] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:36:55,665 - INFO - 127.0.0.1 - - [21/Mar/2025 03:36:55] "GET /static/styles.css HTTP/1.1" 200 -
+2025-03-21 03:36:56,200 - INFO - 127.0.0.1 - - [21/Mar/2025 03:36:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-21 03:36:58,560 - ERROR - Error downloading file: [Errno 2] No such file or directory: 'uploads/LICENSE.txt.enc'
+Traceback (most recent call last):
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/app-fork/online-storage-application-updated_edit/app.py", line 545, in download_file
+    with open(file_path, 'rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'uploads/LICENSE.txt.enc'
+
+2025-03-21 03:36:58,561 - INFO - 127.0.0.1 - - [21/Mar/2025 03:36:58] "[35m[1mGET /download/10 HTTP/1.1[0m" 500 -
+2025-03-21 03:37:00,194 - ERROR - Error downloading file: [Errno 2] No such file or directory: 'uploads/LICENSE.txt.enc'
+Traceback (most recent call last):
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/app-fork/online-storage-application-updated_edit/app.py", line 545, in download_file
+    with open(file_path, 'rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'uploads/LICENSE.txt.enc'
+
+2025-03-21 03:37:00,195 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:00] "[35m[1mGET /download/10 HTTP/1.1[0m" 500 -
+2025-03-21 03:37:01,316 - ERROR - Error downloading file: [Errno 2] No such file or directory: 'uploads/TimelineExplorer.dll.enc'
+Traceback (most recent call last):
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/app-fork/online-storage-application-updated_edit/app.py", line 545, in download_file
+    with open(file_path, 'rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'uploads/TimelineExplorer.dll.enc'
+
+2025-03-21 03:37:01,316 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:01] "[35m[1mGET /download/11 HTTP/1.1[0m" 500 -
+2025-03-21 03:37:01,739 - ERROR - Error downloading file: [Errno 2] No such file or directory: 'uploads/TimelineExplorer.dll.enc'
+Traceback (most recent call last):
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/app-fork/online-storage-application-updated_edit/app.py", line 545, in download_file
+    with open(file_path, 'rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'uploads/TimelineExplorer.dll.enc'
+
+2025-03-21 03:37:01,740 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:01] "[35m[1mGET /download/11 HTTP/1.1[0m" 500 -
+2025-03-21 03:37:01,944 - ERROR - Error downloading file: [Errno 2] No such file or directory: 'uploads/TimelineExplorer.dll.enc'
+Traceback (most recent call last):
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/app-fork/online-storage-application-updated_edit/app.py", line 545, in download_file
+    with open(file_path, 'rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'uploads/TimelineExplorer.dll.enc'
+
+2025-03-21 03:37:01,945 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:01] "[35m[1mGET /download/11 HTTP/1.1[0m" 500 -
+2025-03-21 03:37:02,090 - ERROR - Error downloading file: [Errno 2] No such file or directory: 'uploads/TimelineExplorer.dll.enc'
+Traceback (most recent call last):
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/app-fork/online-storage-application-updated_edit/app.py", line 545, in download_file
+    with open(file_path, 'rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'uploads/TimelineExplorer.dll.enc'
+
+2025-03-21 03:37:02,091 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:02] "[35m[1mGET /download/11 HTTP/1.1[0m" 500 -
+2025-03-21 03:37:02,233 - ERROR - Error downloading file: [Errno 2] No such file or directory: 'uploads/TimelineExplorer.dll.enc'
+Traceback (most recent call last):
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/app-fork/online-storage-application-updated_edit/app.py", line 545, in download_file
+    with open(file_path, 'rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'uploads/TimelineExplorer.dll.enc'
+
+2025-03-21 03:37:02,233 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:02] "[35m[1mGET /download/11 HTTP/1.1[0m" 500 -
+2025-03-21 03:37:02,372 - ERROR - Error downloading file: [Errno 2] No such file or directory: 'uploads/TimelineExplorer.dll.enc'
+Traceback (most recent call last):
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/app-fork/online-storage-application-updated_edit/app.py", line 545, in download_file
+    with open(file_path, 'rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'uploads/TimelineExplorer.dll.enc'
+
+2025-03-21 03:37:02,373 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:02] "[35m[1mGET /download/11 HTTP/1.1[0m" 500 -
+2025-03-21 03:37:02,521 - ERROR - Error downloading file: [Errno 2] No such file or directory: 'uploads/TimelineExplorer.dll.enc'
+Traceback (most recent call last):
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/app-fork/online-storage-application-updated_edit/app.py", line 545, in download_file
+    with open(file_path, 'rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'uploads/TimelineExplorer.dll.enc'
+
+2025-03-21 03:37:02,522 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:02] "[35m[1mGET /download/11 HTTP/1.1[0m" 500 -
+2025-03-21 03:37:02,686 - ERROR - Error downloading file: [Errno 2] No such file or directory: 'uploads/TimelineExplorer.dll.enc'
+Traceback (most recent call last):
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/app-fork/online-storage-application-updated_edit/app.py", line 545, in download_file
+    with open(file_path, 'rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'uploads/TimelineExplorer.dll.enc'
+
+2025-03-21 03:37:02,687 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:02] "[35m[1mGET /download/11 HTTP/1.1[0m" 500 -
+2025-03-21 03:37:02,844 - ERROR - Error downloading file: [Errno 2] No such file or directory: 'uploads/TimelineExplorer.dll.enc'
+Traceback (most recent call last):
+  File "/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/app-fork/online-storage-application-updated_edit/app.py", line 545, in download_file
+    with open(file_path, 'rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'uploads/TimelineExplorer.dll.enc'
+
+2025-03-21 03:37:02,844 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:02] "[35m[1mGET /download/11 HTTP/1.1[0m" 500 -
+2025-03-21 03:37:17,069 - DEBUG - Successfully retrieved public key for user 6
+2025-03-21 03:37:17,070 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:17] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-21 03:37:17,079 - DEBUG - Uploaded file content size: 29 bytes
+2025-03-21 03:37:17,080 - DEBUG - File saved to: uploads/LICENSE.txt.enc
+2025-03-21 03:37:17,080 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 03:37:17,082 - DEBUG - File information saved to database: LICENSE.txt.enc, user_id=6
+2025-03-21 03:37:17,082 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:17] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-03-21 03:37:17,086 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:17] "GET / HTTP/1.1" 200 -
+2025-03-21 03:37:17,105 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:17] "GET / HTTP/1.1" 200 -
+2025-03-21 03:37:17,117 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:17] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:37:17,118 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:17] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:37:18,956 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 03:37:18,956 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 03:37:18,957 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:18] "GET /download/12 HTTP/1.1" 200 -
+2025-03-21 03:37:19,015 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 03:37:19,015 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 03:37:19,015 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:19] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 03:37:20,834 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 03:37:20,835 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 03:37:20,835 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:20] "GET /download/12 HTTP/1.1" 200 -
+2025-03-21 03:37:20,888 - DEBUG - Successfully retrieved private key for user 6
+2025-03-21 03:37:20,888 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 03:37:20,888 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:20] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 03:37:24,335 - DEBUG - Successfully retrieved public key for user 6
+2025-03-21 03:37:24,335 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:24] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-21 03:37:24,345 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:24] "POST /edit/12 HTTP/1.1" 200 -
+2025-03-21 03:37:24,358 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:24] "GET / HTTP/1.1" 200 -
+2025-03-21 03:37:24,368 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:24] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:37:24,369 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:24] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:37:28,154 - DEBUG - Successfully decrypted AES key, length: 16 bytes
+2025-03-21 03:37:28,156 - INFO - File 12 successfully shared with user QAQ2
+2025-03-21 03:37:28,156 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:28] "[32mPOST /share/12 HTTP/1.1[0m" 302 -
+2025-03-21 03:37:28,162 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:28] "GET / HTTP/1.1" 200 -
+2025-03-21 03:37:28,173 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:28] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:37:28,175 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:28] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:37:28,179 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:28] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:37:31,841 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:31] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-03-21 03:37:31,855 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:31] "GET /login HTTP/1.1" 200 -
+2025-03-21 03:37:31,886 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:31] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:37:31,888 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:31] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:37:31,891 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:31] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:37:33,592 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:33] "GET /register HTTP/1.1" 200 -
+2025-03-21 03:37:33,627 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:33] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:37:33,628 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:37:37,425 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:37] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-03-21 03:37:37,434 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:37] "GET /login HTTP/1.1" 200 -
+2025-03-21 03:37:37,464 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:37] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:37:37,465 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:37] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:37:37,465 - INFO - 127.0.0.1 - - [21/Mar/2025 03:37:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:39:40,853 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8001
+2025-03-21 03:39:40,854 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 03:39:40,855 - INFO -  * Restarting with stat
+2025-03-21 03:39:40,972 - WARNING -  * Debugger is active!
+2025-03-21 03:39:40,977 - INFO -  * Debugger PIN: 497-729-346
+2025-03-21 03:39:43,562 - INFO - 127.0.0.1 - - [21/Mar/2025 03:39:43] "GET /login HTTP/1.1" 200 -
+2025-03-21 03:39:43,608 - INFO - 127.0.0.1 - - [21/Mar/2025 03:39:43] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:39:43,638 - INFO - 127.0.0.1 - - [21/Mar/2025 03:39:43] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:39:44,776 - INFO - 127.0.0.1 - - [21/Mar/2025 03:39:44] "GET /register HTTP/1.1" 200 -
+2025-03-21 03:39:44,808 - INFO - 127.0.0.1 - - [21/Mar/2025 03:39:44] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:39:44,810 - INFO - 127.0.0.1 - - [21/Mar/2025 03:39:44] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:39:49,671 - INFO - 127.0.0.1 - - [21/Mar/2025 03:39:49] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-03-21 03:39:49,680 - INFO - 127.0.0.1 - - [21/Mar/2025 03:39:49] "GET /login HTTP/1.1" 200 -
+2025-03-21 03:39:49,715 - INFO - 127.0.0.1 - - [21/Mar/2025 03:39:49] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:39:49,717 - INFO - 127.0.0.1 - - [21/Mar/2025 03:39:49] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:39:49,717 - INFO - 127.0.0.1 - - [21/Mar/2025 03:39:49] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:40:36,972 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8001
+2025-03-21 03:40:36,973 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 03:40:36,973 - INFO -  * Restarting with stat
+2025-03-21 03:40:37,089 - WARNING -  * Debugger is active!
+2025-03-21 03:40:37,093 - INFO -  * Debugger PIN: 497-729-346
+2025-03-21 03:40:39,214 - INFO - 127.0.0.1 - - [21/Mar/2025 03:40:39] "GET /register HTTP/1.1" 200 -
+2025-03-21 03:40:39,250 - INFO - 127.0.0.1 - - [21/Mar/2025 03:40:39] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:40:39,256 - INFO - 127.0.0.1 - - [21/Mar/2025 03:40:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:40:44,948 - INFO - 127.0.0.1 - - [21/Mar/2025 03:40:44] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-03-21 03:40:44,954 - INFO - 127.0.0.1 - - [21/Mar/2025 03:40:44] "GET /login HTTP/1.1" 200 -
+2025-03-21 03:40:44,986 - INFO - 127.0.0.1 - - [21/Mar/2025 03:40:44] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:40:44,987 - INFO - 127.0.0.1 - - [21/Mar/2025 03:40:44] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:40:44,988 - INFO - 127.0.0.1 - - [21/Mar/2025 03:40:44] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:41:14,029 - INFO - 127.0.0.1 - - [21/Mar/2025 03:41:14] "POST /login HTTP/1.1" 200 -
+2025-03-21 03:41:14,055 - INFO - 127.0.0.1 - - [21/Mar/2025 03:41:14] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:41:14,057 - INFO - 127.0.0.1 - - [21/Mar/2025 03:41:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:41:17,752 - INFO - 127.0.0.1 - - [21/Mar/2025 03:41:17] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2025-03-21 03:41:17,774 - INFO - 127.0.0.1 - - [21/Mar/2025 03:41:17] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:41:17,776 - INFO - 127.0.0.1 - - [21/Mar/2025 03:41:17] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-21 03:41:17,776 - INFO - 127.0.0.1 - - [21/Mar/2025 03:41:17] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-21 03:41:17,779 - INFO - 127.0.0.1 - - [21/Mar/2025 03:41:17] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-21 03:41:17,909 - INFO - 127.0.0.1 - - [21/Mar/2025 03:41:17] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=qnwypIKRS8WsdSJ7vfTq HTTP/1.1" 200 -
+2025-03-21 03:41:17,985 - INFO - 127.0.0.1 - - [21/Mar/2025 03:41:17] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-21 03:41:53,707 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/app-fork/online-storage-application-updated_edit/app.py', reloading
+2025-03-21 03:41:53,733 - INFO -  * Restarting with stat
+2025-03-21 03:41:53,920 - WARNING -  * Debugger is active!
+2025-03-21 03:41:53,924 - INFO -  * Debugger PIN: 497-729-346
+2025-03-21 03:41:55,320 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8001
+2025-03-21 03:41:55,321 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 03:41:55,321 - INFO -  * Restarting with stat
+2025-03-21 03:41:55,437 - WARNING -  * Debugger is active!
+2025-03-21 03:41:55,441 - INFO -  * Debugger PIN: 497-729-346
+2025-03-21 03:42:05,302 - INFO - 127.0.0.1 - - [21/Mar/2025 03:42:05] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-21 03:42:05,329 - INFO - 127.0.0.1 - - [21/Mar/2025 03:42:05] "GET /login?next=/ HTTP/1.1" 200 -
+2025-03-21 03:42:05,403 - INFO - 127.0.0.1 - - [21/Mar/2025 03:42:05] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:42:05,405 - INFO - 127.0.0.1 - - [21/Mar/2025 03:42:05] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:42:05,408 - INFO - 127.0.0.1 - - [21/Mar/2025 03:42:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:42:09,946 - INFO - 127.0.0.1 - - [21/Mar/2025 03:42:09] "[35m[1mPOST /login?next=/ HTTP/1.1[0m" 500 -
+2025-03-21 03:42:09,959 - INFO - 127.0.0.1 - - [21/Mar/2025 03:42:09] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:42:09,967 - INFO - 127.0.0.1 - - [21/Mar/2025 03:42:09] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-21 03:42:09,967 - INFO - 127.0.0.1 - - [21/Mar/2025 03:42:09] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-21 03:42:09,972 - INFO - 127.0.0.1 - - [21/Mar/2025 03:42:09] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-21 03:42:10,144 - INFO - 127.0.0.1 - - [21/Mar/2025 03:42:10] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=9WNpuvRu3D2Ce3JcuNx4 HTTP/1.1" 200 -
+2025-03-21 03:42:37,858 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/app-fork/online-storage-application-updated_edit/app.py', reloading
+2025-03-21 03:42:37,885 - INFO -  * Restarting with stat
+2025-03-21 03:42:38,065 - WARNING -  * Debugger is active!
+2025-03-21 03:42:38,069 - INFO -  * Debugger PIN: 497-729-346
+2025-03-21 03:42:59,717 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/app-fork/online-storage-application-updated_edit/app.py', reloading
+2025-03-21 03:42:59,750 - INFO -  * Restarting with stat
+2025-03-21 03:42:59,889 - WARNING -  * Debugger is active!
+2025-03-21 03:42:59,893 - INFO -  * Debugger PIN: 497-729-346
+2025-03-21 03:43:06,109 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/app-fork/online-storage-application-updated_edit/app.py', reloading
+2025-03-21 03:43:06,134 - INFO -  * Restarting with stat
+2025-03-21 03:43:17,619 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8001
+2025-03-21 03:43:17,619 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 03:43:17,619 - INFO -  * Restarting with stat
+2025-03-21 03:43:17,734 - WARNING -  * Debugger is active!
+2025-03-21 03:43:17,738 - INFO -  * Debugger PIN: 497-729-346
+2025-03-21 03:43:27,070 - INFO - 127.0.0.1 - - [21/Mar/2025 03:43:27] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-21 03:43:27,087 - INFO - 127.0.0.1 - - [21/Mar/2025 03:43:27] "GET /login?next=/ HTTP/1.1" 200 -
+2025-03-21 03:43:27,163 - INFO - 127.0.0.1 - - [21/Mar/2025 03:43:27] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:43:27,168 - INFO - 127.0.0.1 - - [21/Mar/2025 03:43:27] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:43:27,171 - INFO - 127.0.0.1 - - [21/Mar/2025 03:43:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:43:28,934 - INFO - 127.0.0.1 - - [21/Mar/2025 03:43:28] "GET /register HTTP/1.1" 200 -
+2025-03-21 03:43:28,962 - INFO - 127.0.0.1 - - [21/Mar/2025 03:43:28] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:43:28,964 - INFO - 127.0.0.1 - - [21/Mar/2025 03:43:28] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:43:33,442 - INFO - 127.0.0.1 - - [21/Mar/2025 03:43:33] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-03-21 03:43:33,464 - INFO - 127.0.0.1 - - [21/Mar/2025 03:43:33] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:43:33,466 - INFO - 127.0.0.1 - - [21/Mar/2025 03:43:33] "GET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-21 03:43:33,466 - INFO - 127.0.0.1 - - [21/Mar/2025 03:43:33] "GET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-21 03:43:33,469 - INFO - 127.0.0.1 - - [21/Mar/2025 03:43:33] "GET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-21 03:43:33,597 - INFO - 127.0.0.1 - - [21/Mar/2025 03:43:33] "GET /register?__debugger__=yes&cmd=resource&f=console.png&s=ZrYGmKD82TrsFBsHgi28 HTTP/1.1" 200 -
+2025-03-21 03:43:33,669 - INFO - 127.0.0.1 - - [21/Mar/2025 03:43:33] "GET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-21 03:43:48,770 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8001
+2025-03-21 03:43:48,771 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 03:43:48,771 - INFO -  * Restarting with stat
+2025-03-21 03:43:48,888 - WARNING -  * Debugger is active!
+2025-03-21 03:43:48,892 - INFO -  * Debugger PIN: 497-729-346
+2025-03-21 03:43:52,492 - INFO - 127.0.0.1 - - [21/Mar/2025 03:43:52] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-03-21 03:43:52,521 - INFO - 127.0.0.1 - - [21/Mar/2025 03:43:52] "GET /otp-setup/test20 HTTP/1.1" 200 -
+2025-03-21 03:43:52,587 - INFO - 127.0.0.1 - - [21/Mar/2025 03:43:52] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:46:04,106 - INFO - 127.0.0.1 - - [21/Mar/2025 03:46:04] "GET /login HTTP/1.1" 200 -
+2025-03-21 03:46:04,140 - INFO - 127.0.0.1 - - [21/Mar/2025 03:46:04] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:46:04,146 - INFO - 127.0.0.1 - - [21/Mar/2025 03:46:04] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:46:12,285 - INFO - 127.0.0.1 - - [21/Mar/2025 03:46:12] "POST /login HTTP/1.1" 200 -
+2025-03-21 03:46:12,305 - INFO - 127.0.0.1 - - [21/Mar/2025 03:46:12] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:46:12,307 - INFO - 127.0.0.1 - - [21/Mar/2025 03:46:12] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:46:16,222 - INFO - 127.0.0.1 - - [21/Mar/2025 03:46:16] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-21 03:46:16,232 - INFO - 127.0.0.1 - - [21/Mar/2025 03:46:16] "GET /otp-verification HTTP/1.1" 200 -
+2025-03-21 03:46:16,267 - INFO - 127.0.0.1 - - [21/Mar/2025 03:46:16] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:46:16,268 - INFO - 127.0.0.1 - - [21/Mar/2025 03:46:16] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:46:16,274 - INFO - 127.0.0.1 - - [21/Mar/2025 03:46:16] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:46:19,893 - INFO - 127.0.0.1 - - [21/Mar/2025 03:46:19] "[32mPOST /otp-verification HTTP/1.1[0m" 302 -
+2025-03-21 03:46:19,914 - INFO - 127.0.0.1 - - [21/Mar/2025 03:46:19] "GET / HTTP/1.1" 200 -
+2025-03-21 03:46:19,949 - INFO - 127.0.0.1 - - [21/Mar/2025 03:46:19] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:46:19,952 - INFO - 127.0.0.1 - - [21/Mar/2025 03:46:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:46:19,953 - INFO - 127.0.0.1 - - [21/Mar/2025 03:46:19] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:46:26,733 - ERROR - Error exporting public key: RSA key format is not supported
+2025-03-21 03:46:26,734 - INFO - 127.0.0.1 - - [21/Mar/2025 03:46:26] "[35m[1mGET /get_public_key HTTP/1.1[0m" 500 -
+2025-03-21 03:46:44,443 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/app-fork/online-storage-application-updated_edit/app.py', reloading
+2025-03-21 03:46:44,472 - INFO -  * Restarting with stat
+2025-03-21 03:46:44,597 - WARNING -  * Debugger is active!
+2025-03-21 03:46:44,601 - INFO -  * Debugger PIN: 497-729-346
+2025-03-21 03:47:04,101 - ERROR - Error exporting public key: RSA key format is not supported
+2025-03-21 03:47:04,103 - INFO - 127.0.0.1 - - [21/Mar/2025 03:47:04] "[35m[1mGET /get_public_key HTTP/1.1[0m" 500 -
+2025-03-21 03:47:15,668 - INFO - 127.0.0.1 - - [21/Mar/2025 03:47:15] "[32mGET /otp-verification HTTP/1.1[0m" 302 -
+2025-03-21 03:47:15,699 - INFO - 127.0.0.1 - - [21/Mar/2025 03:47:15] "GET /login HTTP/1.1" 200 -
+2025-03-21 03:47:15,735 - INFO - 127.0.0.1 - - [21/Mar/2025 03:47:15] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:47:19,644 - INFO - 127.0.0.1 - - [21/Mar/2025 03:47:19] "GET /register HTTP/1.1" 200 -
+2025-03-21 03:47:19,680 - INFO - 127.0.0.1 - - [21/Mar/2025 03:47:19] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:47:19,686 - INFO - 127.0.0.1 - - [21/Mar/2025 03:47:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:47:23,806 - INFO - 127.0.0.1 - - [21/Mar/2025 03:47:23] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-03-21 03:47:23,829 - INFO - 127.0.0.1 - - [21/Mar/2025 03:47:23] "GET /otp-setup/test1 HTTP/1.1" 200 -
+2025-03-21 03:47:23,868 - INFO - 127.0.0.1 - - [21/Mar/2025 03:47:23] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:47:23,869 - INFO - 127.0.0.1 - - [21/Mar/2025 03:47:23] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:47:40,167 - INFO - 127.0.0.1 - - [21/Mar/2025 03:47:40] "GET /login HTTP/1.1" 200 -
+2025-03-21 03:47:40,206 - INFO - 127.0.0.1 - - [21/Mar/2025 03:47:40] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:47:40,211 - INFO - 127.0.0.1 - - [21/Mar/2025 03:47:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:47:43,397 - INFO - 127.0.0.1 - - [21/Mar/2025 03:47:43] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-21 03:47:43,404 - INFO - 127.0.0.1 - - [21/Mar/2025 03:47:43] "GET /otp-verification HTTP/1.1" 200 -
+2025-03-21 03:47:43,442 - INFO - 127.0.0.1 - - [21/Mar/2025 03:47:43] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:47:43,444 - INFO - 127.0.0.1 - - [21/Mar/2025 03:47:43] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:47:43,445 - INFO - 127.0.0.1 - - [21/Mar/2025 03:47:43] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:47:49,246 - INFO - 127.0.0.1 - - [21/Mar/2025 03:47:49] "[32mPOST /otp-verification HTTP/1.1[0m" 302 -
+2025-03-21 03:47:49,265 - INFO - 127.0.0.1 - - [21/Mar/2025 03:47:49] "GET / HTTP/1.1" 200 -
+2025-03-21 03:47:49,297 - INFO - 127.0.0.1 - - [21/Mar/2025 03:47:49] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:47:49,298 - INFO - 127.0.0.1 - - [21/Mar/2025 03:47:49] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:47:49,299 - INFO - 127.0.0.1 - - [21/Mar/2025 03:47:49] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:47:53,889 - ERROR - Error exporting public key: RSA key format is not supported
+2025-03-21 03:47:53,891 - INFO - 127.0.0.1 - - [21/Mar/2025 03:47:53] "[35m[1mGET /get_public_key HTTP/1.1[0m" 500 -
+2025-03-21 03:50:29,148 - INFO -  * Detected change in '/Users/2v744/Library/CloudStorage/SynologyDrive-Polyu/sem2/COMP3334 Computer System Security/ASG/PROJ/app-fork/online-storage-application-updated_edit/app.py', reloading
+2025-03-21 03:50:29,169 - INFO -  * Restarting with stat
+2025-03-21 03:50:29,364 - WARNING -  * Debugger is active!
+2025-03-21 03:50:29,369 - INFO -  * Debugger PIN: 497-729-346
+2025-03-21 03:50:30,514 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8001
+2025-03-21 03:50:30,514 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 03:50:30,515 - INFO -  * Restarting with stat
+2025-03-21 03:50:30,630 - WARNING -  * Debugger is active!
+2025-03-21 03:50:30,634 - INFO -  * Debugger PIN: 497-729-346
+2025-03-21 03:50:34,667 - INFO - 127.0.0.1 - - [21/Mar/2025 03:50:34] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-03-21 03:50:34,688 - INFO - 127.0.0.1 - - [21/Mar/2025 03:50:34] "GET /login HTTP/1.1" 200 -
+2025-03-21 03:50:34,716 - INFO - 127.0.0.1 - - [21/Mar/2025 03:50:34] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:50:34,718 - INFO - 127.0.0.1 - - [21/Mar/2025 03:50:34] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:50:34,723 - INFO - 127.0.0.1 - - [21/Mar/2025 03:50:34] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:50:36,165 - INFO - 127.0.0.1 - - [21/Mar/2025 03:50:36] "GET /register HTTP/1.1" 200 -
+2025-03-21 03:50:36,195 - INFO - 127.0.0.1 - - [21/Mar/2025 03:50:36] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:50:36,196 - INFO - 127.0.0.1 - - [21/Mar/2025 03:50:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:50:44,375 - INFO - 127.0.0.1 - - [21/Mar/2025 03:50:44] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-03-21 03:50:44,397 - INFO - 127.0.0.1 - - [21/Mar/2025 03:50:44] "GET /otp-setup/QAQ1 HTTP/1.1" 200 -
+2025-03-21 03:50:44,434 - INFO - 127.0.0.1 - - [21/Mar/2025 03:50:44] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:50:44,434 - INFO - 127.0.0.1 - - [21/Mar/2025 03:50:44] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:50:54,208 - INFO - 127.0.0.1 - - [21/Mar/2025 03:50:54] "GET /login HTTP/1.1" 200 -
+2025-03-21 03:50:54,245 - INFO - 127.0.0.1 - - [21/Mar/2025 03:50:54] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:50:54,247 - INFO - 127.0.0.1 - - [21/Mar/2025 03:50:54] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:51:02,320 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:02] "POST /login HTTP/1.1" 200 -
+2025-03-21 03:51:02,346 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:02] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:51:02,347 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:02] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:51:05,558 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:05] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-21 03:51:05,569 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:05] "GET /otp-verification HTTP/1.1" 200 -
+2025-03-21 03:51:05,601 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:05] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:51:05,602 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:51:05,605 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:05] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:51:13,235 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:13] "[32mPOST /otp-verification HTTP/1.1[0m" 302 -
+2025-03-21 03:51:13,257 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:13] "GET / HTTP/1.1" 200 -
+2025-03-21 03:51:13,291 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:13] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:51:13,293 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:13] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:51:13,294 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:13] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:51:17,851 - DEBUG - Successfully retrieved public key for user 3
+2025-03-21 03:51:17,853 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:17] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-21 03:51:17,863 - DEBUG - Uploaded file content size: 29 bytes
+2025-03-21 03:51:17,864 - DEBUG - File saved to: uploads/LICENSE.txt.enc
+2025-03-21 03:51:17,864 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 03:51:17,866 - DEBUG - File information saved to database: LICENSE.txt.enc, user_id=3
+2025-03-21 03:51:17,867 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:17] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-03-21 03:51:17,872 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:17] "GET / HTTP/1.1" 200 -
+2025-03-21 03:51:17,892 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:17] "GET / HTTP/1.1" 200 -
+2025-03-21 03:51:17,904 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:17] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:51:17,909 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:17] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:51:19,603 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 03:51:19,603 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 03:51:19,604 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:19] "GET /download/1 HTTP/1.1" 200 -
+2025-03-21 03:51:19,655 - DEBUG - Successfully retrieved private key for user 3
+2025-03-21 03:51:19,655 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 03:51:19,655 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:19] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 03:51:20,983 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 03:51:20,984 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 03:51:20,984 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:20] "GET /download/1 HTTP/1.1" 200 -
+2025-03-21 03:51:21,034 - DEBUG - Successfully retrieved private key for user 3
+2025-03-21 03:51:21,034 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 03:51:21,034 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:21] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 03:51:23,156 - DEBUG - Successfully retrieved public key for user 3
+2025-03-21 03:51:23,156 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:23] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-21 03:51:23,165 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:23] "POST /edit/1 HTTP/1.1" 200 -
+2025-03-21 03:51:23,179 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:23] "GET / HTTP/1.1" 200 -
+2025-03-21 03:51:23,188 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:23] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:51:23,190 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:23] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:51:24,304 - INFO - User QAQ1 downloaded file LICENSE.txt.enc
+2025-03-21 03:51:24,305 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 03:51:24,305 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:24] "GET /download/1 HTTP/1.1" 200 -
+2025-03-21 03:51:24,354 - DEBUG - Successfully retrieved private key for user 3
+2025-03-21 03:51:24,354 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 03:51:24,354 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:24] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 03:51:28,955 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:28] "[32mPOST /share/1 HTTP/1.1[0m" 302 -
+2025-03-21 03:51:28,963 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:28] "GET / HTTP/1.1" 200 -
+2025-03-21 03:51:28,987 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:28] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 03:51:28,989 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:28] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 03:51:28,990 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:28] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -

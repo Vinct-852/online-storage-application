@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP 設定</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+      }
+      .container {
+        max-width: 400px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+        margin: 10px 0;
+      }
+      .btn {
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>OTP 二步驗證設定</h2>
+      <p>請使用 Google Authenticator 或 Authy 掃描以下 QR Code</p>
+      <img src="data:image/png;base64,{{ qr_base64 }}" alt="OTP QR Code" />
+      <p>如果您無法掃描 QR Code，請手動輸入此金鑰：</p>
+      <strong>{{ otp_secret }}</strong>
+
+      <p>掃描 QR Code 並添加成功後，請點擊下方按鈕返回登入</p>
+      <a class="btn" href="{{ url_for('login') }}">返回登入</a>
+    </div>
+  </body>
+</html>
