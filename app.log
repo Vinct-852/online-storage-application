@@ -8459,3 +8459,25 @@ FileNotFoundError: [Errno 2] No such file or directory: 'uploads/TimelineExplore
 2025-03-21 03:51:28,987 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:28] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
 2025-03-21 03:51:28,989 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:28] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
 2025-03-21 03:51:28,990 - INFO - 127.0.0.1 - - [21/Mar/2025 03:51:28] "[33mGET /robots.txt?484027 HTTP/1.1[0m" 404 -
+2025-03-21 17:54:54,595 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8001
+2025-03-21 17:54:54,595 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 17:54:54,596 - INFO -  * Restarting with stat
+2025-03-21 17:54:54,794 - WARNING -  * Debugger is active!
+2025-03-21 17:54:54,802 - INFO -  * Debugger PIN: 497-729-346
+2025-03-21 17:55:13,344 - INFO - 127.0.0.1 - - [21/Mar/2025 17:55:13] "GET / HTTP/1.1" 200 -
+2025-03-21 17:55:13,489 - INFO - 127.0.0.1 - - [21/Mar/2025 17:55:13] "[33mGET /robots.txt?484041 HTTP/1.1[0m" 404 -
+2025-03-21 17:55:13,496 - INFO - 127.0.0.1 - - [21/Mar/2025 17:55:13] "GET /static/styles.css HTTP/1.1" 200 -
+2025-03-21 17:55:14,117 - INFO - 127.0.0.1 - - [21/Mar/2025 17:55:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-21 17:55:15,953 - INFO - 127.0.0.1 - - [21/Mar/2025 17:55:15] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-03-21 17:55:15,961 - INFO - 127.0.0.1 - - [21/Mar/2025 17:55:15] "GET /login HTTP/1.1" 200 -
+2025-03-21 17:55:15,991 - INFO - 127.0.0.1 - - [21/Mar/2025 17:55:15] "[33mGET /robots.txt?484041 HTTP/1.1[0m" 404 -
+2025-03-21 17:55:15,997 - INFO - 127.0.0.1 - - [21/Mar/2025 17:55:15] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 17:55:16,000 - INFO - 127.0.0.1 - - [21/Mar/2025 17:55:16] "[33mGET /robots.txt?484041 HTTP/1.1[0m" 404 -
+2025-03-21 17:55:17,325 - INFO - 127.0.0.1 - - [21/Mar/2025 17:55:17] "GET /register HTTP/1.1" 200 -
+2025-03-21 17:55:17,356 - INFO - 127.0.0.1 - - [21/Mar/2025 17:55:17] "[33mGET /robots.txt?484041 HTTP/1.1[0m" 404 -
+2025-03-21 17:55:17,357 - INFO - 127.0.0.1 - - [21/Mar/2025 17:55:17] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 17:55:23,787 - INFO - 127.0.0.1 - - [21/Mar/2025 17:55:23] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-03-21 17:55:23,825 - INFO - 127.0.0.1 - - [21/Mar/2025 17:55:23] "GET /otp-setup/test202 HTTP/1.1" 200 -
+2025-03-21 17:55:23,861 - INFO - 127.0.0.1 - - [21/Mar/2025 17:55:23] "[33mGET /robots.txt?484041 HTTP/1.1[0m" 404 -
+2025-03-21 17:55:23,863 - INFO - 127.0.0.1 - - [21/Mar/2025 17:55:23] "[33mGET /robots.txt?484041 HTTP/1.1[0m" 404 -
