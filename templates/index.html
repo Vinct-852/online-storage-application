@@ -31,9 +31,16 @@
           {% endif %}
         </div>
         <div class="file-actions">
-          <button class="btn download-btn" data-file-id="{{ file[0] }}">
-            <i class="fas fa-download"></i> Download
-          </button>
+            <div class="button-group"></div>
+            <button class="btn download-btn" data-file-id="{{ file[0] }}">
+              <i class="fas fa-download"></i> Download
+            </button>
+            {% if file[2] == current_user.id %}
+            <button class="btn btn-danger delete-btn" data-file-id="{{ file[0] }}">
+              <i class="fas fa-trash-alt"></i> Delete
+            </button>
+            {% endif %}
+            </div>
           {% if file[2] == current_user.id %}
           <form action="{{ url_for('share_file', file_id=file[0]) }}" method="POST" class="share-form">
             <input type="text" name="shared_user" placeholder="Enter username to share" />
@@ -235,6 +242,7 @@ document.getElementById("uploadForm").addEventListener("submit", async function 
   }
 
   document.addEventListener("DOMContentLoaded", function () {
+    // Download button handler
     document.querySelectorAll(".download-btn").forEach(button => {
         button.addEventListener("click", async function () {
             const fileId = this.getAttribute("data-file-id");
@@ -257,6 +265,36 @@ document.getElementById("uploadForm").addEventListener("submit", async function 
                 // 恢复按钮状态
                 this.innerHTML = originalText;
                 this.disabled = false;
+            }
+        });
+    });
+
+    // Delete button handler
+    document.querySelectorAll(".delete-btn").forEach(button => {
+        button.addEventListener("click", async function() {
+            const fileId = this.getAttribute("data-file-id");
+            if (!fileId) {
+                showNotification("Failed to retrieve file ID!", "error");
+                return;
+            }
+
+            if (!confirm("Are you sure you want to delete this file?")) {
+                return;
+            }
+
+            try {
+                const response = await fetch(`/delete/${fileId}`, {
+                    method: 'DELETE'
+                });
+
+                if (!response.ok) {
+                    throw new Error('Delete failed');
+                }
+
+                showNotification("File successfully deleted!", "success");
+                window.location.reload(); // Ensure the page reloads after deletion
+            } catch (error) {
+                showNotification("Failed to delete file: " + error.message, "error");
             }
         });
     });

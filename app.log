@@ -6810,3 +6810,303 @@ ValueError: Incorrect decryption.
 2025-03-17 23:38:05,644 - INFO - 127.0.0.1 - - [17/Mar/2025 23:38:05] "[32mGET / HTTP/1.1[0m" 302 -
 2025-03-17 23:38:05,654 - INFO - 127.0.0.1 - - [17/Mar/2025 23:38:05] "GET /login?next=/ HTTP/1.1" 200 -
 2025-03-17 23:38:05,668 - INFO - 127.0.0.1 - - [17/Mar/2025 23:38:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 18:29:57,483 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-20 18:29:57,483 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-20 18:29:57,485 - INFO -  * Restarting with stat
+2025-03-20 18:29:57,720 - WARNING -  * Debugger is active!
+2025-03-20 18:29:57,721 - INFO -  * Debugger PIN: 120-070-085
+2025-03-20 18:31:20,775 - INFO - 127.0.0.1 - - [20/Mar/2025 18:31:20] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-20 18:31:20,792 - INFO - 127.0.0.1 - - [20/Mar/2025 18:31:20] "GET /login HTTP/1.1" 200 -
+2025-03-20 18:31:21,067 - INFO - 127.0.0.1 - - [20/Mar/2025 18:31:21] "GET /static/styles.css HTTP/1.1" 200 -
+2025-03-20 18:31:21,424 - INFO - 127.0.0.1 - - [20/Mar/2025 18:31:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-20 18:31:26,769 - INFO - 127.0.0.1 - - [20/Mar/2025 18:31:26] "POST /login HTTP/1.1" 200 -
+2025-03-20 18:31:26,986 - INFO - 127.0.0.1 - - [20/Mar/2025 18:31:26] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 18:31:33,530 - INFO - 127.0.0.1 - - [20/Mar/2025 18:31:33] "POST /login HTTP/1.1" 200 -
+2025-03-20 18:31:33,543 - INFO - 127.0.0.1 - - [20/Mar/2025 18:31:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 18:31:37,059 - INFO - 127.0.0.1 - - [20/Mar/2025 18:31:37] "GET /register HTTP/1.1" 200 -
+2025-03-20 18:31:37,368 - INFO - 127.0.0.1 - - [20/Mar/2025 18:31:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 18:31:42,798 - INFO - 127.0.0.1 - - [20/Mar/2025 18:31:42] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-03-20 18:31:42,803 - INFO - 127.0.0.1 - - [20/Mar/2025 18:31:42] "GET /login HTTP/1.1" 200 -
+2025-03-20 18:31:42,821 - INFO - 127.0.0.1 - - [20/Mar/2025 18:31:42] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 18:31:46,822 - INFO - 127.0.0.1 - - [20/Mar/2025 18:31:46] "POST /login HTTP/1.1" 200 -
+2025-03-20 18:31:46,838 - INFO - 127.0.0.1 - - [20/Mar/2025 18:31:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 18:31:50,593 - INFO - 127.0.0.1 - - [20/Mar/2025 18:31:50] "POST /login HTTP/1.1" 200 -
+2025-03-20 18:31:50,908 - INFO - 127.0.0.1 - - [20/Mar/2025 18:31:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 18:31:57,604 - INFO - 127.0.0.1 - - [20/Mar/2025 18:31:57] "POST /login HTTP/1.1" 200 -
+2025-03-20 18:31:57,615 - INFO - 127.0.0.1 - - [20/Mar/2025 18:31:57] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 18:32:01,551 - INFO - 127.0.0.1 - - [20/Mar/2025 18:32:01] "POST /login HTTP/1.1" 200 -
+2025-03-20 18:32:01,865 - INFO - 127.0.0.1 - - [20/Mar/2025 18:32:01] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 18:32:03,893 - INFO - 127.0.0.1 - - [20/Mar/2025 18:32:03] "GET /register HTTP/1.1" 200 -
+2025-03-20 18:32:03,907 - INFO - 127.0.0.1 - - [20/Mar/2025 18:32:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 18:32:05,750 - INFO - 127.0.0.1 - - [20/Mar/2025 18:32:05] "GET /login HTTP/1.1" 200 -
+2025-03-20 18:32:06,059 - INFO - 127.0.0.1 - - [20/Mar/2025 18:32:06] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 18:32:12,203 - INFO - 127.0.0.1 - - [20/Mar/2025 18:32:12] "POST /login HTTP/1.1" 200 -
+2025-03-20 18:32:12,218 - INFO - 127.0.0.1 - - [20/Mar/2025 18:32:12] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 18:32:17,875 - INFO - 127.0.0.1 - - [20/Mar/2025 18:32:17] "POST /login HTTP/1.1" 200 -
+2025-03-20 18:32:18,183 - INFO - 127.0.0.1 - - [20/Mar/2025 18:32:18] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 18:32:46,057 - INFO -  * Detected change in 'C:\\Users\\Vincent\\Projects\\online-storage-application\\app.py', reloading
+2025-03-20 18:32:46,104 - INFO -  * Restarting with stat
+2025-03-20 18:32:46,442 - WARNING -  * Debugger is active!
+2025-03-20 18:32:46,443 - INFO -  * Debugger PIN: 120-070-085
+2025-03-20 19:31:36,019 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-20 19:31:36,019 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-20 19:31:36,020 - INFO -  * Restarting with stat
+2025-03-20 19:31:36,268 - WARNING -  * Debugger is active!
+2025-03-20 19:31:36,269 - INFO -  * Debugger PIN: 120-070-085
+2025-03-20 19:31:46,581 - INFO - 127.0.0.1 - - [20/Mar/2025 19:31:46] "POST /login HTTP/1.1" 200 -
+2025-03-20 19:31:46,622 - INFO - 127.0.0.1 - - [20/Mar/2025 19:31:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 19:31:49,109 - INFO - 127.0.0.1 - - [20/Mar/2025 19:31:49] "POST /login HTTP/1.1" 200 -
+2025-03-20 19:31:49,418 - INFO - 127.0.0.1 - - [20/Mar/2025 19:31:49] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 19:36:48,502 - INFO - 127.0.0.1 - - [20/Mar/2025 19:36:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-20 19:36:48,510 - INFO - 127.0.0.1 - - [20/Mar/2025 19:36:48] "GET / HTTP/1.1" 200 -
+2025-03-20 19:36:48,616 - INFO - 127.0.0.1 - - [20/Mar/2025 19:36:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 19:37:19,618 - INFO - 127.0.0.1 - - [20/Mar/2025 19:37:19] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-03-20 19:37:19,725 - INFO - 127.0.0.1 - - [20/Mar/2025 19:37:19] "GET /login HTTP/1.1" 200 -
+2025-03-20 19:37:19,880 - INFO - 127.0.0.1 - - [20/Mar/2025 19:37:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 19:53:23,674 - INFO -  * Detected change in 'C:\\Users\\Vincent\\Projects\\online-storage-application\\app.py', reloading
+2025-03-20 19:53:23,721 - INFO -  * Restarting with stat
+2025-03-20 19:53:23,982 - WARNING -  * Debugger is active!
+2025-03-20 19:53:23,983 - INFO -  * Debugger PIN: 120-070-085
+2025-03-20 20:01:33,150 - INFO - 127.0.0.1 - - [20/Mar/2025 20:01:33] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-20 20:01:33,170 - INFO - 127.0.0.1 - - [20/Mar/2025 20:01:33] "GET / HTTP/1.1" 200 -
+2025-03-20 20:01:33,318 - INFO - 127.0.0.1 - - [20/Mar/2025 20:01:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 20:01:53,309 - DEBUG - Successfully retrieved public key for user 3
+2025-03-20 20:01:53,309 - INFO - 127.0.0.1 - - [20/Mar/2025 20:01:53] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-20 20:01:53,576 - DEBUG - Uploaded file content size: 3282589 bytes
+2025-03-20 20:01:53,585 - DEBUG - File saved to: uploads\Lecture1.pptx.enc
+2025-03-20 20:01:53,585 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-20 20:01:53,591 - DEBUG - File information saved to database: Lecture1.pptx.enc, user_id=3
+2025-03-20 20:01:53,592 - INFO - 127.0.0.1 - - [20/Mar/2025 20:01:53] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-03-20 20:01:53,642 - INFO - 127.0.0.1 - - [20/Mar/2025 20:01:53] "GET / HTTP/1.1" 200 -
+2025-03-20 20:01:53,907 - INFO - 127.0.0.1 - - [20/Mar/2025 20:01:53] "GET / HTTP/1.1" 200 -
+2025-03-20 20:01:53,952 - INFO - 127.0.0.1 - - [20/Mar/2025 20:01:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 20:02:03,936 - INFO - User test1 downloaded file Lecture1.pptx.enc
+2025-03-20 20:02:03,936 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-20 20:02:03,945 - INFO - 127.0.0.1 - - [20/Mar/2025 20:02:03] "GET /download/6 HTTP/1.1" 200 -
+2025-03-20 20:02:04,325 - DEBUG - Successfully retrieved private key for user 3
+2025-03-20 20:02:04,325 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-20 20:02:04,325 - INFO - 127.0.0.1 - - [20/Mar/2025 20:02:04] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-20 20:03:49,575 - DEBUG - Successfully retrieved public key for user 3
+2025-03-20 20:03:49,575 - INFO - 127.0.0.1 - - [20/Mar/2025 20:03:49] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-20 20:03:49,843 - DEBUG - Uploaded file content size: 3282657 bytes
+2025-03-20 20:03:49,848 - DEBUG - File saved to: uploads\Lecture1_1.pptx.enc.enc
+2025-03-20 20:03:49,848 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-20 20:03:49,851 - DEBUG - File information saved to database: Lecture1_1.pptx.enc.enc, user_id=3
+2025-03-20 20:03:49,852 - INFO - 127.0.0.1 - - [20/Mar/2025 20:03:49] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-03-20 20:03:49,902 - INFO - 127.0.0.1 - - [20/Mar/2025 20:03:49] "GET / HTTP/1.1" 200 -
+2025-03-20 20:03:50,161 - INFO - 127.0.0.1 - - [20/Mar/2025 20:03:50] "GET / HTTP/1.1" 200 -
+2025-03-20 20:03:50,213 - INFO - 127.0.0.1 - - [20/Mar/2025 20:03:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 20:03:54,605 - INFO - User test1 downloaded file Lecture1_1.pptx.enc.enc
+2025-03-20 20:03:54,605 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-20 20:03:54,621 - INFO - 127.0.0.1 - - [20/Mar/2025 20:03:54] "GET /download/7 HTTP/1.1" 200 -
+2025-03-20 20:03:55,014 - DEBUG - Successfully retrieved private key for user 3
+2025-03-20 20:03:55,015 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-20 20:03:55,015 - INFO - 127.0.0.1 - - [20/Mar/2025 20:03:55] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-20 20:09:15,475 - INFO -  * Detected change in 'C:\\Users\\Vincent\\Projects\\online-storage-application\\app.py', reloading
+2025-03-20 20:09:15,523 - INFO -  * Restarting with stat
+2025-03-20 20:09:15,768 - WARNING -  * Debugger is active!
+2025-03-20 20:09:15,770 - INFO -  * Debugger PIN: 120-070-085
+2025-03-20 20:09:16,793 - INFO -  * Detected change in 'C:\\Users\\Vincent\\Projects\\online-storage-application\\app.py', reloading
+2025-03-20 20:09:16,826 - INFO -  * Restarting with stat
+2025-03-20 20:09:17,079 - WARNING -  * Debugger is active!
+2025-03-20 20:09:17,080 - INFO -  * Debugger PIN: 120-070-085
+2025-03-20 20:09:44,338 - DEBUG - Successfully retrieved public key for user 3
+2025-03-20 20:09:44,339 - INFO - 127.0.0.1 - - [20/Mar/2025 20:09:44] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-20 20:09:44,606 - DEBUG - encrypted_data: eyJlbmNyeXB0ZWRBZXNLZXkiOiJRc0pySis1cFdJR2xHVFlRZ3gzMzNiLzRFYThUaVJYSytnbUhpNndPYWp6RGJqVkt2WFBoTkR6cFVHNVFUN01KSU1MeDZ1VzF1ellQVkZ6cXVIMDJYYk1rVEVxaXQxczlVMkZMMmRPVjRiQzd6Ti9DWURVSXVDUjJTRVpqWUFzaG4zV3hHUThKTE1LUG5WKzFQQmpROStXU2c3M1h2ZlpBcDZ5TTlDaW5BNEVheWtxSDNhVHhBM09DUXVHNXFDWkVlSDhpZVBUNFBRbnltTjJwaHZYUE1qNDRReWZ5SHlXQlJwamZSdUxub3EwUCtvWkxvMG9jOVdBUnZjUXF4blFsWTdHQ1Fwa1NUbEpWeFZFaGZxTmNacTF0YW1Hd3dsYnlBUWR2Q1hmRytmK3RXakNwWTlSVUx3TnJxaGlRdEMvTXJ3ajUyd2ZYTlI0SzZCVnZTRExmUXc9PSIsIml2IjoiK0pUT1VMY2M2NUhRODIwSyJ9
+2025-03-20 20:09:44,607 - DEBUG - Uploaded file content size: 3282589 bytes
+2025-03-20 20:09:44,613 - DEBUG - File saved to: uploads\Lecture1.pptx.enc
+2025-03-20 20:09:44,614 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-20 20:09:44,617 - DEBUG - File information saved to database: Lecture1.pptx.enc, user_id=3
+2025-03-20 20:09:44,618 - INFO - 127.0.0.1 - - [20/Mar/2025 20:09:44] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-03-20 20:09:44,693 - INFO - 127.0.0.1 - - [20/Mar/2025 20:09:44] "GET / HTTP/1.1" 200 -
+2025-03-20 20:09:44,932 - INFO - 127.0.0.1 - - [20/Mar/2025 20:09:44] "GET / HTTP/1.1" 200 -
+2025-03-20 20:09:45,043 - INFO - 127.0.0.1 - - [20/Mar/2025 20:09:45] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-20 20:10:54,982 - INFO -  * Detected change in 'C:\\Users\\Vincent\\Projects\\online-storage-application\\app.py', reloading
+2025-03-20 20:10:55,032 - INFO -  * Restarting with stat
+2025-03-20 20:10:55,274 - WARNING -  * Debugger is active!
+2025-03-20 20:10:55,276 - INFO -  * Debugger PIN: 120-070-085
+2025-03-20 20:10:56,297 - INFO -  * Detected change in 'C:\\Users\\Vincent\\Projects\\online-storage-application\\app.py', reloading
+2025-03-20 20:10:56,332 - INFO -  * Restarting with stat
+2025-03-20 20:10:56,586 - WARNING -  * Debugger is active!
+2025-03-20 20:10:56,588 - INFO -  * Debugger PIN: 120-070-085
+2025-03-21 18:15:10,150 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-21 18:15:10,150 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 18:15:10,153 - INFO -  * Restarting with stat
+2025-03-21 18:15:10,637 - WARNING -  * Debugger is active!
+2025-03-21 18:15:10,640 - INFO -  * Debugger PIN: 120-070-085
+2025-03-21 18:15:19,936 - INFO - 127.0.0.1 - - [21/Mar/2025 18:15:19] "GET / HTTP/1.1" 200 -
+2025-03-21 18:15:20,068 - INFO - 127.0.0.1 - - [21/Mar/2025 18:15:20] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:15:47,072 - INFO - User test1 logged out
+2025-03-21 18:15:47,073 - INFO - 127.0.0.1 - - [21/Mar/2025 18:15:47] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-03-21 18:15:47,414 - INFO - 127.0.0.1 - - [21/Mar/2025 18:15:47] "GET /login HTTP/1.1" 200 -
+2025-03-21 18:15:47,745 - INFO - 127.0.0.1 - - [21/Mar/2025 18:15:47] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:15:53,006 - INFO - User test1 logged in successfully
+2025-03-21 18:15:53,008 - INFO - 127.0.0.1 - - [21/Mar/2025 18:15:53] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-21 18:15:53,041 - INFO - 127.0.0.1 - - [21/Mar/2025 18:15:53] "GET / HTTP/1.1" 200 -
+2025-03-21 18:15:53,384 - INFO - 127.0.0.1 - - [21/Mar/2025 18:15:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:27:20,749 - INFO - 127.0.0.1 - - [21/Mar/2025 18:27:20] "GET / HTTP/1.1" 200 -
+2025-03-21 18:27:20,775 - INFO - 127.0.0.1 - - [21/Mar/2025 18:27:20] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:28:10,482 - INFO - 127.0.0.1 - - [21/Mar/2025 18:28:10] "GET / HTTP/1.1" 200 -
+2025-03-21 18:28:10,741 - INFO - 127.0.0.1 - - [21/Mar/2025 18:28:10] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:29:13,511 - INFO - 127.0.0.1 - - [21/Mar/2025 18:29:13] "GET / HTTP/1.1" 200 -
+2025-03-21 18:29:13,536 - INFO - 127.0.0.1 - - [21/Mar/2025 18:29:13] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 19:35:54,315 - INFO - 127.0.0.1 - - [21/Mar/2025 19:35:54] "GET / HTTP/1.1" 200 -
+2025-03-21 19:35:54,346 - INFO - 127.0.0.1 - - [21/Mar/2025 19:35:54] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 19:43:21,392 - INFO - 127.0.0.1 - - [21/Mar/2025 19:43:21] "GET / HTTP/1.1" 200 -
+2025-03-21 19:43:21,425 - INFO - 127.0.0.1 - - [21/Mar/2025 19:43:21] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 19:43:24,284 - INFO - 127.0.0.1 - - [21/Mar/2025 19:43:24] "GET / HTTP/1.1" 200 -
+2025-03-21 19:43:24,596 - INFO - 127.0.0.1 - - [21/Mar/2025 19:43:24] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 19:43:25,440 - INFO - 127.0.0.1 - - [21/Mar/2025 19:43:25] "GET / HTTP/1.1" 200 -
+2025-03-21 19:43:25,459 - INFO - 127.0.0.1 - - [21/Mar/2025 19:43:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 19:43:28,425 - INFO - 127.0.0.1 - - [21/Mar/2025 19:43:28] "GET / HTTP/1.1" 200 -
+2025-03-21 19:43:28,689 - INFO - 127.0.0.1 - - [21/Mar/2025 19:43:28] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 19:43:29,719 - INFO - 127.0.0.1 - - [21/Mar/2025 19:43:29] "GET / HTTP/1.1" 200 -
+2025-03-21 19:43:29,745 - INFO - 127.0.0.1 - - [21/Mar/2025 19:43:29] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 19:44:55,036 - INFO - 127.0.0.1 - - [21/Mar/2025 19:44:55] "GET / HTTP/1.1" 200 -
+2025-03-21 19:44:55,060 - INFO - 127.0.0.1 - - [21/Mar/2025 19:44:55] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 19:45:39,905 - INFO - 127.0.0.1 - - [21/Mar/2025 19:45:39] "GET / HTTP/1.1" 200 -
+2025-03-21 19:45:40,150 - INFO - 127.0.0.1 - - [21/Mar/2025 19:45:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-22 00:11:07,078 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-22 00:11:07,079 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-22 00:11:07,082 - INFO -  * Restarting with stat
+2025-03-22 00:11:07,580 - WARNING -  * Debugger is active!
+2025-03-22 00:11:07,584 - INFO -  * Debugger PIN: 120-070-085
+2025-03-22 00:11:25,796 - INFO - 127.0.0.1 - - [22/Mar/2025 00:11:25] "GET / HTTP/1.1" 200 -
+2025-03-22 00:11:25,934 - INFO - 127.0.0.1 - - [22/Mar/2025 00:11:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-22 00:11:33,714 - INFO - 127.0.0.1 - - [22/Mar/2025 00:11:33] "[31m[1mDELETE /delete/8 HTTP/1.1[0m" 405 -
+2025-03-22 00:11:37,892 - INFO - 127.0.0.1 - - [22/Mar/2025 00:11:37] "GET / HTTP/1.1" 200 -
+2025-03-22 00:11:37,917 - INFO - 127.0.0.1 - - [22/Mar/2025 00:11:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-22 00:11:39,849 - INFO - 127.0.0.1 - - [22/Mar/2025 00:11:39] "GET / HTTP/1.1" 200 -
+2025-03-22 00:11:40,163 - INFO - 127.0.0.1 - - [22/Mar/2025 00:11:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-22 00:11:46,036 - INFO - 127.0.0.1 - - [22/Mar/2025 00:11:46] "[31m[1mDELETE /delete/8 HTTP/1.1[0m" 405 -
+2025-03-22 00:11:47,529 - INFO - 127.0.0.1 - - [22/Mar/2025 00:11:47] "GET / HTTP/1.1" 200 -
+2025-03-22 00:11:47,833 - INFO - 127.0.0.1 - - [22/Mar/2025 00:11:47] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-22 00:11:53,045 - INFO - 127.0.0.1 - - [22/Mar/2025 00:11:53] "[31m[1mDELETE /delete/8 HTTP/1.1[0m" 405 -
+2025-03-22 00:14:53,296 - INFO -  * Detected change in 'C:\\Users\\Vincent\\Projects\\online-storage-application\\app.py', reloading
+2025-03-22 00:14:53,366 - INFO -  * Restarting with stat
+2025-03-22 00:14:53,933 - WARNING -  * Debugger is active!
+2025-03-22 00:14:53,937 - INFO -  * Debugger PIN: 120-070-085
+2025-03-22 00:15:10,270 - INFO -  * Detected change in 'C:\\Users\\Vincent\\Projects\\online-storage-application\\app.py', reloading
+2025-03-22 00:15:10,496 - INFO -  * Restarting with stat
+2025-03-22 00:15:11,146 - WARNING -  * Debugger is active!
+2025-03-22 00:15:11,148 - INFO -  * Debugger PIN: 120-070-085
+2025-03-22 00:15:11,972 - INFO - 127.0.0.1 - - [22/Mar/2025 00:15:11] "GET / HTTP/1.1" 200 -
+2025-03-22 00:15:12,063 - INFO - 127.0.0.1 - - [22/Mar/2025 00:15:12] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-22 00:15:15,455 - INFO - 127.0.0.1 - - [22/Mar/2025 00:15:15] "[31m[1mDELETE /delete/8 HTTP/1.1[0m" 405 -
+2025-03-22 00:15:35,441 - INFO - 127.0.0.1 - - [22/Mar/2025 00:15:35] "[31m[1mDELETE /delete/8 HTTP/1.1[0m" 405 -
+2025-03-22 00:17:36,887 - INFO - 127.0.0.1 - - [22/Mar/2025 00:17:36] "[31m[1mDELETE /delete/7 HTTP/1.1[0m" 405 -
+2025-03-22 00:20:06,910 - INFO -  * Detected change in 'C:\\Users\\Vincent\\Projects\\online-storage-application\\app.py', reloading
+2025-03-22 00:20:06,989 - INFO -  * Restarting with stat
+2025-03-22 00:20:07,615 - WARNING -  * Debugger is active!
+2025-03-22 00:20:07,618 - INFO -  * Debugger PIN: 120-070-085
+2025-03-22 00:20:08,669 - INFO -  * Detected change in 'C:\\Users\\Vincent\\Projects\\online-storage-application\\app.py', reloading
+2025-03-22 00:20:08,730 - INFO -  * Restarting with stat
+2025-03-22 00:20:09,426 - WARNING -  * Debugger is active!
+2025-03-22 00:20:09,429 - INFO -  * Debugger PIN: 120-070-085
+2025-03-22 00:20:10,865 - INFO - 127.0.0.1 - - [22/Mar/2025 00:20:10] "GET / HTTP/1.1" 200 -
+2025-03-22 00:20:10,957 - INFO - 127.0.0.1 - - [22/Mar/2025 00:20:10] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-22 00:20:13,724 - INFO - File Lecture1.pptx.enc was deleted from filesystem by user test1
+2025-03-22 00:20:13,730 - INFO - File record 8 was deleted from database by user test1
+2025-03-22 00:20:13,732 - INFO - 127.0.0.1 - - [22/Mar/2025 00:20:13] "[32mDELETE /delete/8 HTTP/1.1[0m" 302 -
+2025-03-22 00:20:14,048 - INFO - 127.0.0.1 - - [22/Mar/2025 00:20:14] "[31m[1mDELETE / HTTP/1.1[0m" 405 -
+2025-03-22 00:21:43,429 - INFO - 127.0.0.1 - - [22/Mar/2025 00:21:43] "GET / HTTP/1.1" 200 -
+2025-03-22 00:21:43,455 - INFO - 127.0.0.1 - - [22/Mar/2025 00:21:43] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-22 00:21:49,993 - INFO - File Lecture1_1.pptx.enc.enc was deleted from filesystem by user test1
+2025-03-22 00:21:50,003 - INFO - File record 7 was deleted from database by user test1
+2025-03-22 00:21:50,004 - INFO - 127.0.0.1 - - [22/Mar/2025 00:21:50] "[32mDELETE /delete/7 HTTP/1.1[0m" 302 -
+2025-03-22 00:21:50,315 - INFO - 127.0.0.1 - - [22/Mar/2025 00:21:50] "[31m[1mDELETE / HTTP/1.1[0m" 405 -
+2025-03-22 00:21:54,701 - INFO - 127.0.0.1 - - [22/Mar/2025 00:21:54] "GET / HTTP/1.1" 200 -
+2025-03-22 00:21:55,006 - INFO - 127.0.0.1 - - [22/Mar/2025 00:21:55] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-22 00:39:02,228 - INFO - 127.0.0.1 - - [22/Mar/2025 00:39:02] "GET / HTTP/1.1" 200 -
+2025-03-22 00:39:02,241 - INFO - 127.0.0.1 - - [22/Mar/2025 00:39:02] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-22 00:39:07,847 - INFO - File record 6 was deleted from database by user test1
+2025-03-22 00:39:07,847 - INFO - 127.0.0.1 - - [22/Mar/2025 00:39:07] "[32mDELETE /delete/6 HTTP/1.1[0m" 302 -
+2025-03-22 00:39:08,160 - INFO - 127.0.0.1 - - [22/Mar/2025 00:39:08] "[31m[1mDELETE / HTTP/1.1[0m" 405 -
+2025-03-22 00:39:56,635 - INFO - 127.0.0.1 - - [22/Mar/2025 00:39:56] "GET / HTTP/1.1" 200 -
+2025-03-22 00:39:56,949 - INFO - 127.0.0.1 - - [22/Mar/2025 00:39:56] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-22 00:39:59,324 - INFO - 127.0.0.1 - - [22/Mar/2025 00:39:59] "GET / HTTP/1.1" 200 -
+2025-03-22 00:39:59,337 - INFO - 127.0.0.1 - - [22/Mar/2025 00:39:59] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-22 00:46:01,823 - INFO -  * Detected change in 'C:\\Users\\Vincent\\Projects\\online-storage-application\\app.py', reloading
+2025-03-22 00:46:01,890 - INFO -  * Restarting with stat
+2025-03-22 00:46:02,356 - WARNING -  * Debugger is active!
+2025-03-22 00:46:02,357 - INFO -  * Debugger PIN: 120-070-085
+2025-03-22 00:46:03,386 - INFO -  * Detected change in 'C:\\Users\\Vincent\\Projects\\online-storage-application\\app.py', reloading
+2025-03-22 00:46:03,467 - INFO -  * Restarting with stat
+2025-03-22 00:46:03,818 - WARNING -  * Debugger is active!
+2025-03-22 00:46:03,819 - INFO -  * Debugger PIN: 120-070-085
+2025-03-22 00:46:10,114 - INFO - 127.0.0.1 - - [22/Mar/2025 00:46:10] "GET / HTTP/1.1" 200 -
+2025-03-22 00:46:10,204 - INFO - 127.0.0.1 - - [22/Mar/2025 00:46:10] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-22 00:46:21,112 - DEBUG - Successfully retrieved public key for user 3
+2025-03-22 00:46:21,113 - INFO - 127.0.0.1 - - [22/Mar/2025 00:46:21] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-22 00:46:21,431 - DEBUG - Uploaded file content size: 2903 bytes
+2025-03-22 00:46:21,432 - DEBUG - File saved to: uploads\README.md.enc
+2025-03-22 00:46:21,432 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-22 00:46:21,436 - DEBUG - File information saved to database: README.md.enc, user_id=3
+2025-03-22 00:46:21,437 - INFO - 127.0.0.1 - - [22/Mar/2025 00:46:21] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-03-22 00:46:21,706 - INFO - 127.0.0.1 - - [22/Mar/2025 00:46:21] "GET / HTTP/1.1" 200 -
+2025-03-22 00:46:21,757 - INFO - 127.0.0.1 - - [22/Mar/2025 00:46:21] "GET / HTTP/1.1" 200 -
+2025-03-22 00:46:22,019 - INFO - 127.0.0.1 - - [22/Mar/2025 00:46:22] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-22 00:46:29,696 - INFO - File README.md.enc was deleted from filesystem by user test1
+2025-03-22 00:46:29,699 - INFO - File record 9 was deleted from database by user test1
+2025-03-22 00:46:29,702 - INFO - 127.0.0.1 - - [22/Mar/2025 00:46:29] "DELETE /delete/9 HTTP/1.1" 200 -
+2025-03-22 00:46:30,081 - INFO - 127.0.0.1 - - [22/Mar/2025 00:46:30] "GET / HTTP/1.1" 200 -
+2025-03-22 00:46:30,259 - INFO - 127.0.0.1 - - [22/Mar/2025 00:46:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-22 00:46:57,522 - DEBUG - Successfully retrieved public key for user 3
+2025-03-22 00:46:57,522 - INFO - 127.0.0.1 - - [22/Mar/2025 00:46:57] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-22 00:46:57,892 - DEBUG - Uploaded file content size: 2903 bytes
+2025-03-22 00:46:57,893 - DEBUG - File saved to: uploads\README.md.enc
+2025-03-22 00:46:57,893 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-22 00:46:57,896 - DEBUG - File information saved to database: README.md.enc, user_id=3
+2025-03-22 00:46:57,897 - INFO - 127.0.0.1 - - [22/Mar/2025 00:46:57] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-03-22 00:46:58,159 - INFO - 127.0.0.1 - - [22/Mar/2025 00:46:58] "GET / HTTP/1.1" 200 -
+2025-03-22 00:46:58,212 - INFO - 127.0.0.1 - - [22/Mar/2025 00:46:58] "GET / HTTP/1.1" 200 -
+2025-03-22 00:46:58,480 - INFO - 127.0.0.1 - - [22/Mar/2025 00:46:58] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-22 00:47:00,501 - INFO - 127.0.0.1 - - [22/Mar/2025 00:47:00] "[32mPOST /share/10 HTTP/1.1[0m" 302 -
+2025-03-22 00:47:00,834 - INFO - 127.0.0.1 - - [22/Mar/2025 00:47:00] "GET / HTTP/1.1" 200 -
+2025-03-22 00:47:01,172 - INFO - 127.0.0.1 - - [22/Mar/2025 00:47:01] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-22 00:47:08,582 - DEBUG - Successfully decrypted AES key, length: 16 bytes
+2025-03-22 00:47:08,585 - INFO - File 10 successfully shared with user test2
+2025-03-22 00:47:08,586 - INFO - 127.0.0.1 - - [22/Mar/2025 00:47:08] "[32mPOST /share/10 HTTP/1.1[0m" 302 -
+2025-03-22 00:47:08,814 - INFO - 127.0.0.1 - - [22/Mar/2025 00:47:08] "GET / HTTP/1.1" 200 -
+2025-03-22 00:47:09,144 - INFO - 127.0.0.1 - - [22/Mar/2025 00:47:09] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-22 00:47:12,234 - INFO - User test1 logged out
+2025-03-22 00:47:12,234 - INFO - 127.0.0.1 - - [22/Mar/2025 00:47:12] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-03-22 00:47:12,551 - INFO - 127.0.0.1 - - [22/Mar/2025 00:47:12] "GET /login HTTP/1.1" 200 -
+2025-03-22 00:47:12,875 - INFO - 127.0.0.1 - - [22/Mar/2025 00:47:12] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-22 00:47:18,063 - INFO - User test2 logged in successfully
+2025-03-22 00:47:18,064 - INFO - 127.0.0.1 - - [22/Mar/2025 00:47:18] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-22 00:47:18,209 - INFO - 127.0.0.1 - - [22/Mar/2025 00:47:18] "GET / HTTP/1.1" 200 -
+2025-03-22 00:47:18,550 - INFO - 127.0.0.1 - - [22/Mar/2025 00:47:18] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-22 00:47:26,578 - WARNING - User test2 attempted to delete file 10 without permission
+2025-03-22 00:47:26,579 - INFO - 127.0.0.1 - - [22/Mar/2025 00:47:26] "[31m[1mDELETE /delete/10 HTTP/1.1[0m" 403 -
+2025-03-22 00:48:23,136 - INFO - 127.0.0.1 - - [22/Mar/2025 00:48:23] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-03-22 00:48:23,186 - INFO - 127.0.0.1 - - [22/Mar/2025 00:48:23] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-22 00:48:23,315 - INFO - 127.0.0.1 - - [22/Mar/2025 00:48:23] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-22 00:48:23,675 - INFO - 127.0.0.1 - - [22/Mar/2025 00:48:23] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=zGHexboAOlYOizKfQb6c HTTP/1.1" 200 -
+2025-03-22 00:48:23,929 - INFO - 127.0.0.1 - - [22/Mar/2025 00:48:23] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-22 00:48:41,979 - INFO - 127.0.0.1 - - [22/Mar/2025 00:48:41] "GET / HTTP/1.1" 200 -
+2025-03-22 00:48:42,248 - INFO - 127.0.0.1 - - [22/Mar/2025 00:48:42] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-22 00:49:03,933 - INFO - 127.0.0.1 - - [22/Mar/2025 00:49:03] "GET / HTTP/1.1" 200 -
+2025-03-22 00:49:03,948 - INFO - 127.0.0.1 - - [22/Mar/2025 00:49:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-22 00:49:05,364 - INFO - 127.0.0.1 - - [22/Mar/2025 00:49:05] "GET / HTTP/1.1" 200 -
+2025-03-22 00:49:05,673 - INFO - 127.0.0.1 - - [22/Mar/2025 00:49:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-22 00:49:22,288 - INFO - User test2 logged out
+2025-03-22 00:49:22,289 - INFO - 127.0.0.1 - - [22/Mar/2025 00:49:22] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-03-22 00:49:22,381 - INFO - 127.0.0.1 - - [22/Mar/2025 00:49:22] "GET /login HTTP/1.1" 200 -
+2025-03-22 00:49:22,536 - INFO - 127.0.0.1 - - [22/Mar/2025 00:49:22] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-22 00:49:27,462 - INFO - User test1 logged in successfully
+2025-03-22 00:49:27,463 - INFO - 127.0.0.1 - - [22/Mar/2025 00:49:27] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-22 00:49:27,544 - INFO - 127.0.0.1 - - [22/Mar/2025 00:49:27] "GET / HTTP/1.1" 200 -
+2025-03-22 00:49:27,900 - INFO - 127.0.0.1 - - [22/Mar/2025 00:49:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-22 00:49:36,856 - INFO - User test1 logged out
+2025-03-22 00:49:36,857 - INFO - 127.0.0.1 - - [22/Mar/2025 00:49:36] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-03-22 00:49:37,167 - INFO - 127.0.0.1 - - [22/Mar/2025 00:49:37] "GET /login HTTP/1.1" 200 -
+2025-03-22 00:49:37,196 - INFO - 127.0.0.1 - - [22/Mar/2025 00:49:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-22 00:49:43,658 - INFO - User test2 logged in successfully
+2025-03-22 00:49:43,659 - INFO - 127.0.0.1 - - [22/Mar/2025 00:49:43] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-22 00:49:43,774 - INFO - 127.0.0.1 - - [22/Mar/2025 00:49:43] "GET / HTTP/1.1" 200 -
+2025-03-22 00:49:44,113 - INFO - 127.0.0.1 - - [22/Mar/2025 00:49:44] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -

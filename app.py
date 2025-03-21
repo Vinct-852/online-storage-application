@@ -144,8 +144,10 @@ def login():
 
         if user and check_password_hash(user[2], password):  #  驗證哈希密碼
             login_user(User(user[0], user[1]))
+            logging.info(f"User {username} logged in successfully")
             return redirect(url_for('index'))
         else:
+            logging.warning(f"Failed login attempt for username: {username}")
             flash('Login failed. Please check your username and password!', 'danger')
     return render_template('login.html')
 
@@ -153,6 +155,7 @@ def login():
 @app.route('/logout')
 @login_required
 def logout():
+    logging.info(f"User {current_user.username} logged out")
     logout_user()
     return redirect(url_for('login'))
 
@@ -411,7 +414,7 @@ def edit_file(file_id):
     return redirect(url_for('index'))
 
 #  刪除檔案
-@app.route('/delete/<int:file_id>')
+@app.route('/delete/<int:file_id>', methods=['DELETE'])
 @login_required
 def delete_file(file_id):
     conn = sqlite3.connect('database.db')
@@ -422,16 +425,30 @@ def delete_file(file_id):
     if file:
         file_path = os.path.join(app.config['UPLOAD_FOLDER'], file[1])
         if os.path.exists(file_path):
-            os.remove(file_path)  # 刪除實體檔案
+            try:
+                os.remove(file_path)  # 刪除實體檔案
+                logging.info(f"File {file[1]} was deleted from filesystem by user {current_user.username}")
+            except Exception as e:
+                logging.error(f"Error deleting file {file[1]}: {str(e)}")
+                flash('Error deleting file!', 'danger')
+                return {"error": "Error deleting file"}, 500
 
-        c.execute('DELETE FROM files WHERE id = ?', (file_id,))
-        conn.commit()
-        flash('File successfully deleted!', 'success')
+        try:
+            c.execute('DELETE FROM files WHERE id = ?', (file_id,))
+            conn.commit()
+            logging.info(f"File record {file_id} was deleted from database by user {current_user.username}")
+            flash('File successfully deleted!', 'success')
+            return {"message": "File successfully deleted"}, 200
+        except Exception as e:
+            logging.error(f"Error deleting file record from database: {str(e)}")
+            flash('Error deleting file record!', 'danger')
+            return {"error": "Error deleting file record"}, 500
     else:
+        logging.warning(f"User {current_user.username} attempted to delete file {file_id} without permission")
         flash('You do not have permission to delete this file!', 'danger')
+        return {"error": "You do not have permission to delete this file"}, 403
 
     conn.close()
-    return redirect(url_for('index'))
 
 # 修改下载文件功能，支持共享文件的解密
 @app.route('/download/<int:file_id>', methods=['GET'])
