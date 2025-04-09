@@ -1,0 +1,48 @@
+{% extends "base.html" %} 
+{% block title %}Login{% endblock %} 
+{% block header %}Welcome to the Secure File System{% endblock %} 
+{% block content %}
+
+<style>
+  .otp-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .otp-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+  }
+
+  .otp-button {
+    margin-top: 15px;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .otp-button:hover {
+    background-color: #0056b3;
+  }
+</style>
+
+<div class="otp-container">
+  <form method="POST">
+    <label><strong>Enter OTP:</strong></label><br />
+    <input type="text" name="otp" class="otp-input" required /><br />
+    <button type="submit" class="otp-button">Verify</button>
+  </form>
+</div>
+
+{% endblock %}

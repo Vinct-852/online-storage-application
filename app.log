@@ -6810,3 +6810,862 @@ ValueError: Incorrect decryption.
 2025-03-17 23:38:05,644 - INFO - 127.0.0.1 - - [17/Mar/2025 23:38:05] "[32mGET / HTTP/1.1[0m" 302 -
 2025-03-17 23:38:05,654 - INFO - 127.0.0.1 - - [17/Mar/2025 23:38:05] "GET /login?next=/ HTTP/1.1" 200 -
 2025-03-17 23:38:05,668 - INFO - 127.0.0.1 - - [17/Mar/2025 23:38:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-17 23:57:48,825 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-17 23:57:48,826 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-18 00:19:18,909 - INFO - 127.0.0.1 - - [18/Mar/2025 00:19:18] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-18 00:19:18,928 - INFO - 127.0.0.1 - - [18/Mar/2025 00:19:18] "GET /login?next=/ HTTP/1.1" 200 -
+2025-03-18 00:19:18,942 - INFO - 127.0.0.1 - - [18/Mar/2025 00:19:18] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 00:19:21,955 - INFO - 127.0.0.1 - - [18/Mar/2025 00:19:21] "[32mPOST /login?next=/ HTTP/1.1[0m" 302 -
+2025-03-18 00:19:21,965 - INFO - 127.0.0.1 - - [18/Mar/2025 00:19:21] "GET / HTTP/1.1" 200 -
+2025-03-18 00:19:21,972 - INFO - 127.0.0.1 - - [18/Mar/2025 00:19:21] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 00:19:50,154 - DEBUG - Successfully retrieved public key for user 5
+2025-03-18 00:19:50,154 - INFO - 127.0.0.1 - - [18/Mar/2025 00:19:50] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-18 00:19:50,166 - DEBUG - Uploaded file content size: 115140 bytes
+2025-03-18 00:19:50,166 - DEBUG - File saved to: uploads/2025-03-17_5.30.32.png.enc
+2025-03-18 00:19:50,166 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-18 00:19:50,167 - DEBUG - File information saved to database: 2025-03-17_5.30.32.png.enc, user_id=5
+2025-03-18 00:19:50,167 - INFO - 127.0.0.1 - - [18/Mar/2025 00:19:50] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-03-18 00:19:50,171 - INFO - 127.0.0.1 - - [18/Mar/2025 00:19:50] "GET / HTTP/1.1" 200 -
+2025-03-18 00:19:50,177 - INFO - 127.0.0.1 - - [18/Mar/2025 00:19:50] "GET / HTTP/1.1" 200 -
+2025-03-18 00:19:50,186 - INFO - 127.0.0.1 - - [18/Mar/2025 00:19:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 00:19:54,733 - INFO - 127.0.0.1 - - [18/Mar/2025 00:19:54] "[32mPOST /share/6 HTTP/1.1[0m" 302 -
+2025-03-18 00:19:54,747 - INFO - 127.0.0.1 - - [18/Mar/2025 00:19:54] "GET / HTTP/1.1" 200 -
+2025-03-18 00:19:54,760 - INFO - 127.0.0.1 - - [18/Mar/2025 00:19:54] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 00:19:59,513 - INFO - 127.0.0.1 - - [18/Mar/2025 00:19:59] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-03-18 00:19:59,526 - INFO - 127.0.0.1 - - [18/Mar/2025 00:19:59] "GET /login HTTP/1.1" 200 -
+2025-03-18 00:19:59,540 - INFO - 127.0.0.1 - - [18/Mar/2025 00:19:59] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 02:17:26,614 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-18 02:17:26,614 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-18 02:17:29,595 - INFO - 127.0.0.1 - - [18/Mar/2025 02:17:29] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-18 02:17:29,624 - INFO - 127.0.0.1 - - [18/Mar/2025 02:17:29] "GET /login?next=/ HTTP/1.1" 200 -
+2025-03-18 02:17:29,641 - INFO - 127.0.0.1 - - [18/Mar/2025 02:17:29] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 02:17:46,653 - INFO - 127.0.0.1 - - [18/Mar/2025 02:17:46] "[32mPOST /login?next=/ HTTP/1.1[0m" 302 -
+2025-03-18 02:17:46,663 - INFO - 127.0.0.1 - - [18/Mar/2025 02:17:46] "GET / HTTP/1.1" 200 -
+2025-03-18 02:17:46,669 - INFO - 127.0.0.1 - - [18/Mar/2025 02:17:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 02:18:03,296 - DEBUG - Successfully decrypted AES key, length: 16 bytes
+2025-03-18 02:18:03,298 - INFO - File 5 successfully shared with user test3
+2025-03-18 02:18:03,298 - INFO - 127.0.0.1 - - [18/Mar/2025 02:18:03] "[32mPOST /share/5 HTTP/1.1[0m" 302 -
+2025-03-18 02:18:03,303 - INFO - 127.0.0.1 - - [18/Mar/2025 02:18:03] "GET / HTTP/1.1" 200 -
+2025-03-18 02:18:03,310 - INFO - 127.0.0.1 - - [18/Mar/2025 02:18:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 02:18:05,330 - INFO - User test2 downloaded file report-group14.pdf.enc
+2025-03-18 02:18:05,330 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-18 02:18:05,348 - INFO - 127.0.0.1 - - [18/Mar/2025 02:18:05] "GET /download/5 HTTP/1.1" 200 -
+2025-03-18 02:18:05,421 - DEBUG - Successfully retrieved private key for user 4
+2025-03-18 02:18:05,421 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-18 02:18:05,422 - INFO - 127.0.0.1 - - [18/Mar/2025 02:18:05] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-18 17:22:43,265 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-18 17:22:43,265 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-18 17:22:47,840 - INFO - 127.0.0.1 - - [18/Mar/2025 17:22:47] "GET / HTTP/1.1" 200 -
+2025-03-18 17:22:47,863 - INFO - 127.0.0.1 - - [18/Mar/2025 17:22:47] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 17:23:00,612 - DEBUG - Successfully retrieved public key for user 4
+2025-03-18 17:23:00,613 - INFO - 127.0.0.1 - - [18/Mar/2025 17:23:00] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-18 17:23:00,626 - DEBUG - Uploaded file content size: 103093 bytes
+2025-03-18 17:23:00,627 - DEBUG - File saved to: uploads/3241.pptx.enc
+2025-03-18 17:23:00,627 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-18 17:23:00,629 - DEBUG - File information saved to database: 3241.pptx.enc, user_id=4
+2025-03-18 17:23:00,629 - INFO - 127.0.0.1 - - [18/Mar/2025 17:23:00] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-03-18 17:23:00,634 - INFO - 127.0.0.1 - - [18/Mar/2025 17:23:00] "GET / HTTP/1.1" 200 -
+2025-03-18 17:23:00,642 - INFO - 127.0.0.1 - - [18/Mar/2025 17:23:00] "GET / HTTP/1.1" 200 -
+2025-03-18 17:23:00,651 - INFO - 127.0.0.1 - - [18/Mar/2025 17:23:00] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 17:23:17,413 - INFO - User test2 downloaded file 3241.pptx.enc
+2025-03-18 17:23:17,414 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-18 17:23:17,416 - INFO - 127.0.0.1 - - [18/Mar/2025 17:23:17] "GET /download/7 HTTP/1.1" 200 -
+2025-03-18 17:23:17,495 - DEBUG - Successfully retrieved private key for user 4
+2025-03-18 17:23:17,496 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-18 17:23:17,496 - INFO - 127.0.0.1 - - [18/Mar/2025 17:23:17] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-18 17:23:26,977 - INFO - User test2 downloaded file 3241.pptx.enc
+2025-03-18 17:23:26,978 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-18 17:23:26,979 - INFO - 127.0.0.1 - - [18/Mar/2025 17:23:26] "GET /download/7 HTTP/1.1" 200 -
+2025-03-18 17:23:27,056 - DEBUG - Successfully retrieved private key for user 4
+2025-03-18 17:23:27,056 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-18 17:23:27,056 - INFO - 127.0.0.1 - - [18/Mar/2025 17:23:27] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-18 17:23:29,136 - INFO - User test2 downloaded file report-group14.pdf.enc
+2025-03-18 17:23:29,136 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-18 17:23:29,151 - INFO - 127.0.0.1 - - [18/Mar/2025 17:23:29] "GET /download/5 HTTP/1.1" 200 -
+2025-03-18 17:23:29,220 - DEBUG - Successfully retrieved private key for user 4
+2025-03-18 17:23:29,221 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-18 17:23:29,221 - INFO - 127.0.0.1 - - [18/Mar/2025 17:23:29] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-18 17:23:46,702 - DEBUG - Successfully retrieved public key for user 4
+2025-03-18 17:23:46,704 - INFO - 127.0.0.1 - - [18/Mar/2025 17:23:46] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-18 17:23:46,726 - DEBUG - Uploaded file content size: 42000 bytes
+2025-03-18 17:23:46,728 - DEBUG - File saved to: uploads/4._.doc.enc
+2025-03-18 17:23:46,728 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-18 17:23:46,731 - DEBUG - File information saved to database: 4._.doc.enc, user_id=4
+2025-03-18 17:23:46,733 - INFO - 127.0.0.1 - - [18/Mar/2025 17:23:46] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-03-18 17:23:46,744 - INFO - 127.0.0.1 - - [18/Mar/2025 17:23:46] "GET / HTTP/1.1" 200 -
+2025-03-18 17:23:46,755 - INFO - 127.0.0.1 - - [18/Mar/2025 17:23:46] "GET / HTTP/1.1" 200 -
+2025-03-18 17:23:46,767 - INFO - 127.0.0.1 - - [18/Mar/2025 17:23:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 17:23:58,985 - INFO - User test2 downloaded file 4._.doc.enc
+2025-03-18 17:23:58,986 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-18 17:23:58,988 - INFO - 127.0.0.1 - - [18/Mar/2025 17:23:58] "GET /download/8 HTTP/1.1" 200 -
+2025-03-18 17:23:59,061 - DEBUG - Successfully retrieved private key for user 4
+2025-03-18 17:23:59,061 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-18 17:23:59,061 - INFO - 127.0.0.1 - - [18/Mar/2025 17:23:59] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-18 17:24:18,138 - INFO - 127.0.0.1 - - [18/Mar/2025 17:24:18] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-03-18 17:24:18,154 - INFO - 127.0.0.1 - - [18/Mar/2025 17:24:18] "GET /login HTTP/1.1" 200 -
+2025-03-18 17:24:18,166 - INFO - 127.0.0.1 - - [18/Mar/2025 17:24:18] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 17:24:21,274 - INFO - 127.0.0.1 - - [18/Mar/2025 17:24:21] "GET /register HTTP/1.1" 200 -
+2025-03-18 17:24:21,281 - INFO - 127.0.0.1 - - [18/Mar/2025 17:24:21] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 17:50:35,746 - INFO - 127.0.0.1 - - [18/Mar/2025 17:50:35] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-18 17:50:35,752 - INFO - 127.0.0.1 - - [18/Mar/2025 17:50:35] "GET /login?next=/ HTTP/1.1" 200 -
+2025-03-18 17:50:35,763 - INFO - 127.0.0.1 - - [18/Mar/2025 17:50:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 17:50:40,432 - INFO - 127.0.0.1 - - [18/Mar/2025 17:50:40] "[32mPOST /login?next=/ HTTP/1.1[0m" 302 -
+2025-03-18 17:50:40,438 - INFO - 127.0.0.1 - - [18/Mar/2025 17:50:40] "GET / HTTP/1.1" 200 -
+2025-03-18 17:50:40,444 - INFO - 127.0.0.1 - - [18/Mar/2025 17:50:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 17:50:51,837 - INFO - 127.0.0.1 - - [18/Mar/2025 17:50:51] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-03-18 17:50:51,849 - INFO - 127.0.0.1 - - [18/Mar/2025 17:50:51] "GET /login HTTP/1.1" 200 -
+2025-03-18 17:50:51,860 - INFO - 127.0.0.1 - - [18/Mar/2025 17:50:51] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-18 21:25:56,974 - INFO - 127.0.0.1 - - [18/Mar/2025 21:25:56] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-18 21:25:56,987 - INFO - 127.0.0.1 - - [18/Mar/2025 21:25:56] "GET / HTTP/1.1" 200 -
+2025-03-18 21:25:56,995 - INFO - 127.0.0.1 - - [18/Mar/2025 21:25:56] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:03:03,257 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-21 00:03:03,257 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 00:03:06,691 - INFO - 127.0.0.1 - - [21/Mar/2025 00:03:06] "GET / HTTP/1.1" 200 -
+2025-03-21 00:03:06,703 - INFO - 127.0.0.1 - - [21/Mar/2025 00:03:06] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:03:12,380 - INFO - 127.0.0.1 - - [21/Mar/2025 00:03:12] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-03-21 00:03:12,398 - INFO - 127.0.0.1 - - [21/Mar/2025 00:03:12] "GET /login HTTP/1.1" 200 -
+2025-03-21 00:03:12,412 - INFO - 127.0.0.1 - - [21/Mar/2025 00:03:12] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:03:14,576 - INFO - 127.0.0.1 - - [21/Mar/2025 00:03:14] "GET /register HTTP/1.1" 200 -
+2025-03-21 00:03:14,589 - INFO - 127.0.0.1 - - [21/Mar/2025 00:03:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:03:19,622 - INFO - 127.0.0.1 - - [21/Mar/2025 00:03:19] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-03-21 00:03:19,627 - INFO - 127.0.0.1 - - [21/Mar/2025 00:03:19] "GET /login HTTP/1.1" 200 -
+2025-03-21 00:03:19,634 - INFO - 127.0.0.1 - - [21/Mar/2025 00:03:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:03:24,344 - INFO - 127.0.0.1 - - [21/Mar/2025 00:03:24] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-21 00:03:24,350 - INFO - 127.0.0.1 - - [21/Mar/2025 00:03:24] "GET / HTTP/1.1" 200 -
+2025-03-21 00:03:24,356 - INFO - 127.0.0.1 - - [21/Mar/2025 00:03:24] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:03:36,791 - DEBUG - Successfully retrieved public key for user 6
+2025-03-21 00:03:36,793 - INFO - 127.0.0.1 - - [21/Mar/2025 00:03:36] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-21 00:03:36,811 - ERROR - Error uploading file: name 'get_user_public_key' is not defined
+Traceback (most recent call last):
+  File "/Users/yangxixia/Downloads/SecureFileApp/app.py", line 181, in upload_file
+    public_key_pem = get_user_public_key(current_user.id)
+                     ^^^^^^^^^^^^^^^^^^^
+NameError: name 'get_user_public_key' is not defined. Did you mean: 'get_public_key'?
+
+2025-03-21 00:03:36,812 - INFO - 127.0.0.1 - - [21/Mar/2025 00:03:36] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-03-21 00:03:36,818 - INFO - 127.0.0.1 - - [21/Mar/2025 00:03:36] "GET / HTTP/1.1" 200 -
+2025-03-21 00:03:36,826 - INFO - 127.0.0.1 - - [21/Mar/2025 00:03:36] "GET / HTTP/1.1" 200 -
+2025-03-21 00:03:36,837 - INFO - 127.0.0.1 - - [21/Mar/2025 00:03:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:03:42,209 - DEBUG - Successfully retrieved public key for user 6
+2025-03-21 00:03:42,210 - INFO - 127.0.0.1 - - [21/Mar/2025 00:03:42] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-21 00:03:42,227 - ERROR - Error uploading file: name 'get_user_public_key' is not defined
+Traceback (most recent call last):
+  File "/Users/yangxixia/Downloads/SecureFileApp/app.py", line 181, in upload_file
+    public_key_pem = get_user_public_key(current_user.id)
+                     ^^^^^^^^^^^^^^^^^^^
+NameError: name 'get_user_public_key' is not defined. Did you mean: 'get_public_key'?
+
+2025-03-21 00:03:42,228 - INFO - 127.0.0.1 - - [21/Mar/2025 00:03:42] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-03-21 00:03:42,236 - INFO - 127.0.0.1 - - [21/Mar/2025 00:03:42] "GET / HTTP/1.1" 200 -
+2025-03-21 00:03:42,246 - INFO - 127.0.0.1 - - [21/Mar/2025 00:03:42] "GET / HTTP/1.1" 200 -
+2025-03-21 00:03:42,257 - INFO - 127.0.0.1 - - [21/Mar/2025 00:03:42] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:03:52,054 - DEBUG - Successfully retrieved public key for user 6
+2025-03-21 00:03:52,055 - INFO - 127.0.0.1 - - [21/Mar/2025 00:03:52] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-21 00:03:52,081 - ERROR - Error uploading file: name 'get_user_public_key' is not defined
+Traceback (most recent call last):
+  File "/Users/yangxixia/Downloads/SecureFileApp/app.py", line 181, in upload_file
+    public_key_pem = get_user_public_key(current_user.id)
+                     ^^^^^^^^^^^^^^^^^^^
+NameError: name 'get_user_public_key' is not defined. Did you mean: 'get_public_key'?
+
+2025-03-21 00:03:52,083 - INFO - 127.0.0.1 - - [21/Mar/2025 00:03:52] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-03-21 00:03:52,091 - INFO - 127.0.0.1 - - [21/Mar/2025 00:03:52] "GET / HTTP/1.1" 200 -
+2025-03-21 00:03:52,103 - INFO - 127.0.0.1 - - [21/Mar/2025 00:03:52] "GET / HTTP/1.1" 200 -
+2025-03-21 00:03:52,114 - INFO - 127.0.0.1 - - [21/Mar/2025 00:03:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:04:18,287 - DEBUG - Successfully retrieved public key for user 6
+2025-03-21 00:04:18,287 - INFO - 127.0.0.1 - - [21/Mar/2025 00:04:18] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-21 00:04:18,307 - ERROR - Error uploading file: name 'get_user_public_key' is not defined
+Traceback (most recent call last):
+  File "/Users/yangxixia/Downloads/SecureFileApp/app.py", line 181, in upload_file
+    public_key_pem = get_user_public_key(current_user.id)
+                     ^^^^^^^^^^^^^^^^^^^
+NameError: name 'get_user_public_key' is not defined. Did you mean: 'get_public_key'?
+
+2025-03-21 00:04:18,308 - INFO - 127.0.0.1 - - [21/Mar/2025 00:04:18] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-03-21 00:04:18,316 - INFO - 127.0.0.1 - - [21/Mar/2025 00:04:18] "GET / HTTP/1.1" 200 -
+2025-03-21 00:04:18,328 - INFO - 127.0.0.1 - - [21/Mar/2025 00:04:18] "GET / HTTP/1.1" 200 -
+2025-03-21 00:04:18,342 - INFO - 127.0.0.1 - - [21/Mar/2025 00:04:18] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:04:21,243 - INFO - 127.0.0.1 - - [21/Mar/2025 00:04:21] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-03-21 00:04:21,252 - INFO - 127.0.0.1 - - [21/Mar/2025 00:04:21] "GET /login HTTP/1.1" 200 -
+2025-03-21 00:04:21,264 - INFO - 127.0.0.1 - - [21/Mar/2025 00:04:21] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:04:23,714 - INFO - 127.0.0.1 - - [21/Mar/2025 00:04:23] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-21 00:04:23,724 - INFO - 127.0.0.1 - - [21/Mar/2025 00:04:23] "GET / HTTP/1.1" 200 -
+2025-03-21 00:04:23,734 - INFO - 127.0.0.1 - - [21/Mar/2025 00:04:23] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:04:25,892 - INFO - 127.0.0.1 - - [21/Mar/2025 00:04:25] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-03-21 00:04:25,901 - INFO - 127.0.0.1 - - [21/Mar/2025 00:04:25] "GET /login HTTP/1.1" 200 -
+2025-03-21 00:04:25,913 - INFO - 127.0.0.1 - - [21/Mar/2025 00:04:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:04:30,756 - INFO - 127.0.0.1 - - [21/Mar/2025 00:04:30] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-21 00:04:30,762 - INFO - 127.0.0.1 - - [21/Mar/2025 00:04:30] "GET / HTTP/1.1" 200 -
+2025-03-21 00:04:30,768 - INFO - 127.0.0.1 - - [21/Mar/2025 00:04:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:04:36,323 - DEBUG - Successfully retrieved public key for user 5
+2025-03-21 00:04:36,324 - INFO - 127.0.0.1 - - [21/Mar/2025 00:04:36] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-21 00:04:36,348 - ERROR - Error uploading file: name 'get_user_public_key' is not defined
+Traceback (most recent call last):
+  File "/Users/yangxixia/Downloads/SecureFileApp/app.py", line 181, in upload_file
+    public_key_pem = get_user_public_key(current_user.id)
+                     ^^^^^^^^^^^^^^^^^^^
+NameError: name 'get_user_public_key' is not defined. Did you mean: 'get_public_key'?
+
+2025-03-21 00:04:36,349 - INFO - 127.0.0.1 - - [21/Mar/2025 00:04:36] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-03-21 00:04:36,358 - INFO - 127.0.0.1 - - [21/Mar/2025 00:04:36] "GET / HTTP/1.1" 200 -
+2025-03-21 00:04:36,371 - INFO - 127.0.0.1 - - [21/Mar/2025 00:04:36] "GET / HTTP/1.1" 200 -
+2025-03-21 00:04:36,383 - INFO - 127.0.0.1 - - [21/Mar/2025 00:04:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:07:22,892 - ERROR - Error downloading file: name 'get_user_private_key' is not defined
+Traceback (most recent call last):
+  File "/Users/yangxixia/Downloads/SecureFileApp/app.py", line 477, in download_file
+    private_key_pem = get_user_private_key(current_user.id)  # 你需要实现这个方法来获取私钥
+                      ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'get_user_private_key' is not defined. Did you mean: 'get_private_key'?
+
+2025-03-21 00:07:22,894 - INFO - 127.0.0.1 - - [21/Mar/2025 00:07:22] "[35m[1mGET /download/6 HTTP/1.1[0m" 500 -
+2025-03-21 00:10:21,040 - INFO - 127.0.0.1 - - [21/Mar/2025 00:10:21] "GET / HTTP/1.1" 200 -
+2025-03-21 00:10:21,045 - INFO - 127.0.0.1 - - [21/Mar/2025 00:10:21] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:10:21,054 - INFO - 127.0.0.1 - - [21/Mar/2025 00:10:21] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:10:39,357 - DEBUG - Successfully retrieved public key for user 5
+2025-03-21 00:10:39,358 - INFO - 127.0.0.1 - - [21/Mar/2025 00:10:39] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-21 00:10:39,384 - ERROR - Error uploading file: name 'get_user_public_key' is not defined
+Traceback (most recent call last):
+  File "/Users/yangxixia/Downloads/SecureFileApp/app.py", line 181, in upload_file
+    logging.error("Missing encrypted data in the upload request")
+                 ^^^^^^^^^^^^^^^^^^^
+NameError: name 'get_user_public_key' is not defined. Did you mean: 'get_public_key'?
+
+2025-03-21 00:10:39,386 - INFO - 127.0.0.1 - - [21/Mar/2025 00:10:39] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-03-21 00:10:39,395 - INFO - 127.0.0.1 - - [21/Mar/2025 00:10:39] "GET / HTTP/1.1" 200 -
+2025-03-21 00:10:39,410 - INFO - 127.0.0.1 - - [21/Mar/2025 00:10:39] "GET / HTTP/1.1" 200 -
+2025-03-21 00:10:39,422 - INFO - 127.0.0.1 - - [21/Mar/2025 00:10:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:11:28,304 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-21 00:11:28,304 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 00:11:30,733 - INFO - 127.0.0.1 - - [21/Mar/2025 00:11:30] "GET / HTTP/1.1" 200 -
+2025-03-21 00:11:30,738 - INFO - 127.0.0.1 - - [21/Mar/2025 00:11:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:11:30,740 - INFO - 127.0.0.1 - - [21/Mar/2025 00:11:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:11:37,213 - DEBUG - Successfully retrieved public key for user 5
+2025-03-21 00:11:37,214 - INFO - 127.0.0.1 - - [21/Mar/2025 00:11:37] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-21 00:11:37,223 - DEBUG - Uploaded file content size: 19323 bytes
+2025-03-21 00:11:37,224 - DEBUG - File saved to: uploads/app.py.enc
+2025-03-21 00:11:37,225 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 00:11:37,227 - DEBUG - File information saved to database: app.py.enc, user_id=5
+2025-03-21 00:11:37,227 - INFO - 127.0.0.1 - - [21/Mar/2025 00:11:37] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-03-21 00:11:37,234 - INFO - 127.0.0.1 - - [21/Mar/2025 00:11:37] "GET / HTTP/1.1" 200 -
+2025-03-21 00:11:37,243 - INFO - 127.0.0.1 - - [21/Mar/2025 00:11:37] "GET / HTTP/1.1" 200 -
+2025-03-21 00:11:37,249 - INFO - 127.0.0.1 - - [21/Mar/2025 00:11:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 00:11:44,904 - DEBUG - Successfully decrypted AES key, length: 16 bytes
+2025-03-21 00:11:44,906 - INFO - File 9 successfully shared with user test4
+2025-03-21 00:11:44,907 - INFO - 127.0.0.1 - - [21/Mar/2025 00:11:44] "[32mPOST /share/9 HTTP/1.1[0m" 302 -
+2025-03-21 00:11:44,913 - INFO - 127.0.0.1 - - [21/Mar/2025 00:11:44] "GET / HTTP/1.1" 200 -
+2025-03-21 00:11:44,920 - INFO - 127.0.0.1 - - [21/Mar/2025 00:11:44] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 17:18:24,334 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-21 17:18:24,334 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 17:18:30,264 - INFO - 127.0.0.1 - - [21/Mar/2025 17:18:30] "GET / HTTP/1.1" 200 -
+2025-03-21 17:18:30,269 - INFO - 127.0.0.1 - - [21/Mar/2025 17:18:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 17:18:30,296 - INFO - 127.0.0.1 - - [21/Mar/2025 17:18:30] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+2025-03-21 17:18:30,297 - INFO - 127.0.0.1 - - [21/Mar/2025 17:18:30] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+2025-03-21 17:18:32,889 - INFO - 127.0.0.1 - - [21/Mar/2025 17:18:32] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-03-21 17:18:32,899 - INFO - 127.0.0.1 - - [21/Mar/2025 17:18:32] "GET /login HTTP/1.1" 200 -
+2025-03-21 17:18:32,911 - INFO - 127.0.0.1 - - [21/Mar/2025 17:18:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 17:18:35,021 - ERROR - Exception on /login [POST]
+Traceback (most recent call last):
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/app.py", line 159, in login
+    c.execute('SELECT id, password, otp_secret FROM users WHERE username = ?', (username,))
+sqlite3.OperationalError: no such column: otp_secret
+2025-03-21 17:18:35,023 - INFO - 127.0.0.1 - - [21/Mar/2025 17:18:35] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2025-03-21 17:19:07,109 - ERROR - Exception on /login [POST]
+Traceback (most recent call last):
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/app.py", line 159, in login
+    c.execute('SELECT id, password, otp_secret FROM users WHERE username = ?', (username,))
+sqlite3.OperationalError: no such column: otp_secret
+2025-03-21 17:19:07,113 - INFO - 127.0.0.1 - - [21/Mar/2025 17:19:07] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2025-03-21 17:21:28,035 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-21 17:21:28,036 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 17:21:32,671 - INFO - 127.0.0.1 - - [21/Mar/2025 17:21:32] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-21 17:21:32,682 - INFO - 127.0.0.1 - - [21/Mar/2025 17:21:32] "GET /login?next=/ HTTP/1.1" 200 -
+2025-03-21 17:21:32,686 - INFO - 127.0.0.1 - - [21/Mar/2025 17:21:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 17:21:32,691 - INFO - 127.0.0.1 - - [21/Mar/2025 17:21:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 17:21:35,640 - ERROR - Exception on /login [POST]
+Traceback (most recent call last):
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/app.py", line 161, in login
+    c.execute('SELECT id, password, otp_secret FROM users WHERE username = ?', (username,))
+sqlite3.OperationalError: no such column: otp_secret
+2025-03-21 17:21:35,646 - INFO - 127.0.0.1 - - [21/Mar/2025 17:21:35] "[35m[1mPOST /login?next=/ HTTP/1.1[0m" 500 -
+2025-03-21 17:21:40,959 - INFO - 127.0.0.1 - - [21/Mar/2025 17:21:40] "GET /register HTTP/1.1" 200 -
+2025-03-21 17:21:40,969 - INFO - 127.0.0.1 - - [21/Mar/2025 17:21:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 17:21:46,242 - ERROR - Exception on /register [POST]
+Traceback (most recent call last):
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/app.py", line 138, in register
+    c.execute('INSERT INTO users (username, password, public_key, private_key, otp_secret) VALUES (?, ?, ?, ?, ?)',
+sqlite3.OperationalError: table users has no column named otp_secret
+2025-03-21 17:21:46,242 - INFO - 127.0.0.1 - - [21/Mar/2025 17:21:46] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-03-21 17:23:21,028 - ERROR - Exception on /register [POST]
+Traceback (most recent call last):
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/app.py", line 138, in register
+    c.execute('INSERT INTO users (username, password, public_key, private_key, otp_secret) VALUES (?, ?, ?, ?, ?)',
+sqlite3.OperationalError: table users has no column named otp_secret
+2025-03-21 17:23:21,029 - INFO - 127.0.0.1 - - [21/Mar/2025 17:23:21] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-03-21 17:27:42,829 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-21 17:27:42,829 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 17:27:45,305 - INFO - 127.0.0.1 - - [21/Mar/2025 17:27:45] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-21 17:27:45,328 - INFO - 127.0.0.1 - - [21/Mar/2025 17:27:45] "GET /login?next=/ HTTP/1.1" 200 -
+2025-03-21 17:27:45,339 - INFO - 127.0.0.1 - - [21/Mar/2025 17:27:45] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 17:27:45,340 - INFO - 127.0.0.1 - - [21/Mar/2025 17:27:45] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 17:27:45,576 - INFO - 127.0.0.1 - - [21/Mar/2025 17:27:45] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-21 17:27:45,583 - INFO - 127.0.0.1 - - [21/Mar/2025 17:27:45] "GET /login?next=/ HTTP/1.1" 200 -
+2025-03-21 17:27:45,585 - INFO - 127.0.0.1 - - [21/Mar/2025 17:27:45] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 17:27:45,591 - INFO - 127.0.0.1 - - [21/Mar/2025 17:27:45] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 17:27:51,036 - INFO - 127.0.0.1 - - [21/Mar/2025 17:27:51] "[32mPOST /login?next=/ HTTP/1.1[0m" 302 -
+2025-03-21 17:27:51,046 - INFO - 127.0.0.1 - - [21/Mar/2025 17:27:51] "GET /otp-verification HTTP/1.1" 200 -
+2025-03-21 17:27:51,051 - INFO - 127.0.0.1 - - [21/Mar/2025 17:27:51] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 17:28:30,376 - INFO - 127.0.0.1 - - [21/Mar/2025 17:28:30] "POST /otp-verification HTTP/1.1" 200 -
+2025-03-21 17:28:30,388 - INFO - 127.0.0.1 - - [21/Mar/2025 17:28:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 17:29:56,301 - INFO - 127.0.0.1 - - [21/Mar/2025 17:29:56] "GET /register HTTP/1.1" 200 -
+2025-03-21 17:29:56,317 - INFO - 127.0.0.1 - - [21/Mar/2025 17:29:56] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 17:30:01,598 - INFO - 127.0.0.1 - - [21/Mar/2025 17:30:01] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-03-21 17:30:01,612 - ERROR - Exception on /otp-setup/test5 [GET]
+Traceback (most recent call last):
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/app.py", line 245, in otp_setup
+    qr = qrcode.make(otp_uri)
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/qrcode/main.py", line 28, in make
+    return qr.make_image()
+           ^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/qrcode/main.py", line 363, in make_image
+    from qrcode.image.pil import Image, PilImage
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/qrcode/image/pil.py", line 2, in <module>
+    from PIL import Image, ImageDraw
+ModuleNotFoundError: No module named 'PIL'
+2025-03-21 17:30:01,615 - INFO - 127.0.0.1 - - [21/Mar/2025 17:30:01] "[35m[1mGET /otp-setup/test5 HTTP/1.1[0m" 500 -
+2025-03-21 17:30:11,792 - INFO - 127.0.0.1 - - [21/Mar/2025 17:30:11] "POST /register HTTP/1.1" 200 -
+2025-03-21 17:30:11,803 - INFO - 127.0.0.1 - - [21/Mar/2025 17:30:11] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 17:30:24,431 - INFO - 127.0.0.1 - - [21/Mar/2025 17:30:24] "GET /login HTTP/1.1" 200 -
+2025-03-21 17:30:24,444 - INFO - 127.0.0.1 - - [21/Mar/2025 17:30:24] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 17:30:26,697 - INFO - 127.0.0.1 - - [21/Mar/2025 17:30:26] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-21 17:30:26,702 - INFO - 127.0.0.1 - - [21/Mar/2025 17:30:26] "GET /otp-verification HTTP/1.1" 200 -
+2025-03-21 17:30:26,708 - INFO - 127.0.0.1 - - [21/Mar/2025 17:30:26] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 17:31:13,432 - INFO - 127.0.0.1 - - [21/Mar/2025 17:31:13] "GET /login HTTP/1.1" 200 -
+2025-03-21 17:31:13,446 - INFO - 127.0.0.1 - - [21/Mar/2025 17:31:13] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 17:31:16,117 - INFO - 127.0.0.1 - - [21/Mar/2025 17:31:16] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-21 17:31:16,126 - INFO - 127.0.0.1 - - [21/Mar/2025 17:31:16] "GET /otp-verification HTTP/1.1" 200 -
+2025-03-21 17:31:16,133 - INFO - 127.0.0.1 - - [21/Mar/2025 17:31:16] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 17:32:08,676 - INFO - 127.0.0.1 - - [21/Mar/2025 17:32:08] "GET /register HTTP/1.1" 200 -
+2025-03-21 17:32:08,688 - INFO - 127.0.0.1 - - [21/Mar/2025 17:32:08] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 17:32:11,269 - INFO - 127.0.0.1 - - [21/Mar/2025 17:32:11] "GET /otp-verification HTTP/1.1" 200 -
+2025-03-21 17:32:11,283 - INFO - 127.0.0.1 - - [21/Mar/2025 17:32:11] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 17:32:14,495 - INFO - 127.0.0.1 - - [21/Mar/2025 17:32:14] "[33mGET /otp_setup HTTP/1.1[0m" 404 -
+2025-03-21 17:32:23,156 - INFO - 127.0.0.1 - - [21/Mar/2025 17:32:23] "GET /otp-verification HTTP/1.1" 200 -
+2025-03-21 17:32:23,169 - INFO - 127.0.0.1 - - [21/Mar/2025 17:32:23] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 17:32:24,318 - INFO - 127.0.0.1 - - [21/Mar/2025 17:32:24] "GET /register HTTP/1.1" 200 -
+2025-03-21 17:32:24,331 - INFO - 127.0.0.1 - - [21/Mar/2025 17:32:24] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 17:32:30,089 - INFO - 127.0.0.1 - - [21/Mar/2025 17:32:30] "GET /login HTTP/1.1" 200 -
+2025-03-21 17:32:30,098 - INFO - 127.0.0.1 - - [21/Mar/2025 17:32:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 17:32:33,489 - INFO - 127.0.0.1 - - [21/Mar/2025 17:32:33] "GET /login HTTP/1.1" 200 -
+2025-03-21 17:32:33,500 - INFO - 127.0.0.1 - - [21/Mar/2025 17:32:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 17:32:34,858 - INFO - 127.0.0.1 - - [21/Mar/2025 17:32:34] "GET /otp-verification HTTP/1.1" 200 -
+2025-03-21 17:32:34,870 - INFO - 127.0.0.1 - - [21/Mar/2025 17:32:34] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 17:32:41,456 - INFO - 127.0.0.1 - - [21/Mar/2025 17:32:41] "GET /otp-verification HTTP/1.1" 200 -
+2025-03-21 17:32:41,468 - INFO - 127.0.0.1 - - [21/Mar/2025 17:32:41] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 17:32:43,989 - INFO - 127.0.0.1 - - [21/Mar/2025 17:32:43] "[33mGET /otp_setup HTTP/1.1[0m" 404 -
+2025-03-21 17:48:12,714 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-21 17:48:12,714 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 17:48:15,182 - INFO - 127.0.0.1 - - [21/Mar/2025 17:48:15] "[33mGET /otp_setup HTTP/1.1[0m" 404 -
+2025-03-21 18:06:48,232 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-21 18:06:48,232 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 18:06:52,867 - INFO - 127.0.0.1 - - [21/Mar/2025 18:06:52] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-21 18:06:52,893 - INFO - 127.0.0.1 - - [21/Mar/2025 18:06:52] "GET /login?next=/ HTTP/1.1" 200 -
+2025-03-21 18:06:52,901 - INFO - 127.0.0.1 - - [21/Mar/2025 18:06:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:06:52,905 - INFO - 127.0.0.1 - - [21/Mar/2025 18:06:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:06:53,374 - INFO - 127.0.0.1 - - [21/Mar/2025 18:06:53] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-21 18:06:53,380 - INFO - 127.0.0.1 - - [21/Mar/2025 18:06:53] "GET /login?next=/ HTTP/1.1" 200 -
+2025-03-21 18:06:53,383 - INFO - 127.0.0.1 - - [21/Mar/2025 18:06:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:06:53,389 - INFO - 127.0.0.1 - - [21/Mar/2025 18:06:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:06:56,468 - INFO - 127.0.0.1 - - [21/Mar/2025 18:06:56] "GET /register HTTP/1.1" 200 -
+2025-03-21 18:06:56,481 - INFO - 127.0.0.1 - - [21/Mar/2025 18:06:56] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:07:01,467 - INFO - 127.0.0.1 - - [21/Mar/2025 18:07:01] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-03-21 18:07:01,483 - ERROR - Exception on /otp-setup/test6 [GET]
+Traceback (most recent call last):
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/app.py", line 245, in otp_setup
+    qr = qrcode.make(otp_uri)
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/qrcode/main.py", line 28, in make
+    return qr.make_image()
+           ^^^^^^^^^^^^^^^
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/qrcode/main.py", line 363, in make_image
+    from qrcode.image.pil import Image, PilImage
+  File "/Users/yangxixia/Downloads/SecureFileApp/venv/lib/python3.12/site-packages/qrcode/image/pil.py", line 2, in <module>
+    from PIL import Image, ImageDraw
+ModuleNotFoundError: No module named 'PIL'
+2025-03-21 18:07:01,485 - INFO - 127.0.0.1 - - [21/Mar/2025 18:07:01] "[35m[1mGET /otp-setup/test6 HTTP/1.1[0m" 500 -
+2025-03-21 18:07:09,934 - INFO - 127.0.0.1 - - [21/Mar/2025 18:07:09] "POST /register HTTP/1.1" 200 -
+2025-03-21 18:07:09,950 - INFO - 127.0.0.1 - - [21/Mar/2025 18:07:09] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:07:30,189 - INFO - 127.0.0.1 - - [21/Mar/2025 18:07:30] "GET /login HTTP/1.1" 200 -
+2025-03-21 18:07:30,202 - INFO - 127.0.0.1 - - [21/Mar/2025 18:07:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:07:32,559 - INFO - 127.0.0.1 - - [21/Mar/2025 18:07:32] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-21 18:07:32,565 - INFO - 127.0.0.1 - - [21/Mar/2025 18:07:32] "GET /otp-verification HTTP/1.1" 200 -
+2025-03-21 18:07:32,572 - INFO - 127.0.0.1 - - [21/Mar/2025 18:07:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:07:36,638 - INFO - 127.0.0.1 - - [21/Mar/2025 18:07:36] "GET /login HTTP/1.1" 200 -
+2025-03-21 18:07:36,646 - INFO - 127.0.0.1 - - [21/Mar/2025 18:07:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:07:42,027 - INFO - 127.0.0.1 - - [21/Mar/2025 18:07:42] "POST /login HTTP/1.1" 200 -
+2025-03-21 18:07:42,041 - INFO - 127.0.0.1 - - [21/Mar/2025 18:07:42] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:07:46,417 - INFO - 127.0.0.1 - - [21/Mar/2025 18:07:46] "POST /login HTTP/1.1" 200 -
+2025-03-21 18:07:46,431 - INFO - 127.0.0.1 - - [21/Mar/2025 18:07:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:07:48,917 - INFO - 127.0.0.1 - - [21/Mar/2025 18:07:48] "POST /login HTTP/1.1" 200 -
+2025-03-21 18:07:48,929 - INFO - 127.0.0.1 - - [21/Mar/2025 18:07:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:08:03,283 - INFO - 127.0.0.1 - - [21/Mar/2025 18:08:03] "GET /register HTTP/1.1" 200 -
+2025-03-21 18:08:03,292 - INFO - 127.0.0.1 - - [21/Mar/2025 18:08:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:11:12,044 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-21 18:11:12,044 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 18:11:25,151 - INFO - 127.0.0.1 - - [21/Mar/2025 18:11:25] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-21 18:11:25,175 - INFO - 127.0.0.1 - - [21/Mar/2025 18:11:25] "GET /login?next=/ HTTP/1.1" 200 -
+2025-03-21 18:11:25,186 - INFO - 127.0.0.1 - - [21/Mar/2025 18:11:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:11:25,188 - INFO - 127.0.0.1 - - [21/Mar/2025 18:11:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:11:26,238 - INFO - 127.0.0.1 - - [21/Mar/2025 18:11:26] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-21 18:11:26,245 - INFO - 127.0.0.1 - - [21/Mar/2025 18:11:26] "GET /login?next=/ HTTP/1.1" 200 -
+2025-03-21 18:11:26,248 - INFO - 127.0.0.1 - - [21/Mar/2025 18:11:26] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:11:26,253 - INFO - 127.0.0.1 - - [21/Mar/2025 18:11:26] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:11:29,088 - INFO - 127.0.0.1 - - [21/Mar/2025 18:11:29] "POST /login?next=/ HTTP/1.1" 200 -
+2025-03-21 18:11:29,103 - INFO - 127.0.0.1 - - [21/Mar/2025 18:11:29] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:11:36,731 - INFO - 127.0.0.1 - - [21/Mar/2025 18:11:36] "POST /login?next=/ HTTP/1.1" 200 -
+2025-03-21 18:11:36,746 - INFO - 127.0.0.1 - - [21/Mar/2025 18:11:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:11:42,577 - INFO - 127.0.0.1 - - [21/Mar/2025 18:11:42] "POST /login?next=/ HTTP/1.1" 200 -
+2025-03-21 18:11:42,589 - INFO - 127.0.0.1 - - [21/Mar/2025 18:11:42] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:11:47,609 - INFO - 127.0.0.1 - - [21/Mar/2025 18:11:47] "POST /login?next=/ HTTP/1.1" 200 -
+2025-03-21 18:11:47,622 - INFO - 127.0.0.1 - - [21/Mar/2025 18:11:47] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:11:50,035 - INFO - 127.0.0.1 - - [21/Mar/2025 18:11:50] "POST /login?next=/ HTTP/1.1" 200 -
+2025-03-21 18:11:50,049 - INFO - 127.0.0.1 - - [21/Mar/2025 18:11:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:11:51,380 - INFO - 127.0.0.1 - - [21/Mar/2025 18:11:51] "GET /register HTTP/1.1" 200 -
+2025-03-21 18:11:51,394 - INFO - 127.0.0.1 - - [21/Mar/2025 18:11:51] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:11:57,784 - INFO - 127.0.0.1 - - [21/Mar/2025 18:11:57] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-03-21 18:11:58,088 - INFO - 127.0.0.1 - - [21/Mar/2025 18:11:58] "GET /otp-setup/test7 HTTP/1.1" 200 -
+2025-03-21 18:26:24,570 - INFO - 127.0.0.1 - - [21/Mar/2025 18:26:24] "GET /login HTTP/1.1" 200 -
+2025-03-21 18:26:24,591 - INFO - 127.0.0.1 - - [21/Mar/2025 18:26:24] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:26:36,086 - INFO - 127.0.0.1 - - [21/Mar/2025 18:26:36] "POST /login HTTP/1.1" 200 -
+2025-03-21 18:26:36,094 - INFO - 127.0.0.1 - - [21/Mar/2025 18:26:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:26:47,175 - INFO - 127.0.0.1 - - [21/Mar/2025 18:26:47] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-21 18:26:47,434 - INFO - 127.0.0.1 - - [21/Mar/2025 18:26:47] "GET /otp-verification HTTP/1.1" 200 -
+2025-03-21 18:26:47,450 - INFO - 127.0.0.1 - - [21/Mar/2025 18:26:47] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:26:52,731 - INFO - 127.0.0.1 - - [21/Mar/2025 18:26:52] "[32mPOST /otp-verification HTTP/1.1[0m" 302 -
+2025-03-21 18:26:52,759 - INFO - 127.0.0.1 - - [21/Mar/2025 18:26:52] "GET / HTTP/1.1" 200 -
+2025-03-21 18:26:52,770 - INFO - 127.0.0.1 - - [21/Mar/2025 18:26:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:27:01,786 - DEBUG - Successfully retrieved public key for user 5
+2025-03-21 18:27:01,788 - INFO - 127.0.0.1 - - [21/Mar/2025 18:27:01] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-21 18:27:01,799 - DEBUG - Uploaded file content size: 29 bytes
+2025-03-21 18:27:01,801 - DEBUG - File saved to: uploads/COMP3334-Project.pdf.enc
+2025-03-21 18:27:01,801 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 18:27:01,803 - DEBUG - File information saved to database: COMP3334-Project.pdf.enc, user_id=5
+2025-03-21 18:27:01,810 - INFO - 127.0.0.1 - - [21/Mar/2025 18:27:01] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-03-21 18:27:01,816 - INFO - 127.0.0.1 - - [21/Mar/2025 18:27:01] "GET / HTTP/1.1" 200 -
+2025-03-21 18:27:01,824 - INFO - 127.0.0.1 - - [21/Mar/2025 18:27:01] "GET / HTTP/1.1" 200 -
+2025-03-21 18:27:01,835 - INFO - 127.0.0.1 - - [21/Mar/2025 18:27:01] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:27:07,115 - INFO - User test7 downloaded file COMP3334-Project.pdf.enc
+2025-03-21 18:27:07,116 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 18:27:07,116 - INFO - 127.0.0.1 - - [21/Mar/2025 18:27:07] "GET /download/2 HTTP/1.1" 200 -
+2025-03-21 18:27:07,188 - DEBUG - Successfully retrieved private key for user 5
+2025-03-21 18:27:07,188 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 18:27:07,188 - INFO - 127.0.0.1 - - [21/Mar/2025 18:27:07] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 18:27:16,416 - DEBUG - Successfully retrieved public key for user 5
+2025-03-21 18:27:16,417 - INFO - 127.0.0.1 - - [21/Mar/2025 18:27:16] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-21 18:27:16,432 - INFO - 127.0.0.1 - - [21/Mar/2025 18:27:16] "POST /edit/2 HTTP/1.1" 200 -
+2025-03-21 18:27:16,442 - INFO - 127.0.0.1 - - [21/Mar/2025 18:27:16] "GET / HTTP/1.1" 200 -
+2025-03-21 18:27:16,451 - INFO - 127.0.0.1 - - [21/Mar/2025 18:27:16] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:27:20,549 - INFO - User test7 downloaded file COMP3334-Project.pdf.enc
+2025-03-21 18:27:20,549 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 18:27:20,550 - INFO - 127.0.0.1 - - [21/Mar/2025 18:27:20] "GET /download/2 HTTP/1.1" 200 -
+2025-03-21 18:27:20,633 - DEBUG - Successfully retrieved private key for user 5
+2025-03-21 18:27:20,633 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 18:27:20,633 - INFO - 127.0.0.1 - - [21/Mar/2025 18:27:20] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 18:27:37,496 - DEBUG - Successfully decrypted AES key, length: 16 bytes
+2025-03-21 18:27:37,498 - INFO - File 2 successfully shared with user test6
+2025-03-21 18:27:37,498 - INFO - 127.0.0.1 - - [21/Mar/2025 18:27:37] "[32mPOST /share/2 HTTP/1.1[0m" 302 -
+2025-03-21 18:27:37,504 - INFO - 127.0.0.1 - - [21/Mar/2025 18:27:37] "GET / HTTP/1.1" 200 -
+2025-03-21 18:27:37,512 - INFO - 127.0.0.1 - - [21/Mar/2025 18:27:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:27:48,820 - INFO - 127.0.0.1 - - [21/Mar/2025 18:27:48] "[32mPOST /share/2 HTTP/1.1[0m" 302 -
+2025-03-21 18:27:48,827 - INFO - 127.0.0.1 - - [21/Mar/2025 18:27:48] "GET / HTTP/1.1" 200 -
+2025-03-21 18:27:48,837 - INFO - 127.0.0.1 - - [21/Mar/2025 18:27:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:27:56,360 - INFO - 127.0.0.1 - - [21/Mar/2025 18:27:56] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-03-21 18:27:56,372 - INFO - 127.0.0.1 - - [21/Mar/2025 18:27:56] "GET /login HTTP/1.1" 200 -
+2025-03-21 18:27:56,384 - INFO - 127.0.0.1 - - [21/Mar/2025 18:27:56] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:28:01,080 - INFO - 127.0.0.1 - - [21/Mar/2025 18:28:01] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-21 18:28:01,085 - INFO - 127.0.0.1 - - [21/Mar/2025 18:28:01] "GET /otp-verification HTTP/1.1" 200 -
+2025-03-21 18:28:01,091 - INFO - 127.0.0.1 - - [21/Mar/2025 18:28:01] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:42:23,480 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-21 18:42:23,480 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-21 18:42:27,133 - INFO - 127.0.0.1 - - [21/Mar/2025 18:42:27] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-21 18:42:27,145 - INFO - 127.0.0.1 - - [21/Mar/2025 18:42:27] "GET /login?next=/ HTTP/1.1" 200 -
+2025-03-21 18:42:27,150 - INFO - 127.0.0.1 - - [21/Mar/2025 18:42:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:42:27,155 - INFO - 127.0.0.1 - - [21/Mar/2025 18:42:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:42:30,262 - INFO - 127.0.0.1 - - [21/Mar/2025 18:42:30] "GET /register HTTP/1.1" 200 -
+2025-03-21 18:42:30,289 - INFO - 127.0.0.1 - - [21/Mar/2025 18:42:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:42:37,834 - INFO - 127.0.0.1 - - [21/Mar/2025 18:42:37] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-03-21 18:42:37,861 - INFO - 127.0.0.1 - - [21/Mar/2025 18:42:37] "GET /otp-setup/test8 HTTP/1.1" 200 -
+2025-03-21 18:42:52,916 - INFO - 127.0.0.1 - - [21/Mar/2025 18:42:52] "GET /login HTTP/1.1" 200 -
+2025-03-21 18:42:52,928 - INFO - 127.0.0.1 - - [21/Mar/2025 18:42:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:43:01,573 - INFO - 127.0.0.1 - - [21/Mar/2025 18:43:01] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-21 18:43:01,829 - INFO - 127.0.0.1 - - [21/Mar/2025 18:43:01] "GET /otp-verification HTTP/1.1" 200 -
+2025-03-21 18:43:01,842 - INFO - 127.0.0.1 - - [21/Mar/2025 18:43:01] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:43:07,506 - INFO - 127.0.0.1 - - [21/Mar/2025 18:43:07] "[32mPOST /otp-verification HTTP/1.1[0m" 302 -
+2025-03-21 18:43:07,537 - INFO - 127.0.0.1 - - [21/Mar/2025 18:43:07] "GET / HTTP/1.1" 200 -
+2025-03-21 18:43:07,548 - INFO - 127.0.0.1 - - [21/Mar/2025 18:43:07] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:43:30,024 - DEBUG - Successfully retrieved public key for user 6
+2025-03-21 18:43:30,025 - INFO - 127.0.0.1 - - [21/Mar/2025 18:43:30] "GET /get_public_key HTTP/1.1" 200 -
+2025-03-21 18:43:30,036 - DEBUG - Uploaded file content size: 29 bytes
+2025-03-21 18:43:30,037 - DEBUG - File saved to: uploads/571465bd79a59b209fec3e4b9961fa4b.PNG.enc
+2025-03-21 18:43:30,037 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 18:43:30,048 - DEBUG - File information saved to database: 571465bd79a59b209fec3e4b9961fa4b.PNG.enc, user_id=6
+2025-03-21 18:43:30,050 - INFO - 127.0.0.1 - - [21/Mar/2025 18:43:30] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-03-21 18:43:30,057 - INFO - 127.0.0.1 - - [21/Mar/2025 18:43:30] "GET / HTTP/1.1" 200 -
+2025-03-21 18:43:30,067 - INFO - 127.0.0.1 - - [21/Mar/2025 18:43:30] "GET / HTTP/1.1" 200 -
+2025-03-21 18:43:30,075 - INFO - 127.0.0.1 - - [21/Mar/2025 18:43:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:43:33,650 - DEBUG - Successfully decrypted AES key, length: 16 bytes
+2025-03-21 18:43:33,652 - INFO - File 3 successfully shared with user test7
+2025-03-21 18:43:33,653 - INFO - 127.0.0.1 - - [21/Mar/2025 18:43:33] "[32mPOST /share/3 HTTP/1.1[0m" 302 -
+2025-03-21 18:43:33,658 - INFO - 127.0.0.1 - - [21/Mar/2025 18:43:33] "GET / HTTP/1.1" 200 -
+2025-03-21 18:43:33,667 - INFO - 127.0.0.1 - - [21/Mar/2025 18:43:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:43:38,428 - INFO - 127.0.0.1 - - [21/Mar/2025 18:43:38] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-03-21 18:43:38,439 - INFO - 127.0.0.1 - - [21/Mar/2025 18:43:38] "GET /login HTTP/1.1" 200 -
+2025-03-21 18:43:38,447 - INFO - 127.0.0.1 - - [21/Mar/2025 18:43:38] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:43:43,498 - INFO - 127.0.0.1 - - [21/Mar/2025 18:43:43] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-21 18:43:43,742 - INFO - 127.0.0.1 - - [21/Mar/2025 18:43:43] "GET /otp-verification HTTP/1.1" 200 -
+2025-03-21 18:43:43,752 - INFO - 127.0.0.1 - - [21/Mar/2025 18:43:43] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:43:49,936 - INFO - 127.0.0.1 - - [21/Mar/2025 18:43:49] "[32mPOST /otp-verification HTTP/1.1[0m" 302 -
+2025-03-21 18:43:49,949 - INFO - 127.0.0.1 - - [21/Mar/2025 18:43:49] "GET / HTTP/1.1" 200 -
+2025-03-21 18:43:49,962 - INFO - 127.0.0.1 - - [21/Mar/2025 18:43:49] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:43:57,270 - INFO - 127.0.0.1 - - [21/Mar/2025 18:43:57] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-03-21 18:43:57,282 - INFO - 127.0.0.1 - - [21/Mar/2025 18:43:57] "GET /login HTTP/1.1" 200 -
+2025-03-21 18:43:57,295 - INFO - 127.0.0.1 - - [21/Mar/2025 18:43:57] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:50:52,957 - INFO - 127.0.0.1 - - [21/Mar/2025 18:50:52] "POST /login HTTP/1.1" 200 -
+2025-03-21 18:50:52,974 - INFO - 127.0.0.1 - - [21/Mar/2025 18:50:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:51:09,931 - INFO - 127.0.0.1 - - [21/Mar/2025 18:51:09] "GET /register HTTP/1.1" 200 -
+2025-03-21 18:51:09,945 - INFO - 127.0.0.1 - - [21/Mar/2025 18:51:09] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:51:21,195 - INFO - 127.0.0.1 - - [21/Mar/2025 18:51:21] "GET /login HTTP/1.1" 200 -
+2025-03-21 18:51:21,207 - INFO - 127.0.0.1 - - [21/Mar/2025 18:51:21] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:51:25,435 - INFO - 127.0.0.1 - - [21/Mar/2025 18:51:25] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-21 18:51:25,677 - INFO - 127.0.0.1 - - [21/Mar/2025 18:51:25] "GET /otp-verification HTTP/1.1" 200 -
+2025-03-21 18:51:25,686 - INFO - 127.0.0.1 - - [21/Mar/2025 18:51:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:51:36,905 - INFO - 127.0.0.1 - - [21/Mar/2025 18:51:36] "[32mPOST /otp-verification HTTP/1.1[0m" 302 -
+2025-03-21 18:51:36,923 - INFO - 127.0.0.1 - - [21/Mar/2025 18:51:36] "GET / HTTP/1.1" 200 -
+2025-03-21 18:51:36,936 - INFO - 127.0.0.1 - - [21/Mar/2025 18:51:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-21 18:51:50,961 - INFO - User test7 downloaded file COMP3334-Project.pdf.enc
+2025-03-21 18:51:50,961 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 18:51:50,962 - INFO - 127.0.0.1 - - [21/Mar/2025 18:51:50] "GET /download/2 HTTP/1.1" 200 -
+2025-03-21 18:51:51,048 - DEBUG - Successfully retrieved private key for user 5
+2025-03-21 18:51:51,049 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 18:51:51,049 - INFO - 127.0.0.1 - - [21/Mar/2025 18:51:51] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-21 18:51:55,632 - DEBUG - Using shared user's specific encryption key
+2025-03-21 18:51:55,634 - INFO - User test7 downloaded file 571465bd79a59b209fec3e4b9961fa4b.PNG.enc
+2025-03-21 18:51:55,634 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-03-21 18:51:55,636 - INFO - 127.0.0.1 - - [21/Mar/2025 18:51:55] "GET /download/3 HTTP/1.1" 200 -
+2025-03-21 18:51:55,716 - DEBUG - Successfully retrieved private key for user 5
+2025-03-21 18:51:55,716 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-03-21 18:51:55,716 - INFO - 127.0.0.1 - - [21/Mar/2025 18:51:55] "GET /get_private_key HTTP/1.1" 200 -
+2025-03-22 23:48:06,265 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-22 23:48:06,266 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-22 23:48:29,393 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-22 23:48:29,393 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-22 23:49:06,012 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-22 23:49:06,012 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-22 23:49:41,560 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-22 23:49:41,560 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 15:33:42,950 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-09 15:33:42,951 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 15:33:53,968 - INFO - 127.0.0.1 - - [09/Apr/2025 15:33:53] "[32mGET / HTTP/1.1[0m" 302 -
+2025-04-09 15:33:54,009 - INFO - 127.0.0.1 - - [09/Apr/2025 15:33:54] "GET /login?next=/ HTTP/1.1" 200 -
+2025-04-09 15:33:54,025 - INFO - 127.0.0.1 - - [09/Apr/2025 15:33:54] "GET /static/styles.css HTTP/1.1" 200 -
+2025-04-09 15:33:54,241 - INFO - 127.0.0.1 - - [09/Apr/2025 15:33:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-09 15:33:54,495 - INFO - 127.0.0.1 - - [09/Apr/2025 15:33:54] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+2025-04-09 15:33:54,503 - INFO - 127.0.0.1 - - [09/Apr/2025 15:33:54] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+2025-04-09 15:34:12,307 - INFO - 127.0.0.1 - - [09/Apr/2025 15:34:12] "POST /login?next=/ HTTP/1.1" 200 -
+2025-04-09 15:34:12,323 - INFO - 127.0.0.1 - - [09/Apr/2025 15:34:12] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 15:34:21,733 - INFO - 127.0.0.1 - - [09/Apr/2025 15:34:21] "POST /login?next=/ HTTP/1.1" 200 -
+2025-04-09 15:34:21,751 - INFO - 127.0.0.1 - - [09/Apr/2025 15:34:21] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 15:34:24,234 - INFO - 127.0.0.1 - - [09/Apr/2025 15:34:24] "GET /register HTTP/1.1" 200 -
+2025-04-09 15:34:24,245 - INFO - 127.0.0.1 - - [09/Apr/2025 15:34:24] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 15:34:33,787 - INFO - 127.0.0.1 - - [09/Apr/2025 15:34:33] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-04-09 15:34:33,817 - INFO - 127.0.0.1 - - [09/Apr/2025 15:34:33] "GET /otp-setup/test10 HTTP/1.1" 200 -
+2025-04-09 15:34:52,683 - INFO - 127.0.0.1 - - [09/Apr/2025 15:34:52] "GET /login HTTP/1.1" 200 -
+2025-04-09 15:34:52,697 - INFO - 127.0.0.1 - - [09/Apr/2025 15:34:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 15:34:57,442 - INFO - 127.0.0.1 - - [09/Apr/2025 15:34:57] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-09 15:34:57,449 - INFO - 127.0.0.1 - - [09/Apr/2025 15:34:57] "GET /otp-verification HTTP/1.1" 200 -
+2025-04-09 15:34:57,454 - INFO - 127.0.0.1 - - [09/Apr/2025 15:34:57] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 15:35:06,326 - INFO - 127.0.0.1 - - [09/Apr/2025 15:35:06] "[32mPOST /otp-verification HTTP/1.1[0m" 302 -
+2025-04-09 15:35:06,358 - INFO - 127.0.0.1 - - [09/Apr/2025 15:35:06] "GET / HTTP/1.1" 200 -
+2025-04-09 15:35:06,371 - INFO - 127.0.0.1 - - [09/Apr/2025 15:35:06] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 15:35:22,126 - DEBUG - Successfully retrieved public key for user 7
+2025-04-09 15:35:22,127 - INFO - 127.0.0.1 - - [09/Apr/2025 15:35:22] "GET /get_public_key HTTP/1.1" 200 -
+2025-04-09 15:35:22,145 - DEBUG - Uploaded file content size: 29 bytes
+2025-04-09 15:35:22,145 - DEBUG - File saved to: uploads/ChatGPT_Image_202545_23_53_39.png.enc
+2025-04-09 15:35:22,146 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-04-09 15:35:22,148 - DEBUG - File information saved to database: ChatGPT_Image_202545_23_53_39.png.enc, user_id=7
+2025-04-09 15:35:22,150 - INFO - 127.0.0.1 - - [09/Apr/2025 15:35:22] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-04-09 15:35:22,155 - INFO - 127.0.0.1 - - [09/Apr/2025 15:35:22] "GET / HTTP/1.1" 200 -
+2025-04-09 15:35:22,164 - INFO - 127.0.0.1 - - [09/Apr/2025 15:35:22] "GET / HTTP/1.1" 200 -
+2025-04-09 15:35:22,173 - INFO - 127.0.0.1 - - [09/Apr/2025 15:35:22] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 15:35:36,710 - DEBUG - Successfully decrypted AES key, length: 16 bytes
+2025-04-09 15:35:36,712 - INFO - File 4 successfully shared with user test7
+2025-04-09 15:35:36,712 - INFO - 127.0.0.1 - - [09/Apr/2025 15:35:36] "[32mPOST /share/4 HTTP/1.1[0m" 302 -
+2025-04-09 15:35:36,720 - INFO - 127.0.0.1 - - [09/Apr/2025 15:35:36] "GET / HTTP/1.1" 200 -
+2025-04-09 15:35:36,729 - INFO - 127.0.0.1 - - [09/Apr/2025 15:35:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 15:35:38,321 - INFO - 127.0.0.1 - - [09/Apr/2025 15:35:38] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-09 15:35:38,332 - INFO - 127.0.0.1 - - [09/Apr/2025 15:35:38] "GET /login HTTP/1.1" 200 -
+2025-04-09 15:35:38,344 - INFO - 127.0.0.1 - - [09/Apr/2025 15:35:38] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 15:35:42,449 - INFO - 127.0.0.1 - - [09/Apr/2025 15:35:42] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-09 15:35:42,750 - INFO - 127.0.0.1 - - [09/Apr/2025 15:35:42] "GET /otp-verification HTTP/1.1" 200 -
+2025-04-09 15:35:42,759 - INFO - 127.0.0.1 - - [09/Apr/2025 15:35:42] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 15:35:48,612 - INFO - 127.0.0.1 - - [09/Apr/2025 15:35:48] "[32mPOST /otp-verification HTTP/1.1[0m" 302 -
+2025-04-09 15:35:48,625 - INFO - 127.0.0.1 - - [09/Apr/2025 15:35:48] "GET / HTTP/1.1" 200 -
+2025-04-09 15:35:48,638 - INFO - 127.0.0.1 - - [09/Apr/2025 15:35:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 15:35:53,965 - DEBUG - Using shared user's specific encryption key
+2025-04-09 15:35:53,966 - INFO - User test7 downloaded file ChatGPT_Image_202545_23_53_39.png.enc
+2025-04-09 15:35:53,966 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-04-09 15:35:53,967 - INFO - 127.0.0.1 - - [09/Apr/2025 15:35:53] "GET /download/4 HTTP/1.1" 200 -
+2025-04-09 15:35:54,049 - DEBUG - Successfully retrieved private key for user 5
+2025-04-09 15:35:54,049 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-04-09 15:35:54,050 - INFO - 127.0.0.1 - - [09/Apr/2025 15:35:54] "GET /get_private_key HTTP/1.1" 200 -
+2025-04-09 15:36:08,443 - DEBUG - Using shared user's specific encryption key
+2025-04-09 15:36:08,444 - INFO - User test7 downloaded file 571465bd79a59b209fec3e4b9961fa4b.PNG.enc
+2025-04-09 15:36:08,445 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-04-09 15:36:08,446 - INFO - 127.0.0.1 - - [09/Apr/2025 15:36:08] "GET /download/3 HTTP/1.1" 200 -
+2025-04-09 15:36:08,520 - DEBUG - Successfully retrieved private key for user 5
+2025-04-09 15:36:08,520 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-04-09 15:36:08,521 - INFO - 127.0.0.1 - - [09/Apr/2025 15:36:08] "GET /get_private_key HTTP/1.1" 200 -
+2025-04-09 15:36:25,848 - INFO - User test7 downloaded file COMP3334-Project.pdf.enc
+2025-04-09 15:36:25,848 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-04-09 15:36:25,854 - INFO - 127.0.0.1 - - [09/Apr/2025 15:36:25] "GET /download/2 HTTP/1.1" 200 -
+2025-04-09 15:36:25,910 - DEBUG - Successfully retrieved private key for user 5
+2025-04-09 15:36:25,910 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-04-09 15:36:25,910 - INFO - 127.0.0.1 - - [09/Apr/2025 15:36:25] "GET /get_private_key HTTP/1.1" 200 -
+2025-04-09 15:37:17,630 - INFO - 127.0.0.1 - - [09/Apr/2025 15:37:17] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-09 15:37:17,643 - INFO - 127.0.0.1 - - [09/Apr/2025 15:37:17] "GET /login HTTP/1.1" 200 -
+2025-04-09 15:37:17,659 - INFO - 127.0.0.1 - - [09/Apr/2025 15:37:17] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 15:44:59,444 - INFO - 127.0.0.1 - - [09/Apr/2025 15:44:59] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-09 15:44:59,830 - INFO - 127.0.0.1 - - [09/Apr/2025 15:44:59] "GET /otp-verification HTTP/1.1" 200 -
+2025-04-09 15:44:59,851 - INFO - 127.0.0.1 - - [09/Apr/2025 15:44:59] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 15:45:09,954 - INFO - 127.0.0.1 - - [09/Apr/2025 15:45:09] "[32mPOST /otp-verification HTTP/1.1[0m" 302 -
+2025-04-09 15:45:09,967 - INFO - 127.0.0.1 - - [09/Apr/2025 15:45:09] "GET / HTTP/1.1" 200 -
+2025-04-09 15:45:09,976 - INFO - 127.0.0.1 - - [09/Apr/2025 15:45:09] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 15:45:20,229 - INFO - User test7 downloaded file COMP3334-Project.pdf.enc
+2025-04-09 15:45:20,230 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-04-09 15:45:20,230 - INFO - 127.0.0.1 - - [09/Apr/2025 15:45:20] "GET /download/2 HTTP/1.1" 200 -
+2025-04-09 15:45:20,308 - DEBUG - Successfully retrieved private key for user 5
+2025-04-09 15:45:20,308 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-04-09 15:45:20,308 - INFO - 127.0.0.1 - - [09/Apr/2025 15:45:20] "GET /get_private_key HTTP/1.1" 200 -
+2025-04-09 16:24:50,955 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-09 16:24:50,955 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 16:24:54,284 - INFO - 127.0.0.1 - - [09/Apr/2025 16:24:54] "GET / HTTP/1.1" 200 -
+2025-04-09 16:24:54,288 - INFO - 127.0.0.1 - - [09/Apr/2025 16:24:54] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 16:24:54,295 - INFO - 127.0.0.1 - - [09/Apr/2025 16:24:54] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 16:24:57,518 - INFO - User test7 downloaded file COMP3334-Project.pdf.enc
+2025-04-09 16:24:57,519 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-04-09 16:24:57,520 - INFO - 127.0.0.1 - - [09/Apr/2025 16:24:57] "GET /download/2 HTTP/1.1" 200 -
+2025-04-09 16:24:57,667 - DEBUG - Successfully retrieved private key for user 5
+2025-04-09 16:24:57,667 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-04-09 16:24:57,668 - INFO - 127.0.0.1 - - [09/Apr/2025 16:24:57] "GET /get_private_key HTTP/1.1" 200 -
+2025-04-09 16:25:51,698 - INFO - 127.0.0.1 - - [09/Apr/2025 16:25:51] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-09 16:25:51,716 - INFO - 127.0.0.1 - - [09/Apr/2025 16:25:51] "GET /login HTTP/1.1" 200 -
+2025-04-09 16:25:51,729 - INFO - 127.0.0.1 - - [09/Apr/2025 16:25:51] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 16:25:53,174 - INFO - 127.0.0.1 - - [09/Apr/2025 16:25:53] "GET /register HTTP/1.1" 200 -
+2025-04-09 16:25:53,186 - INFO - 127.0.0.1 - - [09/Apr/2025 16:25:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 16:25:58,320 - INFO - 127.0.0.1 - - [09/Apr/2025 16:25:58] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-04-09 16:25:58,355 - INFO - 127.0.0.1 - - [09/Apr/2025 16:25:58] "GET /otp-setup/test11 HTTP/1.1" 200 -
+2025-04-09 16:26:14,541 - INFO - 127.0.0.1 - - [09/Apr/2025 16:26:14] "GET /login HTTP/1.1" 200 -
+2025-04-09 16:26:14,553 - INFO - 127.0.0.1 - - [09/Apr/2025 16:26:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 16:26:18,315 - INFO - 127.0.0.1 - - [09/Apr/2025 16:26:18] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-09 16:26:18,568 - INFO - 127.0.0.1 - - [09/Apr/2025 16:26:18] "GET /otp-verification HTTP/1.1" 200 -
+2025-04-09 16:26:18,577 - INFO - 127.0.0.1 - - [09/Apr/2025 16:26:18] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 16:26:24,552 - INFO - 127.0.0.1 - - [09/Apr/2025 16:26:24] "[32mPOST /otp-verification HTTP/1.1[0m" 302 -
+2025-04-09 16:26:24,564 - INFO - 127.0.0.1 - - [09/Apr/2025 16:26:24] "GET / HTTP/1.1" 200 -
+2025-04-09 16:26:24,575 - INFO - 127.0.0.1 - - [09/Apr/2025 16:26:24] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 16:26:31,282 - DEBUG - Successfully retrieved public key for user 8
+2025-04-09 16:26:31,284 - INFO - 127.0.0.1 - - [09/Apr/2025 16:26:31] "GET /get_public_key HTTP/1.1" 200 -
+2025-04-09 16:26:31,305 - DEBUG - Uploaded file content size: 29 bytes
+2025-04-09 16:26:31,306 - DEBUG - File saved to: uploads/8e3ccb16-31b8-4a80-83a6-fef1ce6a9414.png.enc
+2025-04-09 16:26:31,307 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-04-09 16:26:31,309 - DEBUG - File information saved to database: 8e3ccb16-31b8-4a80-83a6-fef1ce6a9414.png.enc, user_id=8
+2025-04-09 16:26:31,311 - INFO - 127.0.0.1 - - [09/Apr/2025 16:26:31] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-04-09 16:26:31,326 - INFO - 127.0.0.1 - - [09/Apr/2025 16:26:31] "GET / HTTP/1.1" 200 -
+2025-04-09 16:26:31,339 - INFO - 127.0.0.1 - - [09/Apr/2025 16:26:31] "GET / HTTP/1.1" 200 -
+2025-04-09 16:26:31,348 - INFO - 127.0.0.1 - - [09/Apr/2025 16:26:31] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 16:26:35,269 - DEBUG - Successfully decrypted AES key, length: 16 bytes
+2025-04-09 16:26:35,271 - INFO - File 5 successfully shared with user test10
+2025-04-09 16:26:35,272 - INFO - 127.0.0.1 - - [09/Apr/2025 16:26:35] "[32mPOST /share/5 HTTP/1.1[0m" 302 -
+2025-04-09 16:26:35,282 - INFO - 127.0.0.1 - - [09/Apr/2025 16:26:35] "GET / HTTP/1.1" 200 -
+2025-04-09 16:26:35,295 - INFO - 127.0.0.1 - - [09/Apr/2025 16:26:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 16:26:37,624 - INFO - User test11 downloaded file 8e3ccb16-31b8-4a80-83a6-fef1ce6a9414.png.enc
+2025-04-09 16:26:37,624 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-04-09 16:26:37,625 - INFO - 127.0.0.1 - - [09/Apr/2025 16:26:37] "GET /download/5 HTTP/1.1" 200 -
+2025-04-09 16:26:37,710 - DEBUG - Successfully retrieved private key for user 8
+2025-04-09 16:26:37,711 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-04-09 16:26:37,711 - INFO - 127.0.0.1 - - [09/Apr/2025 16:26:37] "GET /get_private_key HTTP/1.1" 200 -
+2025-04-09 16:57:04,758 - INFO - 127.0.0.1 - - [09/Apr/2025 16:57:04] "GET / HTTP/1.1" 200 -
+2025-04-09 16:57:04,764 - INFO - 127.0.0.1 - - [09/Apr/2025 16:57:04] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 16:57:04,772 - INFO - 127.0.0.1 - - [09/Apr/2025 16:57:04] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 16:57:07,139 - INFO - 127.0.0.1 - - [09/Apr/2025 16:57:07] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-09 16:57:07,147 - INFO - 127.0.0.1 - - [09/Apr/2025 16:57:07] "GET /login HTTP/1.1" 200 -
+2025-04-09 16:57:07,155 - INFO - 127.0.0.1 - - [09/Apr/2025 16:57:07] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 16:57:48,068 - INFO - 127.0.0.1 - - [09/Apr/2025 16:57:48] "POST /login HTTP/1.1" 200 -
+2025-04-09 16:57:48,078 - INFO - 127.0.0.1 - - [09/Apr/2025 16:57:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 16:57:53,406 - INFO - 127.0.0.1 - - [09/Apr/2025 16:57:53] "POST /login HTTP/1.1" 200 -
+2025-04-09 16:57:53,418 - INFO - 127.0.0.1 - - [09/Apr/2025 16:57:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 16:58:10,518 - INFO - 127.0.0.1 - - [09/Apr/2025 16:58:10] "POST /login HTTP/1.1" 200 -
+2025-04-09 16:58:10,532 - INFO - 127.0.0.1 - - [09/Apr/2025 16:58:10] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 16:58:25,195 - INFO - 127.0.0.1 - - [09/Apr/2025 16:58:25] "POST /login HTTP/1.1" 200 -
+2025-04-09 16:58:25,205 - INFO - 127.0.0.1 - - [09/Apr/2025 16:58:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 16:58:35,653 - INFO - 127.0.0.1 - - [09/Apr/2025 16:58:35] "POST /login HTTP/1.1" 200 -
+2025-04-09 16:58:35,665 - INFO - 127.0.0.1 - - [09/Apr/2025 16:58:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 17:05:18,202 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-09 17:05:18,202 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 17:05:20,963 - INFO - 127.0.0.1 - - [09/Apr/2025 17:05:20] "GET /login HTTP/1.1" 200 -
+2025-04-09 17:05:20,980 - INFO - 127.0.0.1 - - [09/Apr/2025 17:05:20] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 17:05:24,668 - INFO - 127.0.0.1 - - [09/Apr/2025 17:05:24] "GET /reset-password HTTP/1.1" 200 -
+2025-04-09 17:05:24,675 - INFO - 127.0.0.1 - - [09/Apr/2025 17:05:24] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 17:05:32,499 - INFO - 127.0.0.1 - - [09/Apr/2025 17:05:32] "[32mPOST /reset-password HTTP/1.1[0m" 302 -
+2025-04-09 17:05:32,728 - INFO - 127.0.0.1 - - [09/Apr/2025 17:05:32] "GET /login HTTP/1.1" 200 -
+2025-04-09 17:05:32,736 - INFO - 127.0.0.1 - - [09/Apr/2025 17:05:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 17:05:38,262 - INFO - 127.0.0.1 - - [09/Apr/2025 17:05:38] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-09 17:05:38,507 - INFO - 127.0.0.1 - - [09/Apr/2025 17:05:38] "GET /otp-verification HTTP/1.1" 200 -
+2025-04-09 17:05:38,515 - INFO - 127.0.0.1 - - [09/Apr/2025 17:05:38] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 17:05:50,265 - INFO - 127.0.0.1 - - [09/Apr/2025 17:05:50] "[32mPOST /otp-verification HTTP/1.1[0m" 302 -
+2025-04-09 17:05:50,293 - INFO - 127.0.0.1 - - [09/Apr/2025 17:05:50] "GET / HTTP/1.1" 200 -
+2025-04-09 17:05:50,305 - INFO - 127.0.0.1 - - [09/Apr/2025 17:05:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 17:05:54,056 - INFO - 127.0.0.1 - - [09/Apr/2025 17:05:54] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-09 17:05:54,066 - INFO - 127.0.0.1 - - [09/Apr/2025 17:05:54] "GET /login HTTP/1.1" 200 -
+2025-04-09 17:05:54,080 - INFO - 127.0.0.1 - - [09/Apr/2025 17:05:54] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 17:17:04,221 - INFO - 127.0.0.1 - - [09/Apr/2025 17:17:04] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-09 17:17:04,227 - INFO - 127.0.0.1 - - [09/Apr/2025 17:17:04] "GET /otp-verification HTTP/1.1" 200 -
+2025-04-09 17:17:04,236 - INFO - 127.0.0.1 - - [09/Apr/2025 17:17:04] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 17:17:12,940 - INFO - 127.0.0.1 - - [09/Apr/2025 17:17:12] "[32mPOST /otp-verification HTTP/1.1[0m" 302 -
+2025-04-09 17:17:12,954 - INFO - 127.0.0.1 - - [09/Apr/2025 17:17:12] "GET / HTTP/1.1" 200 -
+2025-04-09 17:17:12,969 - INFO - 127.0.0.1 - - [09/Apr/2025 17:17:12] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 17:17:29,395 - DEBUG - Using shared user's specific encryption key
+2025-04-09 17:17:29,396 - INFO - User test10 downloaded file 8e3ccb16-31b8-4a80-83a6-fef1ce6a9414.png.enc
+2025-04-09 17:17:29,396 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-04-09 17:17:29,397 - INFO - 127.0.0.1 - - [09/Apr/2025 17:17:29] "GET /download/5 HTTP/1.1" 200 -
+2025-04-09 17:17:29,477 - DEBUG - Successfully retrieved private key for user 7
+2025-04-09 17:17:29,477 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-04-09 17:17:29,477 - INFO - 127.0.0.1 - - [09/Apr/2025 17:17:29] "GET /get_private_key HTTP/1.1" 200 -
+2025-04-09 17:17:33,082 - DEBUG - Using shared user's specific encryption key
+2025-04-09 17:17:33,083 - INFO - User test10 downloaded file 8e3ccb16-31b8-4a80-83a6-fef1ce6a9414.png.enc
+2025-04-09 17:17:33,083 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-04-09 17:17:33,084 - INFO - 127.0.0.1 - - [09/Apr/2025 17:17:33] "GET /download/5 HTTP/1.1" 200 -
+2025-04-09 17:17:33,167 - DEBUG - Successfully retrieved private key for user 7
+2025-04-09 17:17:33,167 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-04-09 17:17:33,167 - INFO - 127.0.0.1 - - [09/Apr/2025 17:17:33] "GET /get_private_key HTTP/1.1" 200 -
+2025-04-09 17:18:10,641 - DEBUG - Using shared user's specific encryption key
+2025-04-09 17:18:10,642 - INFO - User test10 downloaded file 8e3ccb16-31b8-4a80-83a6-fef1ce6a9414.png.enc
+2025-04-09 17:18:10,642 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-04-09 17:18:10,643 - INFO - 127.0.0.1 - - [09/Apr/2025 17:18:10] "GET /download/5 HTTP/1.1" 200 -
+2025-04-09 17:18:10,711 - DEBUG - Successfully retrieved private key for user 7
+2025-04-09 17:18:10,711 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-04-09 17:18:10,711 - INFO - 127.0.0.1 - - [09/Apr/2025 17:18:10] "GET /get_private_key HTTP/1.1" 200 -
+2025-04-09 17:18:50,252 - INFO - User test10 downloaded file ChatGPT_Image_202545_23_53_39.png.enc
+2025-04-09 17:18:50,252 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-04-09 17:18:50,253 - INFO - 127.0.0.1 - - [09/Apr/2025 17:18:50] "GET /download/4 HTTP/1.1" 200 -
+2025-04-09 17:18:50,333 - DEBUG - Successfully retrieved private key for user 7
+2025-04-09 17:18:50,334 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-04-09 17:18:50,334 - INFO - 127.0.0.1 - - [09/Apr/2025 17:18:50] "GET /get_private_key HTTP/1.1" 200 -
+2025-04-09 17:25:32,356 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-09 17:25:32,356 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 17:25:35,889 - INFO - 127.0.0.1 - - [09/Apr/2025 17:25:35] "GET / HTTP/1.1" 200 -
+2025-04-09 17:25:35,896 - INFO - 127.0.0.1 - - [09/Apr/2025 17:25:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 17:25:35,903 - INFO - 127.0.0.1 - - [09/Apr/2025 17:25:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
