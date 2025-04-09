@@ -13,10 +13,13 @@ env/
 *.db
 *.sqlite3
 
-# Logs
+# Logs - Make sure these come before any !exceptions
 *.log
-logs/
 app.log
+logs/
+log/
+**/logs/
+**/app.log
 
 # IDE
 .vscode/
