@@ -8381,3 +8381,20 @@ ModuleNotFoundError: No module named 'PIL'
 2025-04-09 22:37:05,799 - INFO - 127.0.0.1 - - [09/Apr/2025 22:37:05] "[32mGET /logout HTTP/1.1[0m" 302 -
 2025-04-09 22:37:06,140 - INFO - 127.0.0.1 - - [09/Apr/2025 22:37:06] "GET /login HTTP/1.1" 200 -
 2025-04-09 22:37:06,156 - INFO - 127.0.0.1 - - [09/Apr/2025 22:37:06] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 22:40:08,059 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8001
+2025-04-09 22:40:08,059 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 22:40:08,061 - INFO -  * Restarting with stat
+2025-04-09 22:40:08,498 - WARNING -  * Debugger is active!
+2025-04-09 22:40:08,500 - INFO -  * Debugger PIN: 120-070-085
+2025-04-09 22:40:33,005 - WARNING - Login failed for username: admin
+2025-04-09 22:40:33,014 - INFO - 127.0.0.1 - - [09/Apr/2025 22:40:33] "POST /login HTTP/1.1" 200 -
+2025-04-09 22:40:33,113 - INFO - 127.0.0.1 - - [09/Apr/2025 22:40:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 22:40:37,921 - INFO - User admin logged in successfully
+2025-04-09 22:40:37,922 - INFO - 127.0.0.1 - - [09/Apr/2025 22:40:37] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-09 22:40:38,230 - INFO - 127.0.0.1 - - [09/Apr/2025 22:40:38] "GET /otp-verification HTTP/1.1" 200 -
+2025-04-09 22:40:38,556 - INFO - 127.0.0.1 - - [09/Apr/2025 22:40:38] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 22:40:47,215 - INFO - 127.0.0.1 - - [09/Apr/2025 22:40:47] "[32mPOST /otp-verification HTTP/1.1[0m" 302 -
+2025-04-09 22:40:47,589 - INFO - 127.0.0.1 - - [09/Apr/2025 22:40:47] "GET / HTTP/1.1" 200 -
+2025-04-09 22:40:47,604 - INFO - 127.0.0.1 - - [09/Apr/2025 22:40:47] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 22:40:47,860 - INFO - 127.0.0.1 - - [09/Apr/2025 22:40:47] "GET /admin/logs HTTP/1.1" 200 -

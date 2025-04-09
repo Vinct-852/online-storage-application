@@ -16,6 +16,7 @@ env/
 # Logs
 *.log
 logs/
+app.log
 
 # IDE
 .vscode/
@@ -45,5 +46,3 @@ instance/
 # Build artifacts
 dist/
 build/
-
-*.log
