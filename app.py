@@ -3,11 +3,9 @@ import sqlite3
 from flask import Flask, render_template, request, redirect, url_for, flash, send_from_directory, send_file, session
 from werkzeug.utils import secure_filename
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
-from werkzeug.security import generate_password_hash, check_password_hash
 from Crypto.Cipher import AES
 from Crypto.PublicKey import RSA
 from Crypto.Random import get_random_bytes
-from Crypto.Hash import HMAC, SHA256
 from flask import make_response, send_file, jsonify
 import base64
 import logging
@@ -210,23 +208,36 @@ def reset_password():
     if request.method == 'POST':
         username = request.form['username']
         new_password = request.form['new_password']
+        otp_code = request.form['otp']
 
         conn = sqlite3.connect('database.db')
         c = conn.cursor()
-        # 防止SQL Injection：使用参数化查询
-        c.execute('SELECT * FROM users WHERE username = ?', (username,))
+        c.execute('SELECT id, otp_secret FROM users WHERE username = ?', (username,))
         user = c.fetchone()
 
-        if user:
-            hashed_password = generate_password_hash(new_password)
-            c.execute('UPDATE users SET password = ? WHERE username = ?', (hashed_password, username))
-            conn.commit()
-            conn.close()
-            flash('Password successfully reset! Please login with your new password.', 'success')
-            return redirect(url_for('login'))
-        else:
-            conn.close()
+        if not user:
             flash('Username not found!', 'danger')
+            return render_template('reset_password.html')
+
+        # Verify OTP
+        otp_secret = user[1]
+        if not otp_secret:
+            flash('OTP not set up for this user!', 'danger')
+            return render_template('reset_password.html')
+
+        totp = pyotp.TOTP(otp_secret)
+        if not totp.verify(otp_code):
+            flash('Invalid OTP code!', 'danger')
+            return render_template('reset_password.html')
+
+        # If OTP is valid, proceed with password reset
+        hashed_password = generate_password_hash(new_password)
+        c.execute('UPDATE users SET password = ? WHERE username = ?', (hashed_password, username))
+        conn.commit()
+        conn.close()
+
+        flash('Password successfully reset! Please login with your new password.', 'success')
+        return redirect(url_for('login'))
 
     return render_template('reset_password.html')
 

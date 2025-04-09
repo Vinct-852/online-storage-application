@@ -45,3 +45,5 @@ instance/
 # Build artifacts
 dist/
 build/
+
+*.log

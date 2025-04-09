@@ -7836,3 +7836,166 @@ ModuleNotFoundError: No module named 'PIL'
 2025-04-09 19:03:12,556 - INFO - 127.0.0.1 - - [09/Apr/2025 19:03:12] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
 2025-04-09 19:03:12,879 - INFO - 127.0.0.1 - - [09/Apr/2025 19:03:12] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png&s=bac02eZk8le2XmdGKPWJ HTTP/1.1[0m" 304 -
 2025-04-09 19:03:13,146 - INFO - 127.0.0.1 - - [09/Apr/2025 19:03:13] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-04-09 19:48:32,643 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8001
+2025-04-09 19:48:32,644 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 19:48:32,645 - INFO -  * Restarting with stat
+2025-04-09 19:48:33,094 - WARNING -  * Debugger is active!
+2025-04-09 19:48:33,096 - INFO -  * Debugger PIN: 120-070-085
+2025-04-09 19:48:38,546 - INFO - 127.0.0.1 - - [09/Apr/2025 19:48:38] "GET /login?next=/ HTTP/1.1" 200 -
+2025-04-09 19:48:38,604 - INFO - 127.0.0.1 - - [09/Apr/2025 19:48:38] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 19:48:41,013 - INFO - 127.0.0.1 - - [09/Apr/2025 19:48:41] "GET /register HTTP/1.1" 200 -
+2025-04-09 19:48:41,331 - INFO - 127.0.0.1 - - [09/Apr/2025 19:48:41] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 19:48:47,862 - INFO - 127.0.0.1 - - [09/Apr/2025 19:48:47] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-04-09 19:48:47,915 - INFO - 127.0.0.1 - - [09/Apr/2025 19:48:47] "GET /otp-setup/admin HTTP/1.1" 200 -
+2025-04-09 19:49:14,703 - INFO - 127.0.0.1 - - [09/Apr/2025 19:49:14] "GET /login HTTP/1.1" 200 -
+2025-04-09 19:49:14,831 - INFO - 127.0.0.1 - - [09/Apr/2025 19:49:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 19:49:19,671 - INFO - User admin logged in successfully
+2025-04-09 19:49:19,672 - INFO - 127.0.0.1 - - [09/Apr/2025 19:49:19] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-09 19:49:19,864 - INFO - 127.0.0.1 - - [09/Apr/2025 19:49:19] "GET /otp-verification HTTP/1.1" 200 -
+2025-04-09 19:49:20,208 - INFO - 127.0.0.1 - - [09/Apr/2025 19:49:20] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 19:49:26,984 - INFO - 127.0.0.1 - - [09/Apr/2025 19:49:26] "[32mPOST /otp-verification HTTP/1.1[0m" 302 -
+2025-04-09 19:49:27,314 - INFO - 127.0.0.1 - - [09/Apr/2025 19:49:27] "GET / HTTP/1.1" 200 -
+2025-04-09 19:49:27,703 - INFO - 127.0.0.1 - - [09/Apr/2025 19:49:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 19:49:27,987 - INFO - 127.0.0.1 - - [09/Apr/2025 19:49:27] "GET /admin/logs HTTP/1.1" 200 -
+2025-04-09 19:50:55,455 - INFO - 127.0.0.1 - - [09/Apr/2025 19:50:55] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 19:55:43,061 - INFO - 127.0.0.1 - - [09/Apr/2025 19:55:43] "GET / HTTP/1.1" 200 -
+2025-04-09 19:55:43,092 - INFO - 127.0.0.1 - - [09/Apr/2025 19:55:43] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 19:55:43,307 - INFO - 127.0.0.1 - - [09/Apr/2025 19:55:43] "GET /admin/logs HTTP/1.1" 200 -
+2025-04-09 19:58:37,302 - INFO - 127.0.0.1 - - [09/Apr/2025 19:58:37] "GET / HTTP/1.1" 200 -
+2025-04-09 19:58:37,327 - INFO - 127.0.0.1 - - [09/Apr/2025 19:58:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 19:58:37,552 - INFO - 127.0.0.1 - - [09/Apr/2025 19:58:37] "GET /admin/logs HTTP/1.1" 200 -
+2025-04-09 19:58:55,888 - INFO - 127.0.0.1 - - [09/Apr/2025 19:58:55] "GET / HTTP/1.1" 200 -
+2025-04-09 19:58:55,908 - INFO - 127.0.0.1 - - [09/Apr/2025 19:58:55] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 19:58:56,092 - INFO - 127.0.0.1 - - [09/Apr/2025 19:58:56] "GET /admin/logs HTTP/1.1" 200 -
+2025-04-09 19:59:05,173 - DEBUG - Successfully retrieved public key for user 9
+2025-04-09 19:59:05,174 - INFO - 127.0.0.1 - - [09/Apr/2025 19:59:05] "GET /get_public_key HTTP/1.1" 200 -
+2025-04-09 19:59:05,433 - DEBUG - Uploaded file content size: 29 bytes
+2025-04-09 19:59:05,434 - DEBUG - File saved to: uploads\README.md.enc
+2025-04-09 19:59:05,434 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-04-09 19:59:05,443 - DEBUG - File information saved to database: README.md.enc, user_id=9
+2025-04-09 19:59:05,443 - INFO - 127.0.0.1 - - [09/Apr/2025 19:59:05] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-04-09 19:59:05,496 - INFO - 127.0.0.1 - - [09/Apr/2025 19:59:05] "GET / HTTP/1.1" 200 -
+2025-04-09 19:59:05,760 - INFO - 127.0.0.1 - - [09/Apr/2025 19:59:05] "GET / HTTP/1.1" 200 -
+2025-04-09 19:59:05,837 - INFO - 127.0.0.1 - - [09/Apr/2025 19:59:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 19:59:06,123 - INFO - 127.0.0.1 - - [09/Apr/2025 19:59:06] "GET /admin/logs HTTP/1.1" 200 -
+2025-04-09 19:59:57,371 - INFO - 127.0.0.1 - - [09/Apr/2025 19:59:57] "GET / HTTP/1.1" 200 -
+2025-04-09 19:59:57,675 - INFO - 127.0.0.1 - - [09/Apr/2025 19:59:57] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 19:59:58,035 - INFO - 127.0.0.1 - - [09/Apr/2025 19:59:58] "GET /admin/logs HTTP/1.1" 200 -
+2025-04-09 20:00:01,198 - INFO - User admin downloaded file README.md.enc
+2025-04-09 20:00:01,198 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-04-09 20:00:01,199 - INFO - 127.0.0.1 - - [09/Apr/2025 20:00:01] "GET /download/6 HTTP/1.1" 200 -
+2025-04-09 20:00:01,575 - DEBUG - Successfully retrieved private key for user 9
+2025-04-09 20:00:01,575 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-04-09 20:00:01,575 - INFO - 127.0.0.1 - - [09/Apr/2025 20:00:01] "GET /get_private_key HTTP/1.1" 200 -
+2025-04-09 20:00:13,927 - INFO - User admin downloaded file README.md.enc
+2025-04-09 20:00:13,927 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-04-09 20:00:13,927 - INFO - 127.0.0.1 - - [09/Apr/2025 20:00:13] "GET /download/6 HTTP/1.1" 200 -
+2025-04-09 20:00:14,287 - DEBUG - Successfully retrieved private key for user 9
+2025-04-09 20:00:14,287 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-04-09 20:00:14,288 - INFO - 127.0.0.1 - - [09/Apr/2025 20:00:14] "GET /get_private_key HTTP/1.1" 200 -
+2025-04-09 20:00:42,562 - INFO - User admin downloaded file README.md.enc
+2025-04-09 20:00:42,562 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-04-09 20:00:42,562 - INFO - 127.0.0.1 - - [09/Apr/2025 20:00:42] "GET /download/6 HTTP/1.1" 200 -
+2025-04-09 20:00:42,932 - DEBUG - Successfully retrieved private key for user 9
+2025-04-09 20:00:42,932 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-04-09 20:00:42,932 - INFO - 127.0.0.1 - - [09/Apr/2025 20:00:42] "GET /get_private_key HTTP/1.1" 200 -
+2025-04-09 20:01:29,541 - INFO - User admin downloaded file README.md.enc
+2025-04-09 20:01:29,542 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-04-09 20:01:29,542 - INFO - 127.0.0.1 - - [09/Apr/2025 20:01:29] "GET /download/6 HTTP/1.1" 200 -
+2025-04-09 20:01:29,916 - DEBUG - Successfully retrieved private key for user 9
+2025-04-09 20:01:29,916 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-04-09 20:01:29,917 - INFO - 127.0.0.1 - - [09/Apr/2025 20:01:29] "GET /get_private_key HTTP/1.1" 200 -
+2025-04-09 20:02:05,641 - INFO - File README.md.enc was deleted from filesystem by user admin
+2025-04-09 20:02:05,649 - INFO - File record 6 was deleted from database by user admin
+2025-04-09 20:02:05,650 - INFO - 127.0.0.1 - - [09/Apr/2025 20:02:05] "DELETE /delete/6 HTTP/1.1" 200 -
+2025-04-09 20:02:06,018 - INFO - 127.0.0.1 - - [09/Apr/2025 20:02:06] "GET / HTTP/1.1" 200 -
+2025-04-09 20:02:06,051 - INFO - 127.0.0.1 - - [09/Apr/2025 20:02:06] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 20:02:06,289 - INFO - 127.0.0.1 - - [09/Apr/2025 20:02:06] "GET /admin/logs HTTP/1.1" 200 -
+2025-04-09 20:02:14,888 - DEBUG - Successfully retrieved public key for user 9
+2025-04-09 20:02:14,888 - INFO - 127.0.0.1 - - [09/Apr/2025 20:02:14] "GET /get_public_key HTTP/1.1" 200 -
+2025-04-09 20:02:15,150 - DEBUG - Uploaded file content size: 29 bytes
+2025-04-09 20:02:15,151 - DEBUG - File saved to: uploads\requirements.txt.enc
+2025-04-09 20:02:15,151 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-04-09 20:02:15,161 - DEBUG - File information saved to database: requirements.txt.enc, user_id=9
+2025-04-09 20:02:15,162 - INFO - 127.0.0.1 - - [09/Apr/2025 20:02:15] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-04-09 20:02:15,215 - INFO - 127.0.0.1 - - [09/Apr/2025 20:02:15] "GET / HTTP/1.1" 200 -
+2025-04-09 20:02:15,490 - INFO - 127.0.0.1 - - [09/Apr/2025 20:02:15] "GET / HTTP/1.1" 200 -
+2025-04-09 20:02:15,553 - INFO - 127.0.0.1 - - [09/Apr/2025 20:02:15] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 20:02:15,848 - INFO - 127.0.0.1 - - [09/Apr/2025 20:02:15] "GET /admin/logs HTTP/1.1" 200 -
+2025-04-09 20:02:18,071 - INFO - User admin downloaded file requirements.txt.enc
+2025-04-09 20:02:18,071 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-04-09 20:02:18,072 - INFO - 127.0.0.1 - - [09/Apr/2025 20:02:18] "GET /download/7 HTTP/1.1" 200 -
+2025-04-09 20:02:18,431 - DEBUG - Successfully retrieved private key for user 9
+2025-04-09 20:02:18,431 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-04-09 20:02:18,431 - INFO - 127.0.0.1 - - [09/Apr/2025 20:02:18] "GET /get_private_key HTTP/1.1" 200 -
+2025-04-09 20:02:47,159 - INFO - User admin logged out
+2025-04-09 20:02:47,159 - INFO - 127.0.0.1 - - [09/Apr/2025 20:02:47] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-09 20:02:47,480 - INFO - 127.0.0.1 - - [09/Apr/2025 20:02:47] "GET /login HTTP/1.1" 200 -
+2025-04-09 20:02:47,505 - INFO - 127.0.0.1 - - [09/Apr/2025 20:02:47] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 20:02:54,432 - INFO - 127.0.0.1 - - [09/Apr/2025 20:02:54] "GET /reset-password HTTP/1.1" 200 -
+2025-04-09 20:02:54,748 - INFO - 127.0.0.1 - - [09/Apr/2025 20:02:54] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 20:18:10,549 - INFO -  * Detected change in 'C:\\Users\\Vincent\\Projects\\online-storage-application\\app.py', reloading
+2025-04-09 20:18:10,605 - INFO -  * Restarting with stat
+2025-04-09 20:18:11,126 - WARNING -  * Debugger is active!
+2025-04-09 20:18:11,127 - INFO -  * Debugger PIN: 120-070-085
+2025-04-09 20:18:12,163 - INFO -  * Detected change in 'C:\\Users\\Vincent\\Projects\\online-storage-application\\app.py', reloading
+2025-04-09 20:18:12,212 - INFO -  * Restarting with stat
+2025-04-09 20:18:12,636 - WARNING -  * Debugger is active!
+2025-04-09 20:18:12,638 - INFO -  * Debugger PIN: 120-070-085
+2025-04-09 20:18:39,910 - INFO -  * Detected change in 'C:\\Users\\Vincent\\Projects\\online-storage-application\\app.py', reloading
+2025-04-09 20:18:39,941 - INFO -  * Restarting with stat
+2025-04-09 20:18:40,379 - WARNING -  * Debugger is active!
+2025-04-09 20:18:40,382 - INFO -  * Debugger PIN: 120-070-085
+2025-04-09 20:18:58,110 - INFO - 127.0.0.1 - - [09/Apr/2025 20:18:58] "GET /reset-password HTTP/1.1" 200 -
+2025-04-09 20:18:58,186 - INFO - 127.0.0.1 - - [09/Apr/2025 20:18:58] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 20:20:25,239 - INFO - 127.0.0.1 - - [09/Apr/2025 20:20:25] "POST /reset-password HTTP/1.1" 200 -
+2025-04-09 20:20:25,263 - INFO - 127.0.0.1 - - [09/Apr/2025 20:20:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 20:20:46,033 - INFO - 127.0.0.1 - - [09/Apr/2025 20:20:46] "[32mPOST /reset-password HTTP/1.1[0m" 302 -
+2025-04-09 20:20:46,266 - INFO - 127.0.0.1 - - [09/Apr/2025 20:20:46] "GET /login HTTP/1.1" 200 -
+2025-04-09 20:20:46,594 - INFO - 127.0.0.1 - - [09/Apr/2025 20:20:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 20:20:57,914 - WARNING - Login failed for username: admin
+2025-04-09 20:20:57,915 - INFO - 127.0.0.1 - - [09/Apr/2025 20:20:57] "POST /login HTTP/1.1" 200 -
+2025-04-09 20:20:58,152 - INFO - 127.0.0.1 - - [09/Apr/2025 20:20:58] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 20:21:03,763 - INFO - User admin logged in successfully
+2025-04-09 20:21:03,764 - INFO - 127.0.0.1 - - [09/Apr/2025 20:21:03] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-09 20:21:03,769 - INFO - 127.0.0.1 - - [09/Apr/2025 20:21:03] "GET /otp-verification HTTP/1.1" 200 -
+2025-04-09 20:21:03,936 - INFO - 127.0.0.1 - - [09/Apr/2025 20:21:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 20:21:17,591 - INFO - 127.0.0.1 - - [09/Apr/2025 20:21:17] "[32mPOST /otp-verification HTTP/1.1[0m" 302 -
+2025-04-09 20:21:17,601 - INFO - 127.0.0.1 - - [09/Apr/2025 20:21:17] "GET / HTTP/1.1" 200 -
+2025-04-09 20:21:17,856 - INFO - 127.0.0.1 - - [09/Apr/2025 20:21:17] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 20:21:18,201 - INFO - 127.0.0.1 - - [09/Apr/2025 20:21:18] "GET /admin/logs HTTP/1.1" 200 -
+2025-04-09 20:30:44,205 - INFO -  * Detected change in 'C:\\Users\\Vincent\\Projects\\online-storage-application\\app.py', reloading
+2025-04-09 20:30:44,251 - INFO -  * Restarting with stat
+2025-04-09 21:33:59,740 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8001
+2025-04-09 21:33:59,741 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 21:33:59,742 - INFO -  * Restarting with stat
+2025-04-09 21:34:00,203 - WARNING -  * Debugger is active!
+2025-04-09 21:34:00,205 - INFO -  * Debugger PIN: 120-070-085
+2025-04-09 21:34:09,686 - INFO - 127.0.0.1 - - [09/Apr/2025 21:34:09] "GET / HTTP/1.1" 200 -
+2025-04-09 21:34:09,734 - INFO - 127.0.0.1 - - [09/Apr/2025 21:34:09] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 21:34:09,964 - INFO - 127.0.0.1 - - [09/Apr/2025 21:34:09] "GET /admin/logs HTTP/1.1" 200 -
+2025-04-09 21:34:27,748 - DEBUG - Successfully retrieved public key for user 9
+2025-04-09 21:34:27,748 - INFO - 127.0.0.1 - - [09/Apr/2025 21:34:27] "GET /get_public_key HTTP/1.1" 200 -
+2025-04-09 21:34:27,989 - DEBUG - Uploaded file content size: 29 bytes
+2025-04-09 21:34:27,990 - DEBUG - File saved to: uploads\requirements.txt.enc
+2025-04-09 21:34:27,990 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-04-09 21:34:27,997 - DEBUG - File information saved to database: requirements.txt.enc, user_id=9
+2025-04-09 21:34:27,997 - INFO - 127.0.0.1 - - [09/Apr/2025 21:34:27] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-04-09 21:34:28,070 - INFO - 127.0.0.1 - - [09/Apr/2025 21:34:28] "GET / HTTP/1.1" 200 -
+2025-04-09 21:34:28,317 - INFO - 127.0.0.1 - - [09/Apr/2025 21:34:28] "GET / HTTP/1.1" 200 -
+2025-04-09 21:34:28,392 - INFO - 127.0.0.1 - - [09/Apr/2025 21:34:28] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 21:34:28,689 - INFO - 127.0.0.1 - - [09/Apr/2025 21:34:28] "GET /admin/logs HTTP/1.1" 200 -
+2025-04-09 21:34:31,837 - INFO - User admin downloaded file requirements.txt.enc
+2025-04-09 21:34:31,837 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-04-09 21:34:31,838 - INFO - 127.0.0.1 - - [09/Apr/2025 21:34:31] "GET /download/8 HTTP/1.1" 200 -
+2025-04-09 21:34:32,176 - DEBUG - Successfully retrieved private key for user 9
+2025-04-09 21:34:32,176 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-04-09 21:34:32,176 - INFO - 127.0.0.1 - - [09/Apr/2025 21:34:32] "GET /get_private_key HTTP/1.1" 200 -
+2025-04-09 21:36:40,104 - INFO - User admin downloaded file requirements.txt.enc
+2025-04-09 21:36:40,104 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-04-09 21:36:40,105 - INFO - 127.0.0.1 - - [09/Apr/2025 21:36:40] "GET /download/8 HTTP/1.1" 200 -
+2025-04-09 21:36:40,378 - DEBUG - Successfully retrieved private key for user 9
+2025-04-09 21:36:40,378 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
+2025-04-09 21:36:40,378 - INFO - 127.0.0.1 - - [09/Apr/2025 21:36:40] "GET /get_private_key HTTP/1.1" 200 -
