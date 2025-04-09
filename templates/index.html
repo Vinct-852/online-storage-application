@@ -37,15 +37,15 @@ header %}Welcome, {{ current_user.username }}{% endblock %} {% block content %}
             <button class="btn download-btn" data-file-id="{{ file[0] }}">
               <i class="fas fa-download"></i> Download
             </button>
-          <button class="btn edit-btn" data-file-id="{{ file[0] }}">
-            <i class="fas fa-edit"></i> Edit
-          </button>
             {% if file[2] == current_user.id %}
+            <button class="btn edit-btn" data-file-id="{{ file[0] }}">
+              <i class="fas fa-edit"></i> Edit
+            </button>
             <button class="btn btn-danger delete-btn" data-file-id="{{ file[0] }}">
               <i class="fas fa-trash-alt"></i> Delete
             </button>
             {% endif %}
-            </div>
+        </div>
           {% if file[2] == current_user.id %}
           <form
             action="{{ url_for('share_file', file_id=file[0]) }}"
@@ -62,7 +62,6 @@ header %}Welcome, {{ current_user.username }}{% endblock %} {% block content %}
             </button>
           </form>
           {% endif %}
-        </div>
       </li>
       {% endfor %}
     </ul>
@@ -75,6 +74,7 @@ header %}Welcome, {{ current_user.username }}{% endblock %} {% block content %}
     </div>
     {% endif %}
   </div>
+  
 
   {% if current_user.username == 'admin' %}
   <div class="card">
@@ -151,85 +151,61 @@ header %}Welcome, {{ current_user.username }}{% endblock %} {% block content %}
     document.getElementById("selectedFileName").textContent = fileName;
   });
 
-  async function encryptFile(data) {
+  async function encryptFile(file) {
     const aesKey = window.crypto.getRandomValues(new Uint8Array(16));
     debugLog("Generated AES key", Array.from(aesKey));
 
     try {
-      const response = await fetch("/get_public_key");
-      const { publicKey } = await response.json();
-      if (!publicKey) throw new Error("Public key is empty");
-      debugLog(
-        "Retrieved public key (first 20 characters)",
-        publicKey.substring(0, 20) + "..."
-      );
+        const response = await fetch("/get_public_key");
+        const { publicKey } = await response.json();
+        if (!publicKey) throw new Error("Public key is empty");
+        
+        // Read file content as ArrayBuffer
+        const fileBuffer = await file.arrayBuffer();
+        debugLog("File read as ArrayBuffer, size:", fileBuffer.byteLength);
 
-      const binaryDer = Uint8Array.from(atob(publicKey), (c) =>
-        c.charCodeAt(0)
-      ).buffer;
-      debugLog("Public key decoded successfully, preparing to import");
-
-      try {
+        const binaryDer = Uint8Array.from(atob(publicKey), c => c.charCodeAt(0)).buffer;
         const importedKey = await window.crypto.subtle.importKey(
-          "spki",
-          binaryDer,
-          { name: "RSA-OAEP", hash: "SHA-256" },
-          true,
-          ["encrypt"]
+            "spki",
+            binaryDer,
+            { name: "RSA-OAEP", hash: "SHA-256" },
+            true,
+            ["encrypt"]
         );
-        debugLog("Public key imported successfully");
 
         const encryptedAesKey = await window.crypto.subtle.encrypt(
-          { name: "RSA-OAEP" },
-          importedKey,
-          aesKey
+            { name: "RSA-OAEP" },
+            importedKey,
+            aesKey
         );
-        debugLog("AES key encrypted with RSA successfully");
 
-        const fileBuffer = new TextEncoder().encode(data);
         const iv = window.crypto.getRandomValues(new Uint8Array(12));
-        debugLog("Generated IV", Array.from(iv));
-
         const cryptoKey = await window.crypto.subtle.importKey(
-          "raw",
-          aesKey,
-          { name: "AES-GCM" },
-          false,
-          ["encrypt"]
+            "raw",
+            aesKey,
+            { name: "AES-GCM" },
+            false,
+            ["encrypt"]
         );
+
         const encryptedFile = await window.crypto.subtle.encrypt(
-          {
-            name: "AES-GCM",
-            iv,
-            tagLength: 128,
-          },
-          cryptoKey,
-          fileBuffer
+            { name: "AES-GCM", iv, tagLength: 128 },
+            cryptoKey,
+            fileBuffer
         );
 
-        debugLog("File encrypted successfully, size", encryptedFile.byteLength);
-
-        // 將IV與加密後的AES密鑰一起保存
         const combinedData = {
-          encryptedAesKey: btoa(
-            String.fromCharCode(...new Uint8Array(encryptedAesKey))
-          ),
-          iv: btoa(String.fromCharCode(...new Uint8Array(iv))),
+            encryptedAesKey: btoa(String.fromCharCode(...new Uint8Array(encryptedAesKey))),
+            iv: btoa(String.fromCharCode(...new Uint8Array(iv)))
         };
 
         return {
-          encryptedFile: new Blob([encryptedFile]),
-          encryptedData: btoa(JSON.stringify(combinedData)),
+            encryptedFile: new Blob([encryptedFile]),
+            encryptedData: btoa(JSON.stringify(combinedData))
         };
-      } catch (error) {
-        debugLog("Encryption processing failed", error.message);
-        throw error;
-      }
     } catch (error) {
-      console.error("Encryption failed:", error);
-      debugLog("Encryption failed", error.message);
-      alert("Encryption failed: " + error.message);
-      return null;
+        debugLog("Encryption failed", error);
+        throw error;
     }
   }
 
@@ -338,26 +314,14 @@ header %}Welcome, {{ current_user.username }}{% endblock %} {% block content %}
         this.disabled = true;
 
         try {
-          const decryptedContent = await downloadAndDecrypt(fileId);
-          if (!decryptedContent) {
-            throw new Error("Decryption failed");
-          }
-
-          // 下載解密後的文件
-          saveDecryptedFile(decryptedContent, `decrypted_file_${fileId}.txt`);
-          showNotification(
-            "File successfully downloaded and decrypted!",
-            "success"
-          );
+            const result = await downloadAndDecrypt(fileId);
+            saveDecryptedFile(result.content, result.filename);
+            showNotification("File successfully downloaded and decrypted!", "success");
         } catch (error) {
-          showNotification(
-            "Download or decryption failed: " + error.message,
-            "error"
-          );
+            showNotification("Download or decryption failed: " + error.message, "error");
         } finally {
-          // 恢復按鈕狀態
-          this.innerHTML = originalText;
-          this.disabled = false;
+            this.innerHTML = originalText;
+            this.disabled = false;
         }
       });
     });
@@ -396,135 +360,78 @@ header %}Welcome, {{ current_user.username }}{% endblock %} {% block content %}
  
   async function downloadAndDecrypt(fileId) {
     try {
-      debugLog(`Starting file download, ID: ${fileId}`);
-      const response = await fetch(`/download/${fileId}`);
-      if (!response.ok) throw new Error("Download failed");
+        const response = await fetch(`/download/${fileId}`);
+        if (!response.ok) throw new Error("Download failed");
 
-      const fileInfo = await response.json();
-      const { filename, encrypted_aes_key, file_data } = fileInfo;
-      debugLog("Successfully retrieved file info", {
-        filename,
-        encrypted_aes_key_length: encrypted_aes_key?.length,
-      });
+        const fileInfo = await response.json();
+        const { filename, encrypted_aes_key, file_data } = fileInfo;
+        
+        if (!encrypted_aes_key || !file_data) {
+            throw new Error("Failed to retrieve encrypted data");
+        }
 
-      if (!encrypted_aes_key || !file_data) {
-        throw new Error("Failed to retrieve encrypted data");
-      }
-
-      // 嘗試解密
-      const decryptedContent = await tryMultipleDecryptionMethods(
-        encrypted_aes_key,
-        file_data
-      );
-      if (!decryptedContent) {
-        throw new Error("Decryption failed");
-      }
-
-      return decryptedContent;
+        const decryptedContent = await tryMultipleDecryptionMethods(encrypted_aes_key, file_data);
+        return { content: decryptedContent, filename: filename.replace('.enc', '') };
     } catch (error) {
-      console.error("File decryption failed:", error);
-      debugLog("Decryption failed", error);
-      throw error;
+        debugLog("Decryption failed", error);
+        throw error;
     }
   }
 
-  // 嘗試多種解密方法
-  async function tryMultipleDecryptionMethods(
-    encrypted_aes_key,
-    file_data,
-    filename
-  ) {
-    try {
-      debugLog("Fetching private key...");
-      const privateKeyResponse = await fetch("/get_private_key");
-      if (!privateKeyResponse.ok) {
-        throw new Error("Failed to retrieve private key");
-      }
+  async function tryMultipleDecryptionMethods(encrypted_aes_key, file_data) {
+    const privateKeyResponse = await fetch("/get_private_key");
+    const { privateKey: privateKeyB64 } = await privateKeyResponse.json();
+    
+    const privateKeyDer = Uint8Array.from(atob(privateKeyB64), c => c.charCodeAt(0)).buffer;
+    const encryptedData = JSON.parse(atob(encrypted_aes_key));
+    const { encryptedAesKey, iv } = encryptedData;
 
-      const { privateKey: privateKeyB64 } = await privateKeyResponse.json();
-      if (!privateKeyB64) {
-        throw new Error("Private key is empty");
-      }
+    const encryptedAesKeyBytes = Uint8Array.from(atob(encryptedAesKey), c => c.charCodeAt(0));
+    const ivBytes = Uint8Array.from(atob(iv), c => c.charCodeAt(0));
+    const encryptedFileBytes = Uint8Array.from(atob(file_data), c => c.charCodeAt(0));
 
-      debugLog("Successfully retrieved private key");
-
-      const privateKeyDer = Uint8Array.from(atob(privateKeyB64), (c) =>
-        c.charCodeAt(0)
-      ).buffer;
-
-      debugLog("Parsing encrypted data in JSON format");
-      const encryptedData = JSON.parse(atob(encrypted_aes_key));
-      const { encryptedAesKey, iv } = encryptedData;
-
-      if (!encryptedAesKey || !iv) {
-        throw new Error("Missing AES key or IV in encrypted data");
-      }
-
-      const encryptedAesKeyBytes = Uint8Array.from(atob(encryptedAesKey), (c) =>
-        c.charCodeAt(0)
-      );
-      const ivBytes = Uint8Array.from(atob(iv), (c) => c.charCodeAt(0));
-
-      const privateKey = await window.crypto.subtle.importKey(
+    const privateKey = await window.crypto.subtle.importKey(
         "pkcs8",
         privateKeyDer,
         { name: "RSA-OAEP", hash: "SHA-256" },
         true,
         ["decrypt"]
-      );
+    );
 
-      const aesKeyBuffer = await window.crypto.subtle.decrypt(
+    const aesKeyBuffer = await window.crypto.subtle.decrypt(
         { name: "RSA-OAEP" },
         privateKey,
         encryptedAesKeyBytes
-      );
+    );
 
-      const cryptoKey = await window.crypto.subtle.importKey(
+    const cryptoKey = await window.crypto.subtle.importKey(
         "raw",
         new Uint8Array(aesKeyBuffer),
         { name: "AES-GCM" },
         false,
         ["decrypt"]
-      );
+    );
 
-      const encryptedFileBytes = Uint8Array.from(atob(file_data), (c) =>
-        c.charCodeAt(0)
-      );
-
-      const decryptedFile = await window.crypto.subtle.decrypt(
+    const decryptedContent = await window.crypto.subtle.decrypt(
         { name: "AES-GCM", iv: ivBytes, tagLength: 128 },
         cryptoKey,
         encryptedFileBytes
-      );
+    );
 
-      const decodedText = new TextDecoder().decode(decryptedFile);
-      debugLog("File decrypted successfully", decodedText);
-      return decodedText;
-    } catch (error) {
-      debugLog("Decryption failed", error);
-      throw new Error(`Decryption failed: ${error.message}`);
-    }
+    return decryptedContent;
   }
 
-  // 保存解密後的文件
-  // **修正 `saveDecryptedFile()` 讓它能夠下載解密後的內容**
   function saveDecryptedFile(decryptedContent, filename) {
-    if (!decryptedContent || typeof decryptedContent !== "string") {
-      showNotification("Error: No valid decrypted content to save!", "error");
-      return;
-    }
-
-    const blob = new Blob([decryptedContent], { type: "text/plain" });
-    const link = document.createElement("a");
-    link.href = URL.createObjectURL(blob);
-    link.download = filename;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-
-    debugLog("File saved as", filename);
+    const blob = new Blob([decryptedContent]);
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
   }
-
 
   document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".edit-btn").forEach((button) => {
