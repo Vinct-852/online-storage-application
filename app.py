@@ -13,6 +13,9 @@ import base64
 import logging
 import traceback
 import json
+from functools import wraps
+from flask import abort
+import sys
 
 # 设置日志记录
 logging.basicConfig(filename='app.log', level=logging.DEBUG,
@@ -78,10 +81,21 @@ def load_user(user_id):
         return User(user[0], user[1])
     return None
 
+ADMIN_USERNAME = 'admin'  # Change this to your desired admin username
+
+def admin_required(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        if not current_user.is_authenticated or current_user.username != ADMIN_USERNAME:
+            abort(403)
+        return f(*args, **kwargs)
+    return decorated_function
+
 # 📌 首頁
 @app.route('/')
 @login_required
 def index():
+
     conn = sqlite3.connect('database.db')
     c = conn.cursor()
     
@@ -509,6 +523,51 @@ def download_file(file_id):
     finally:
         if 'conn' in locals():
             conn.close()
+
+@app.route('/admin/logs')
+@login_required
+@admin_required
+def view_logs():
+    try:
+        # Try UTF-8 first
+        try:
+            with open('app.log', 'r', encoding='utf-8') as f:
+                logs = f.read()
+            return logs
+        except UnicodeDecodeError:
+            # Fallback to system default encoding with error handling
+            with open('app.log', 'r', encoding=sys.getdefaultencoding(), errors='replace') as f:
+                logs = f.read()
+            logging.warning("Log file was read with replacement characters due to encoding issues")
+            return logs
+    except Exception as e:
+        logging.error(f"Error reading logs: {str(e)}")
+        return {"error": "Failed to read log file"}, 500
+
+@app.route('/admin/logs/clear', methods=['POST'])
+@login_required
+@admin_required
+def clear_logs():
+    try:
+        # Backup current logs with timestamp
+        from datetime import datetime
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        backup_path = f'app_backup_{timestamp}.log'
+        
+        # Create backup
+        if os.path.exists('app.log'):
+            import shutil
+            shutil.copy2('app.log', backup_path)
+            
+        # Clear the log file
+        with open('app.log', 'w') as f:
+            f.write(f'Log file cleared by {current_user.username} at {datetime.now().isoformat()}\n')
+        
+        logging.info("Log file cleared and backed up")
+        return {"message": "Logs cleared successfully"}, 200
+    except Exception as e:
+        logging.error(f"Error clearing logs: {str(e)}")
+        return {"error": "Failed to clear log file"}, 500
 
 if __name__ == '__main__':
     if not os.path.exists(app.config['UPLOAD_FOLDER']):
