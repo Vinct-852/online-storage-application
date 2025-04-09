@@ -95,3 +95,23 @@ Log file cleared by admin at 2025-04-09T17:29:58.822492
 2025-04-09 17:47:56,455 - DEBUG - Private key format: PKCS#8 DER, encoded length: 1624
 2025-04-09 17:47:56,456 - INFO - 127.0.0.1 - - [09/Apr/2025 17:47:56] "GET /get_private_key HTTP/1.1" 200 -
 2025-04-09 17:58:09,627 - INFO - 127.0.0.1 - - [09/Apr/2025 17:58:09] "GET /admin/logs HTTP/1.1" 200 -
+2025-04-09 18:10:06,238 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-09 18:10:06,238 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 18:10:06,240 - INFO -  * Restarting with stat
+2025-04-09 18:10:06,592 - WARNING -  * Debugger is active!
+2025-04-09 18:10:06,594 - INFO -  * Debugger PIN: 120-070-085
+2025-04-09 18:10:15,841 - INFO - 127.0.0.1 - - [09/Apr/2025 18:10:15] "GET / HTTP/1.1" 200 -
+2025-04-09 18:10:15,882 - INFO - 127.0.0.1 - - [09/Apr/2025 18:10:15] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 18:10:16,096 - INFO - 127.0.0.1 - - [09/Apr/2025 18:10:16] "GET /admin/logs HTTP/1.1" 200 -
+2025-04-09 18:10:20,174 - INFO - User admin logged out
+2025-04-09 18:10:20,175 - INFO - 127.0.0.1 - - [09/Apr/2025 18:10:20] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-09 18:10:20,292 - INFO - 127.0.0.1 - - [09/Apr/2025 18:10:20] "GET /login HTTP/1.1" 200 -
+2025-04-09 18:10:20,441 - INFO - 127.0.0.1 - - [09/Apr/2025 18:10:20] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 18:10:24,687 - WARNING - Failed login attempt for username: 123
+2025-04-09 18:10:24,688 - INFO - 127.0.0.1 - - [09/Apr/2025 18:10:24] "POST /login HTTP/1.1" 200 -
+2025-04-09 18:10:24,859 - INFO - 127.0.0.1 - - [09/Apr/2025 18:10:24] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 18:10:32,572 - INFO - User test1 logged in successfully
+2025-04-09 18:10:32,573 - INFO - 127.0.0.1 - - [09/Apr/2025 18:10:32] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-09 18:10:32,579 - INFO - 127.0.0.1 - - [09/Apr/2025 18:10:32] "GET / HTTP/1.1" 200 -
+2025-04-09 18:10:32,683 - INFO - 127.0.0.1 - - [09/Apr/2025 18:10:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
