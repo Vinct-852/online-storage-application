@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    {% block head %}{% endblock %}
   </head>
   <body>
     <header class="app-header">
@@ -48,6 +49,9 @@
 
     <!-- Notification container -->
     <div id="notifications-container"></div>
+    <!-- Load KeyManager first -->
+    <script src="{{ url_for('static', filename='js/keyManager.js') }}"></script>
+    {% block scripts %}{% endblock %}
   </body>
 </html>
 

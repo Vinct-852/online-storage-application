@@ -37,19 +37,18 @@ def init_db():
     conn = sqlite3.connect('database.db')
     c = conn.cursor()
     
-    # 創建 users 表，增加 otp_secret 欄位
+    # Create users table - storing only public key
     c.execute('''
         CREATE TABLE IF NOT EXISTS users (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             username TEXT UNIQUE NOT NULL,
             password TEXT NOT NULL,
             public_key TEXT NOT NULL,
-            private_key TEXT NOT NULL,
-            otp_secret TEXT DEFAULT NULL  -- 新增 OTP 密鑰欄位
+            otp_secret TEXT DEFAULT NULL
         )
     ''')
 
-    # 創建 files 表
+    # Create files table
     c.execute('''
         CREATE TABLE IF NOT EXISTS files (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -135,31 +134,53 @@ def index():
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
-        username = request.form['username']
-        password = generate_password_hash(request.form['password'])
-
-        # Generate OTP secret
-        otp_secret = pyotp.random_base32()
-
-        # Generate RSA keys (assuming you need them)
-        private_key, public_key = generate_keys()
- 
-
-        conn = sqlite3.connect('database.db')
-        c = conn.cursor()
-
+        if not request.is_json:
+            return jsonify({
+                'success': False,
+                'message': 'Content-Type must be application/json'
+            }), 415
+            
         try:
-            c.execute('INSERT INTO users (username, password, public_key, private_key, otp_secret) VALUES (?, ?, ?, ?, ?)',
-                      (username, password, public_key, private_key, otp_secret))
-            conn.commit()
-            conn.close()
+            data = request.get_json()
+            if not data:
+                return jsonify({'success': False, 'message': 'No data received'}), 400
+                
+            username = data.get('username')
+            password = data.get('password')
+            public_key = data.get('publicKey')
+            
+            if not all([username, password, public_key]):
+                return jsonify({'success': False, 'message': 'Missing required fields'}), 400
 
-            flash('Registration successful! Set up your OTP by scanning the QR code.', 'success')
-            return redirect(url_for('otp_setup', username=username))
-        except sqlite3.IntegrityError:
-            flash('Username already exists. Please choose another one.', 'danger')
-
-        conn.close()
+            hashed_password = generate_password_hash(password)
+            
+            conn = sqlite3.connect('database.db')
+            c = conn.cursor()
+            
+            try:
+                c.execute('''INSERT INTO users (username, password, public_key, otp_secret) 
+                           VALUES (?, ?, ?, ?)''', 
+                           (username, hashed_password, public_key, pyotp.random_base32()))
+                conn.commit()
+                
+                return jsonify({
+                    'success': True,
+                    'message': 'Registration successful'
+                })
+            except sqlite3.IntegrityError:
+                return jsonify({
+                    'success': False,
+                    'message': 'Username already exists'
+                }), 409
+            finally:
+                conn.close()
+                
+        except Exception as e:
+            logging.error(f"Registration error: {str(e)}")
+            return jsonify({
+                'success': False,
+                'message': str(e)
+            }), 500
 
     return render_template('register.html')
 
@@ -396,49 +417,17 @@ def get_public_key():
     conn.close()
 
     if user:
-        public_key_pem = user[0]
         try:
-            public_key = RSA.import_key(public_key_pem)
-            public_key_der = public_key.export_key(format="DER")
-            public_key_b64 = base64.b64encode(public_key_der).decode()
+            # The public key is already stored as base64 from registration
+            public_key = user[0]  # Already in correct format
             logging.debug(f"Successfully retrieved public key for user {current_user.id}")
-            return {"publicKey": public_key_b64}
+            return {"publicKey": public_key}
         except Exception as e:
-            logging.error(f"Error exporting public key: {str(e)}")
+            logging.error(f"Error processing public key: {str(e)}")
             return {"error": f"Error processing public key: {str(e)}"}, 500
     else:
         logging.error(f"Public key not found for user {current_user.id}")
         return {"error": "Public key not found"}, 404
-
-# 新增：获取私钥接口
-@app.route('/get_private_key')
-@login_required
-def get_private_key():
-    conn = sqlite3.connect('database.db')
-    c = conn.cursor()
-    c.execute('SELECT private_key FROM users WHERE id = ?', (current_user.id,))
-    user = c.fetchone()
-    conn.close()
-
-    if user:
-        private_key_pem = user[0]
-        try:
-            # 获取RSA密钥对象
-            private_key = RSA.import_key(private_key_pem)
-            # 将私钥转换为PKCS#8 DER格式，这是Web Crypto API支持的格式
-            private_key_der = private_key.export_key(format="DER", pkcs=8)
-            private_key_b64 = base64.b64encode(private_key_der).decode()
-            
-            logging.debug(f"Successfully retrieved private key for user {current_user.id}")
-            logging.debug(f"Private key format: PKCS#8 DER, encoded length: {len(private_key_b64)}")
-            
-            return {"privateKey": private_key_b64}
-        except Exception as e:
-            logging.error(f"Error exporting private key: {str(e)}\n{traceback.format_exc()}")
-            return {"error": f"Error processing private key: {str(e)}"}, 500
-    else:
-        logging.error(f"Private key not found for user {current_user.id}")
-        return {"error": "Private key not found"}, 404
 
 # 📌 設定共享權限（用 user_id）
 @app.route('/share/<int:file_id>', methods=['POST'])
@@ -475,8 +464,8 @@ def share_file(file_id):
         else:
             try:
                 # 获取当前用户的私钥以解密原始AES密钥
-                c.execute('SELECT private_key FROM users WHERE id = ?', (current_user.id,))
-                owner_private_key = c.fetchone()[0]
+                c.execute('SELECT public_key FROM users WHERE id = ?', (current_user.id,))
+                owner_public_key = c.fetchone()[0]
                 
                 # 解析原始加密数据
                 encrypted_data = json.loads(base64.b64decode(encryption_key).decode())
@@ -486,8 +475,8 @@ def share_file(file_id):
                 if not encrypted_aes_key_base64 or not iv_base64:
                     raise ValueError("Invalid encrypted data format")
                 
-                # 使用所有者的私钥解密AES密钥
-                owner_key = RSA.import_key(owner_private_key)
+                # 使用所有者的公钥解密AES密钥
+                owner_key = RSA.import_key(owner_public_key)
                 encrypted_aes_key = base64.b64decode(encrypted_aes_key_base64)
                 
                 # 修改：使用正确的RSA-OAEP解密方式

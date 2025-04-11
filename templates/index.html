@@ -363,17 +363,68 @@ header %}Welcome, {{ current_user.username }}{% endblock %} {% block content %}
         const response = await fetch(`/download/${fileId}`);
         if (!response.ok) throw new Error("Download failed");
 
-        const fileInfo = await response.json();
-        const { filename, encrypted_aes_key, file_data } = fileInfo;
-        
-        if (!encrypted_aes_key || !file_data) {
-            throw new Error("Failed to retrieve encrypted data");
-        }
+        const { filename, encrypted_aes_key, file_data } = await response.json();
+          
+        // Get private key from local storage
+        const username = "{{ current_user.username }}";
+        const password = prompt("Enter your password to decrypt the file:");
+        if (!password) throw new Error("Password required for decryption");
 
-        const decryptedContent = await tryMultipleDecryptionMethods(encrypted_aes_key, file_data);
+        const privateKey = await KeyManager.retrievePrivateKey(username, password);
+        
+        const decryptedContent = await decryptWithLocalKey(encrypted_aes_key, file_data, privateKey);
         return { content: decryptedContent, filename: filename.replace('.enc', '') };
     } catch (error) {
         debugLog("Decryption failed", error);
+        throw error;
+    }
+  }
+
+  async function decryptWithLocalKey(encrypted_aes_key, file_data, privateKey) {
+    try {
+        const encryptedData = JSON.parse(atob(encrypted_aes_key));
+        const { encryptedAesKey, iv } = encryptedData;
+
+        // Convert base64 data to Uint8Arrays
+        const encryptedAesKeyBytes = Uint8Array.from(atob(encryptedAesKey), c => c.charCodeAt(0));
+        const ivBytes = Uint8Array.from(atob(iv), c => c.charCodeAt(0));
+        const encryptedFileBytes = Uint8Array.from(atob(file_data), c => c.charCodeAt(0));
+
+        // Import private key for decryption
+        const importedPrivateKey = await window.crypto.subtle.importKey(
+            "pkcs8",
+            privateKey,
+            { name: "RSA-OAEP", hash: "SHA-256" },
+            false,
+            ["decrypt"]
+        );
+
+        // Decrypt the AES key
+        const aesKeyBuffer = await window.crypto.subtle.decrypt(
+            { name: "RSA-OAEP" },
+            importedPrivateKey,
+            encryptedAesKeyBytes
+        );
+
+        // Import the decrypted AES key
+        const aesKey = await window.crypto.subtle.importKey(
+            "raw",
+            aesKeyBuffer,
+            { name: "AES-GCM" },
+            false,
+            ["decrypt"]
+        );
+
+        // Decrypt the file content
+        const decryptedContent = await window.crypto.subtle.decrypt(
+            { name: "AES-GCM", iv: ivBytes, tagLength: 128 },
+            aesKey,
+            encryptedFileBytes
+        );
+
+        return decryptedContent;
+    } catch (error) {
+        console.error("Decryption failed:", error);
         throw error;
     }
   }
@@ -578,4 +629,16 @@ async function clearLogs() {
 }
 </script>
 
+{% endblock %}
+
+{% block scripts %}
+<script>
+// Remove KeyManager import since it's in base.html
+document.addEventListener('DOMContentLoaded', function() {
+    if (typeof KeyManager === 'undefined') {
+        console.error('KeyManager not loaded');
+        return;
+    }
+});
+</script>
 {% endblock %}

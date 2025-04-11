@@ -10,7 +10,7 @@
       <p class="auth-subtitle">Register to start using the secure file system</p>
     </div>
     
-    <form method="POST" class="auth-form">
+    <form method="POST" class="auth-form" id="registerForm">
       <div class="form-group">
         <label for="username"><i class="fas fa-user"></i> Username</label>
         <input type="text" id="username" name="username" placeholder="Enter your username" required />
@@ -46,4 +46,52 @@
   </div>
 </div>
 
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    if (typeof KeyManager === 'undefined') {
+        console.error('KeyManager not loaded');
+        return;
+    }
+    
+    document.getElementById('registerForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        
+        try {
+            // Generate and store key pair
+            const { publicKey } = await KeyManager.generateAndStoreKeyPair(username, password);
+
+            // Send registration data to server
+            const response = await fetch('/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                  username: username,
+                  password: password,
+                  publicKey: publicKey
+                }),
+            });
+            
+            const result = await response.json();
+            
+            if (result.success) {
+                window.location.href = '/otp-setup/' + username;
+            } else {
+                alert(result.message || 'Registration failed');
+            }
+        } catch (error) {
+            console.error('Registration error:', error);
+            alert('Registration failed: ' + error.message);
+        }
+    });
+});
+</script>
 {% endblock %}

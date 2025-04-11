@@ -1,0 +1,79 @@
+Log file cleared by admin at 2025-04-11T13:31:31.236448
+2025-04-11 13:31:31,236 - INFO - Log file cleared and backed up
+2025-04-11 13:31:31,237 - INFO - 127.0.0.1 - - [11/Apr/2025 13:31:31] "POST /admin/logs/clear HTTP/1.1" 200 -
+2025-04-11 13:31:31,496 - INFO - 127.0.0.1 - - [11/Apr/2025 13:31:31] "GET /admin/logs HTTP/1.1" 200 -
+2025-04-11 13:31:42,449 - ERROR - Error exporting public key: RSA key format is not supported
+2025-04-11 13:31:42,450 - INFO - 127.0.0.1 - - [11/Apr/2025 13:31:42] "[35m[1mGET /get_public_key HTTP/1.1[0m" 500 -
+2025-04-11 13:39:46,697 - INFO -  * Detected change in 'C:\\Users\\Vincent\\Projects\\online-storage-application\\app.py', reloading
+2025-04-11 13:39:46,777 - INFO -  * Restarting with stat
+2025-04-11 13:39:47,470 - WARNING -  * Debugger is active!
+2025-04-11 13:39:47,473 - INFO -  * Debugger PIN: 120-070-085
+2025-04-11 13:40:05,511 - INFO - User admin logged out
+2025-04-11 13:40:05,512 - INFO - 127.0.0.1 - - [11/Apr/2025 13:40:05] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-11 13:40:05,618 - INFO - 127.0.0.1 - - [11/Apr/2025 13:40:05] "GET /login HTTP/1.1" 200 -
+2025-04-11 13:40:05,825 - INFO - 127.0.0.1 - - [11/Apr/2025 13:40:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-11 13:40:05,950 - INFO - 127.0.0.1 - - [11/Apr/2025 13:40:05] "GET /static/js/keyManager.js HTTP/1.1" 200 -
+2025-04-11 13:40:09,393 - INFO - User 1234 logged in successfully
+2025-04-11 13:40:09,394 - INFO - 127.0.0.1 - - [11/Apr/2025 13:40:09] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-11 13:40:09,708 - INFO - 127.0.0.1 - - [11/Apr/2025 13:40:09] "GET /otp-verification HTTP/1.1" 200 -
+2025-04-11 13:40:10,051 - INFO - 127.0.0.1 - - [11/Apr/2025 13:40:10] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-11 13:40:10,052 - INFO - 127.0.0.1 - - [11/Apr/2025 13:40:10] "[36mGET /static/js/keyManager.js HTTP/1.1[0m" 304 -
+2025-04-11 13:40:16,148 - INFO - 127.0.0.1 - - [11/Apr/2025 13:40:16] "GET /login HTTP/1.1" 200 -
+2025-04-11 13:40:18,251 - INFO - 127.0.0.1 - - [11/Apr/2025 13:40:18] "GET /register HTTP/1.1" 200 -
+2025-04-11 13:40:18,567 - INFO - 127.0.0.1 - - [11/Apr/2025 13:40:18] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-11 13:40:18,583 - INFO - 127.0.0.1 - - [11/Apr/2025 13:40:18] "[36mGET /static/js/keyManager.js HTTP/1.1[0m" 304 -
+2025-04-11 13:40:23,999 - INFO - 127.0.0.1 - - [11/Apr/2025 13:40:23] "POST /register HTTP/1.1" 200 -
+2025-04-11 13:40:24,300 - INFO - 127.0.0.1 - - [11/Apr/2025 13:40:24] "GET /otp-setup/234 HTTP/1.1" 200 -
+2025-04-11 13:40:55,647 - INFO - 127.0.0.1 - - [11/Apr/2025 13:40:55] "GET /login HTTP/1.1" 200 -
+2025-04-11 13:40:55,961 - INFO - 127.0.0.1 - - [11/Apr/2025 13:40:55] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-11 13:40:55,993 - INFO - 127.0.0.1 - - [11/Apr/2025 13:40:55] "[36mGET /static/js/keyManager.js HTTP/1.1[0m" 304 -
+2025-04-11 13:41:03,061 - WARNING - Login failed for username: 234
+2025-04-11 13:41:03,063 - INFO - 127.0.0.1 - - [11/Apr/2025 13:41:03] "POST /login HTTP/1.1" 200 -
+2025-04-11 13:41:03,093 - INFO - 127.0.0.1 - - [11/Apr/2025 13:41:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-11 13:41:03,332 - INFO - 127.0.0.1 - - [11/Apr/2025 13:41:03] "[36mGET /static/js/keyManager.js HTTP/1.1[0m" 304 -
+2025-04-11 13:41:07,757 - INFO - User 234 logged in successfully
+2025-04-11 13:41:07,757 - INFO - 127.0.0.1 - - [11/Apr/2025 13:41:07] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-11 13:41:07,764 - INFO - 127.0.0.1 - - [11/Apr/2025 13:41:07] "GET /otp-verification HTTP/1.1" 200 -
+2025-04-11 13:41:08,022 - INFO - 127.0.0.1 - - [11/Apr/2025 13:41:08] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-11 13:41:08,100 - INFO - 127.0.0.1 - - [11/Apr/2025 13:41:08] "[36mGET /static/js/keyManager.js HTTP/1.1[0m" 304 -
+2025-04-11 13:41:14,361 - INFO - 127.0.0.1 - - [11/Apr/2025 13:41:14] "[32mPOST /otp-verification HTTP/1.1[0m" 302 -
+2025-04-11 13:41:14,386 - INFO - 127.0.0.1 - - [11/Apr/2025 13:41:14] "GET / HTTP/1.1" 200 -
+2025-04-11 13:41:14,625 - INFO - 127.0.0.1 - - [11/Apr/2025 13:41:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-11 13:41:14,734 - INFO - 127.0.0.1 - - [11/Apr/2025 13:41:14] "[36mGET /static/js/keyManager.js HTTP/1.1[0m" 304 -
+2025-04-11 13:41:25,269 - DEBUG - Successfully retrieved public key for user 3
+2025-04-11 13:41:25,269 - INFO - 127.0.0.1 - - [11/Apr/2025 13:41:25] "GET /get_public_key HTTP/1.1" 200 -
+2025-04-11 13:41:25,537 - DEBUG - Uploaded file content size: 4873 bytes
+2025-04-11 13:41:25,538 - DEBUG - File saved to: uploads\README_5.md.enc
+2025-04-11 13:41:25,538 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-04-11 13:41:25,543 - DEBUG - File information saved to database: README_5.md.enc, user_id=3
+2025-04-11 13:41:25,544 - INFO - 127.0.0.1 - - [11/Apr/2025 13:41:25] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-04-11 13:41:25,602 - INFO - 127.0.0.1 - - [11/Apr/2025 13:41:25] "GET / HTTP/1.1" 200 -
+2025-04-11 13:41:25,862 - INFO - 127.0.0.1 - - [11/Apr/2025 13:41:25] "GET / HTTP/1.1" 200 -
+2025-04-11 13:41:25,941 - INFO - 127.0.0.1 - - [11/Apr/2025 13:41:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-11 13:41:26,204 - INFO - 127.0.0.1 - - [11/Apr/2025 13:41:26] "[36mGET /static/js/keyManager.js HTTP/1.1[0m" 304 -
+2025-04-11 13:41:35,878 - INFO - User 234 downloaded file README_5.md.enc
+2025-04-11 13:41:35,878 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-04-11 13:41:35,879 - INFO - 127.0.0.1 - - [11/Apr/2025 13:41:35] "GET /download/1 HTTP/1.1" 200 -
+2025-04-11 13:48:34,441 - INFO - 127.0.0.1 - - [11/Apr/2025 13:48:34] "GET / HTTP/1.1" 200 -
+2025-04-11 13:48:34,474 - INFO - 127.0.0.1 - - [11/Apr/2025 13:48:34] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-11 13:48:34,604 - INFO - 127.0.0.1 - - [11/Apr/2025 13:48:34] "[36mGET /static/js/keyManager.js HTTP/1.1[0m" 304 -
+2025-04-11 13:48:35,616 - INFO - User 234 downloaded file README_5.md.enc
+2025-04-11 13:48:35,616 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-04-11 13:48:35,617 - INFO - 127.0.0.1 - - [11/Apr/2025 13:48:35] "GET /download/1 HTTP/1.1" 200 -
+2025-04-11 13:48:50,907 - INFO - User 234 downloaded file README_5.md.enc
+2025-04-11 13:48:50,907 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-04-11 13:48:50,907 - INFO - 127.0.0.1 - - [11/Apr/2025 13:48:50] "GET /download/1 HTTP/1.1" 200 -
+2025-04-11 13:49:05,947 - DEBUG - Successfully retrieved public key for user 3
+2025-04-11 13:49:05,948 - INFO - 127.0.0.1 - - [11/Apr/2025 13:49:05] "GET /get_public_key HTTP/1.1" 200 -
+2025-04-11 13:49:06,267 - DEBUG - Uploaded file content size: 23475855 bytes
+2025-04-11 13:49:06,310 - DEBUG - File saved to: uploads\COMP3122-demo-video.mp4.enc
+2025-04-11 13:49:06,310 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-04-11 13:49:06,316 - DEBUG - File information saved to database: COMP3122-demo-video.mp4.enc, user_id=3
+2025-04-11 13:49:06,320 - INFO - 127.0.0.1 - - [11/Apr/2025 13:49:06] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-04-11 13:49:06,449 - INFO - 127.0.0.1 - - [11/Apr/2025 13:49:06] "GET / HTTP/1.1" 200 -
+2025-04-11 13:49:06,634 - INFO - 127.0.0.1 - - [11/Apr/2025 13:49:06] "GET / HTTP/1.1" 200 -
+2025-04-11 13:49:06,772 - INFO - 127.0.0.1 - - [11/Apr/2025 13:49:06] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-11 13:49:06,960 - INFO - 127.0.0.1 - - [11/Apr/2025 13:49:06] "[36mGET /static/js/keyManager.js HTTP/1.1[0m" 304 -
+2025-04-11 13:49:09,151 - INFO - User 234 downloaded file COMP3122-demo-video.mp4.enc
+2025-04-11 13:49:09,151 - DEBUG - Encrypted data contains fields: encryptedAesKey, iv
+2025-04-11 13:49:09,268 - INFO - 127.0.0.1 - - [11/Apr/2025 13:49:09] "GET /download/2 HTTP/1.1" 200 -
